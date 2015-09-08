@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Freescale Homepage</title>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> -->
+    <meta name="viewport" content="initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="../css/basecamp.css" />
+
+   
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <script type="text/javascript" src="../js/basecamp-template.js"></script> -->
+    <link rel="shortcut icon" href="../ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+<style>
+#homepage {background-color: yellow;}
+ #homepage.container {margin-top: 5px; margin-bottom: 10px;}
+ #homepage .homepage-banner-main {padding-right: 5px; padding-left: 0px;}
+ #homepage .homepage-banner-side {padding-left: 0px; padding-right: 0px;}
+ #homepage #banner-1 img{ width:755px;}
+ #homepage #banner-2 img {height:210px; margin-bottom:5px;}
+ #homepage #banner-3 img {height:210px;}
+ #homepage .homepage-info {height: 100px; padding-left: 10px;}
+ #homepage #homepage-links  {padding-right: 5px; background-color: #eee; }
+ #homepage #homepage-news  {padding-left: 0px; background-color: linen; }
+
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 0px solid transparent;
+  border-bottom: 50px solid transparent; 
+  
+  border-left:50px solid #ffc945; 
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.arrow-right-main {
+  width: 0; 
+  height: 0; 
+  border-top: 100px solid transparent;
+  border-bottom: 0px solid transparent; 
+  
+  border-right:100px solid #e66c23; 
+  /*margin-right: -5px;*/
+  /*margin-top: -5px;*/
+  position: absolute;
+  bottom:0px;
+  right:5px;
+}
+
+
+.arrow-right-side-2 {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 0px solid transparent; 
+  
+  border-right:60px solid #e66c23; 
+  /*margin-right: -5px;*/
+  /*margin-top: -5px;*/
+  position: absolute;
+  bottom:215px;
+  right:0px;
+}
+
+.arrow-right-side-3 {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 0px solid transparent; 
+  
+  border-right:60px solid #e66c23; 
+  /*margin-right: -5px;*/
+  /*margin-top: -5px;*/
+  position: absolute;
+  bottom:0px;
+  right:0px;
+}
+
+#header .form-control {border-radius: 0px; border-color: #888; color:#888;}
+#header .input-group-btn button {border:1px solid #888; border-radius:0;}
+
+#header .navbar-default .navbar-nav > li > a { border-left:1px solid white;}
+#header .navbar-default .navbar-nav > li:first-child > a { border-left:0px;}
+
+#homepage .homepage-banner-main:after { 
+  content: " ";
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  right:5px;
+  border-top: 100px solid transparent;
+  border-bottom: 0px solid transparent; 
+  border-right:100px solid #e66c23; 
+  zoom:1;
+  
+}
+
+#homepage .homepage-banner-main:before { 
+  content: " ";
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  right:5px;
+  border-top: 110px solid transparent;
+  border-bottom: 0px solid transparent; 
+  border-right:110px solid white; 
+  zoom:1;
+  
+}
+
+
+#homepage .homepage-banner-side:after { 
+  content: " ";
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  right:0px;
+  border-top: 75px solid transparent;
+  border-bottom: 0px solid transparent; 
+  border-right:75px solid #e66c23; 
+  
+}
+
+#homepage .homepage-banner-side:before { 
+  content: " ";
+  position: absolute;
+  z-index: 100;
+  bottom: 0px;
+  right:0px;
+  border-top: 85px solid transparent;
+  border-bottom: 0px solid transparent; 
+  border-right:85px solid white; 
+  
+}
+
+#banner-1  img {z-index: -1; zoom:1;}
+    </style>
+
+</head>
+  <body >
+  
+     <header><div id="header"><div class="container">
+      <div class="row">
+        <div class="col-sm-1" >
+          <div id="fsl-logo">
+            <a href="#" title="Freescale" ><img src="//www.freescale.com/files/graphic/icons/freescale-logo.png" alt="Freescale Semiconductor"></a>
+          </div>
+        </div>
+        <div class="col-sm-8 pull-right" id="login-block">
+          <ul class="list-inline pull-right">
+            <!-- <li><span class="icon-user"></span>&nbsp;John Smith</li> -->
+             <li>
+              <div class="dropdown">
+                <a href="#" id="userDropdownMenu" data-toggle="dropdown"><span class="icon-user"></span>&nbsp;John Smith <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="userDropdownMenu">
+                 
+                  <li role="presentation"><a role="menuitem" >Login</a></li>
+                  <li role="presentation"><a role="menuitem" href="#nogo" >Account</a></li>
+                  <li role="presentation"><a role="menuitem" href="#nogo" >Preferences</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#nogo"><span class="icon-cart"></span></a></li>
+            <li>
+              <div class="dropdown">
+                <a href="#" id="languageDropdownMenu" data-toggle="dropdown">Language <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="languageDropdownMenu">
+                  <li role="presentation">Select language</li>
+                  <li role="presentation"><a role="menuitem" class="lang-en selected">English <span class="icon-checkmark3 pull-right"></span></a></li>
+                  <li role="presentation"><a role="menuitem" class="lang-zh" href="http://www.freescale.com/zh-Hans" >中文</a></li>
+                  <li role="presentation"><a role="menuitem" class="lang-ja" href="http://www.freescale.com/ja" >日本語</a></li>
+                  <li role="presentation"><a role="menuitem" class="lang-ko" href="http://www.freescale.co.kr" >한국어 </a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-8 pull-right" id="search-block">
+          <ul class="nav navbar-nav pull-right">
+            <li>
+             <div class="input-group" style="width:450px;">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                  <button  type="button" style="padding:6px;" class="btn btn-default fsl-orange-text" ><span class="icon-search2"></span></button>
+                  <button type="button" style="padding:6px; background-color: #888; color:white; font-weight:600;" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">Everything &nbsp;<span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Software & Tools</a></li>
+                    <li><a href="#">Applications</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Partners</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div></div>
+      <div class="navbar navbar-default megamenu">
+        <div class="navbar-header">
+          <a href="#nogo"  data-toggle="collapse" data-target="#navbar-collapse-fsl" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+        </div>
+        <div class="container">
+          <div id="navbar-collapse-fsl" class="navbar-collapse collapse">
+            <div class="navbar-center">
+              <ul class="nav navbar-nav">
+                <li class="dropdown  megamenu-fw">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Products</a>
+                </li>
+                <!-- <li><div class="vertical-line" ></div></li> -->
+                <li class="dropdown megamenu-hw">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Applications</a>
+                  
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Software &amp; Tools</a>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training &amp; Support</a>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Support &amp; Communities</a>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></header>
+    
+    <!-- // header -->   
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- <div class="fsl-container" > -->
+      <div class="container" id="homepage">
+      
+        <div class="row" style="margin:auto 0;">
+          <div class="col-md-8 homepage-banner-main" id="banner-1" >
+           <img src="http://fillmurray.com/g/710/400" alt="" >
+          </div>
+          <div class="col-md-4 e">
+          <div class="row">
+            <div class="col-md-12 col-xs-6 homepage-banner-side" id="banner-2"><img src="//fillmurray.com/380/210" alt="" ></div>
+            <div class="col-md-12 col-xs-6 homepage-banner-side" id="banner-3"><img src="//fillmurray.com/380/210" alt="" ></div>
+          </div>
+          
+             
+             
+          </div>
+        </div><!-- .row -->
+
+   <div class="row" style="margin-top:5px;  margin-left:0px; margin-right:0px;">
+        <div class="col-md-4" style="padding:0; height:inherit; "><div style="background-color:#9cacb9; border-right:5px solid white; padding: 5px; height:125px; color:white">
+           <div style=" padding-left:20px;">
+           <h4>Quick Links</h4>
+           <ul class="list-unstyled" >
+             <li ><a href="#nogo" style="color:white; ">Parametric Selector&nbsp;&nbsp;<span class="icon-angle-right" style="font-size:1.5em;vertical-align: sub;"></span></a></li>
+             <li ><a href="#nogo" style="color:white; ">Software Center &nbsp;&nbsp;<span class="icon-angle-right" style="font-size:1.5em;vertical-align: sub;"></span></a></li>
+             <li ><a href="#nogo" style="color:white; ">Technical Documentation &nbsp;&nbsp;<span class="icon-angle-right" style="font-size:1.5em;vertical-align: sub;"></span></a></li>
+             <li ><a href="#nogo" style="color:white; ">Training Schedule &nbsp;&nbsp;<span class="icon-angle-right" style="font-size:1.5em;vertical-align: sub;"></span></a></li>
+           </ul>
+            </div>
+        </div> </div>
+        <div class="col-md-8" style="padding:0; height:inherit;">
+          <div class="row" style="background-color:#e6eaeb; padding:10px; margin:0;  height:125px; color:black; ">
+               <div class="col-xs-1  h3" style="color:#555; text-align:justify; height:26px; margin-top:0px; padding:0;"> 
+               <span class="icon-arrow-left pull-left"></span><span class="icon-arrow-right2 pull-right"></span>
+               
+               </div>
+               <div class="col-xs-10"> 
+                  <h3 style="color:#e66c23; font-weight: 800; margin:0; padding:0;">News</h3> 
+                </div>
+               <div class="clearfix"></div>
+               <div class="col-xs-1" style="color:#555; padding:0; font-size:14px;  font-weight:800; color:#888; text-align:center;"> 
+               07/30/14
+               </div>
+               <div class="col-xs-9" > 
+                  <a href="#nogo" style="color:black;">Freescale announces new industrial accelerometer as company ships its two-billionth sensor.</a>
+                </div>
+               <div style="position:absolute; bottom:10px; right:15px; display:block;">
+                 <a href="#nogo" style="color:#888;">More News <span class="icon-arrow-right2"></span></a> 
+               </div>
+                
+          </div>
+
+        </div>
+
+
+      </div>  <!-- .container -->
+      </div>
+      <div class="clearfix"></div>
+
+    <footer>
+      <div class="container" id="footer">
+        <div class="footer-wrapper ">
+          <div class="footer-left">
+            <!-- <div class="row"> -->
+            <div class="column1">
+              <ul class="list-unstyled small">
+                <li><a href="#nogo">About Freescale</a></li>
+                <li><a href="#nogo">Media</a></li>
+                <li><a href="#nogo">Investors</a></li>
+              </ul>
+            </div>
+            <div class="column2">
+              <ul class="list-unstyled small">
+                <li><a href="#nogo">Partners</a></li>
+                <li><a href="#nogo">University Programs</a></li>
+                <li><a href="#nogo">Events</a></li>
+              </ul>
+            </div>
+            <div class="visible-sm clearfix"></div>
+            <div class="column3">
+              <ul class="list-unstyled small">
+                <li><a href="#nogo0">Careers</a></li>
+                <li><a href="#nogo">Contact Us</a></li>
+                <li><a href="#nogo">Our Locations</a></li>
+              </ul>
+            </div>
+            <div class="column4">
+              
+              <!-- </div> -->
+            </div>
+          </div>
+          <!-- <div class="clearfix"></div> -->
+         
+          <div class="footer-right">
+            <ul>
+            <li class="media">
+              <div class="media-image pull-left">
+                <img  alt="Freescale named a Top 100 Global Innovator" src="http://images.freescale.com/files/graphic/logo_freescale/DiamondChip-2014.png">
+              </div>
+              <div class="media-body" >
+              <ul class="list-unstyled">
+                <li><a href="#nogo">Contact Us</a></li>
+                <li>Communities:
+                  <ul class="list-inline social-icons" style="margin-top:3px;">
+                    <li><a href="#nogo"><span class="icon-facebook"></span></a></li>
+                    <li><a href="#nogo"><span class="icon-twitter"></span></a></li>
+                    <li><a href="#nogo"><span class="icon-googleplus"></span></a></li>
+                    <li><a href="#nogo"><span class="icon-youtube-square"></span></a></li>
+                    <li><a href="#nogo"><span class="icon-linkedin"></span></a></li>
+                  </ul>
+                </li>
+              </ul>
+             </div>
+            </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+         <div class="small fsl-gray-light-text text-center">&copy; 2004-2014 Freescale Semiconductor Inc. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/fsl-basecamp-nav.js"></script>
+    <!-- // <script src="//www.freescale.com/files/js/fsl-nav.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/basecamp-delta.js"></script>
+
+  </body>
+</html>

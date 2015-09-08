@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+       <link rel="stylesheet" href="//uat.freescale.com/files/test/basecamp.css">
+      
+       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- <script type="text/javascript" src="../js/basecamp-template.js"></script> -->
+       <link rel="shortcut icon" href="../ico/favicon.ico">
+       <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../ico/apple-touch-icon-144-precomposed.png">
+
+       <style>
+        
+       
+       </style>
+    </head>
+  <body>
+    <!-- <div id="dimensions"></div> -->
+    
+    <header><div class="container" id="header">
+              <div class="row">
+                  <div class="col-xs-1" >
+                    <div id="fsl-logo">
+                      <a href="#" title="Freescale" ><img src="//www.freescale.com/files/graphic/icons/freescale-logo.png" alt="Freescale Semiconductor"></a>
+                    </div>
+                  </div>
+                  <div class="col-xs-8 pull-right" id="login-block">
+                    <ul class="list-inline pull-right">
+                      <li><span class="icon-user"></span>&nbsp;John Smith</li>
+                      <li><div class="vertical-line"></div></li>
+                      <li><span class="icon-cart"></span></li>
+                      <li><div class="vertical-line"></div></li>
+                      <li>
+                        <div class="dropdown">
+                         <a href="#" id="languageDropdownMenu" data-toggle="dropdown">Language <span class="caret"></span></a>
+                           <ul class="dropdown-menu" role="menu" aria-labelledby="languageDropdownMenu">
+                             <li role="presentation">Select language</li>
+                             <li role="presentation"><a role="menuitem" class="lang-en selected">English <span class="icon-checkmark3 pull-right"></span></a></li>
+                             <li role="presentation"><a role="menuitem" class="lang-zh" href="http://www.freescale.com/zh-Hans" >中文</a></li>
+                             <li role="presentation"><a role="menuitem" class="lang-ja" href="http://www.freescale.com/ja" >日本語</a></li>
+                             <li role="presentation"><a role="menuitem" class="lang-ko" href="http://www.freescale.co.kr" >한국어 </a></li>
+                           </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              <div class="navbar navbar-default megamenu">
+                <div class="navbar-header">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-collapse-fsl" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div id="navbar-collapse-fsl" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown  megamenu-fw">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products</a>
+                      <ul class="dropdown-menu" >
+                        <li>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <h4 ><strong>Microcontrollers</strong></h4>
+                              <ul class="list-unstyled">
+                                <li class="media">
+                                   <div class="media-image pull-left">
+                                     <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                                   </div>
+                                   <div class="media-body">
+                                     <a href="#nogo">
+                                      <p class="nav-heading">Kinetis</p>
+                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                   </a>
+                                   </div>
+                                  </li>
+                                  <li class="media">
+                             <div class="media-image pull-left">
+                               <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                             </div>
+                             <div class="media-body">
+                               <a href="#nogo">
+                                <p class="nav-heading">Kinetis</p>
+                               <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                             </a>
+                             </div>
+                            </li>
+                            <li class="media">
+                               <div class="media-image pull-left">
+                                 <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                               </div>
+                               <div class="media-body">
+                                 <a href="#nogo">
+                                  <p class="nav-heading">Kinetis</p>
+                                 <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                               </a>
+                               </div>
+                              </li>
+                              <li class="media">
+                                 <div class="media-image pull-left">
+                                   <img src="http://cache.freescale.com/files/graphic/tn/16-BIT-ORANGEBOX.png" alt="32 bit" class="media-object">
+                                 </div>
+                                 <div class="media-body">
+                                   <a href="#nogo">
+                                    <p class="nav-heading">Kinetis</p>
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                 </a>
+                                 </div>
+                                </li>
+                                <li class="media">
+                                   <div class="media-image pull-left">
+                                     <img src="http://cache.freescale.com/files/graphic/tn/8-BIT-ORANGEBOX.png" alt="16 bit" class="media-object">
+                                   </div>
+                                   <div class="media-body">
+                                     <a href="#nogo">
+                                      <p class="nav-heading">Kinetis</p>
+                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                   </a>
+                                   </div>
+                                  </li>
+                              </ul>
+                              <a href="#nogo" ><p class="text-muted small" style="padding-left:40px;">&mdash; Compare all Microcontrollers</p></a>
+                             </div>
+                             <div class="col-sm-4">
+                               <h4 class="fsl-black-text"><strong>Processors</strong></h4>
+                               <ul class="list-unstyled">
+                                 <li class="media" style="margin-left:-35px;">
+                                   <div class="media-image pull-left">
+                                     <img src="http://cache.freescale.com/files/graphic/tn/64-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                     <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                   </div>
+                                   <div class="media-body">
+                                     <a href="#nogo">
+                                      <p class="nav-heading">Kinetis</p>
+                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                   </a>
+                                   </div>
+                                  </li>
+                                  <li class="media">
+                                     <div class="media-image pull-left">
+                                      <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                     </div>
+                                     <div class="media-body">
+                                       <a href="#nogo">
+                                        <p class="nav-heading">Kinetis</p>
+                                       <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                     </a>
+                                     </div>
+                                    </li>
+                                    <li class="media">
+                                       <div class="media-image pull-left">
+                                        <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                       </div>
+                                       <div class="media-body">
+                                         <a href="#nogo">
+                                          <p class="nav-heading">Kinetis</p>
+                                         <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                       </a>
+                                       </div>
+                                      </li>
+                                      <li class="media">
+                                         <div class="media-image pull-left">
+                                           <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                         </div>
+                                         <div class="media-body">
+                                           <a href="#nogo">
+                                            <p class="nav-heading">Kinetis</p>
+                                           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                         </a>
+                                         </div>
+                                        </li>
+                                        <li class="media">
+                                           <div class="media-image pull-left">
+                                            <img src="http://cache.freescale.com/files/graphic/tn/16-BIT-ORANGEBOX.png" alt="16 bit" class="media-object">
+                                           </div>
+                                           <div class="media-body">
+                                             <a href="#nogo">
+                                              <p class="nav-heading">Kinetis</p>
+                                             <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                           </a>
+                                           </div>
+                                          </li>
+                               </ul>
+                               <a href="#nogo"><p class="text-muted small" style="padding-left:35px;">&mdash; Compare all Processors</p></a>
+                              </div>
+                            
+                           <div class="col-sm-4">
+                            <h4 class="fsl-black-text"><strong>More Products</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#nogo"><p class="nav-heading">Analog & Power Management</p>
+                                  <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                </li>
+                                <li>
+                                  <a href="#nogo"><p class="nav-heading">Sensors/Xtrinsic Sensing Solutions</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                </li>
+                                <li>
+                                  <a href="#nogo"><p class="nav-heading">RF/Airfast RF Power Solutions</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                </li>
+                                <li>
+                                  <a href="#nogo"><p class="nav-heading">Connectivity</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                </li>
+                                <li>
+                                  <a href="#nogo"><p class="nav-heading">Programs & Technologies</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                  </li>
+
+                              </ul> 
+                            </div>
+                          </div>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="vertical-line" ></div></li>
+                    <li class="dropdown megamenu-hw">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Applications</a>
+                      <ul class="dropdown-menu">
+                        <li >
+                          
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <ul>
+                                <li><a href="#nogo">Advanced Driver Assistance Systems</a></li>
+                                <li><a href="#nogo">Internet of Things</a></li>
+                                <li><a href="#nogo">Software Defined Networking</a></li>
+                              </ul>
+                              <img src="//placeape.com/75/75" style="padding-left:50px;">
+                             </div>
+                             <div class="col-sm-4">
+                                <ul>
+                                <li><a href="#nogo">Automotive</a>
+                                  <ul>
+                                    <li><a href="#nogo">ADAS</a></li>
+                                    <li><a href="#nogo">Body Electronics</a></li>
+                                    <li><a href="#nogo">Chasis and Safety</a></li>
+                                    <li><a href="#nogo">Infotainment</a></li>
+                                    <li><a href="#nogo">Instrument Cluster</a></li>
+                                    <li><a href="#nogo">Powertrain and Hybrid Systems</a></li>
+                                  </ul>
+                                </li>
+                                </ul></div>
+                                <div class="col-sm-4">
+                                  <ul>
+                                <li><a href="#nogo">Connectivity</a></li>
+                                <li><a href="#nogo">Consumer</a></li>
+                                <li><a href="#nogo">Industrial</a></li>
+                                <li><a href="#nogo">Medical</a></li>
+                                <li><a href="#nogo">Motor Control</a></li>
+                                <li><a href="#nogo">Networking</a></li>
+                                <li><a href="#nogo">Smart Energy</a></li>
+                            </ul> 
+
+                          </div>
+                            
+                          </div>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="vertical-line" ></div></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Software & Tools</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          
+                          <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="list-unstyled">
+                                <li><a href="#nogo">Hardware Development Tools</a></li>
+                                <li><a href="#nogo">Software Development Tools</a></li>
+                                <li><a href="#nogo">Run-time Software</a></li>
+                                <li><a href="#nogo">Software Store</a></li>
+                                <li><a href="#nogo">Reference Designs</a></li>
+                                <li><a href="#nogo">Embedded Board Solutions</a></li>
+                            </ul> </div>
+                         
+                          </div>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="vertical-line" ></div></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Training & Events</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <ul >
+                                <li><a href="#bogo">On Demand Training</a></li>
+                                <li><a href="#nogo">Designing with Freescale</a></li>
+                                <li><a href="#nogo">Freescale Technology Forum</a></li>
+                                <li><a href="#nogo">Training Schedule</a></li>
+                                <li><a href="#nogo">Events</a></li>
+                              </ul>
+                              <h4>FTF Video</h4>
+                                <div id="VideoBoxFTF"><a class="FTFVideo" data-date="04/09/14" data-time="(81:12 min)" video-id="5045" data-video="http://www.freescale.com/webapp/sps/site/overview.jsp?code=FTF_AMERICAS_VIDEOS" data-title="Opening FTF 2014 General Session with Freescale President and CEO Gregg Lowe" data-description="Get insight into Freescale's vision for a world of connected intelligence where big data, security and cloud computing meet, with Freescale president and CEO Gregg Lowe. Featuring several prominent customers, including Oracle, Cadillac, OrCam and Alcatel-Lucent Gregg provides a comprehensive look at Freescale solutions and the future of innovation."></a><iframe id="player" style="background-color:#000000;" seamless="" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="http://www.freescale.com/viewerportal/videos/embed.vp?programId=esc_program%3A5045&amp;autoplay=false"  height="300"></iframe></div>
+                          </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="vertical-line" ></div></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Support & Communities</a>
+                      <ul class="dropdown-menu">
+                        <li >
+                          
+                          <div class="row">
+                            <div class="col-sm-12"><ul class="list-unstyled">
+                                <li><a href="nogo">Sales and Support</a></li>
+                                <li><a href="nogo">Professional Engineering Services</a></li>
+                                <li><a href="nogo">Freescale Connect Partner Program</a></li>
+                                <li><a href="nogo">Technical Service Request</a></li>
+                                <li><a href="nogo">Communities</a></li>
+                                <li><a href="nogo">Documentation</a></li>
+                            </ul> </div>
+                           
+                          </div>
+                          
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                  <li >
+                      <form class="input-group input-group-sm fsl-search">
+                        <input type="text" class="form-control" placeholder="Search" >
+                        <span class="input-group-btn" >
+                            <button type="button" class="btn btn-default fsl-orange" ><span class="icon-search"></span></button>
+                        </span>
+                      </form>
+                   </li>
+                </ul>
+                </div>
+              </div>  
+    </div></header> 
+    
+    <!-- // header -->
+
+<div class="container fsl-container">
+  <div class="row">
+    <!-- <div class="col-sm-2"></div> -->
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <ul class="breadcrumb">
+        <li><a href="#nogo">Freescale</a></li>
+        <li><a href="#nogo">CodeWarrior Development Tool</a></li>
+        <li><a href="#nogo">CodeWarrior Development Studio</a></li>
+        <li><a href="#nogo">CodeWarrior Development Studio for Microcontrollers</a></li>
+        <li><a href="#nogo" class="active">CW-MCU10</a></li>
+      </ul>
+
+      <h1 id="overview">Codewarrior for MCUs</h1>
+        <div id="page-nav" >
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navpage-collapse-fsl" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div id="navpage-collapse-fsl" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+             <li class="active"><a href="#header"><div class="icon-list"></div><small>OVERVIEW</small></a></li>
+             <li><a href="#features"><div class="icon-checkmark3"></div><small>FEATURES</small></a></li>
+             <li><a href="#buydownload" ><div class="icon-para-cart"></div><small>BUY/DOWNLOAD</small></a></li>
+             <li><a href="#documents"><div class="icon-para-pdf"></div><small>DOCUMENTS</small></a></li>
+             <li><a href="#training"><div class="icon-users4"></div><small>TRAINING & SUPPORT</small></a></li>
+             <li><a href="#related"><div class="icon-copy"></div><small>RELATED SOFTWARE & <br>SUPPORTED DEVICES</small></a></li>
+           </ul>
+         </div>
+         </nav>
+       </div>
+
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, perferendis, illo nihil repellendus earum officia quidem recusandae consectetur sunt tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ratione, eaque sequi nam voluptate ducimus eligendi sunt! Architecto eius earum obcaecati illo a perferendis quis et. Quisquam, omnis, ullam, odit aspernatur maiores nisi accusantium id ipsa magnam aperiam in aliquam cum dolor dolorem consectetur fugit velit dolorum accusamus animi distinctio?</p>
+        
+        <div class="row">
+          <div class="col-sm-6"> 
+              <p><strong>Key Features</strong></p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+              <p><strong>Supported Operating Systems.</strong></p>
+              <ul class="list-inline text-center pull-left">
+                <li><div class="icon-windows8"></div> <small>Windows</small> </li>
+                <li><div class="icon-tux"></div><small>Linux</small></li>
+                <li><div class="icon-apple"></div><small>Apple</small> </li>
+                <li><div class="icon-android"></div><small>Java</small> </li>
+                
+              </ul>
+          </div>
+          <div class="col-sm-6">
+            <p><strong>CW-MCU10XX IDE Environment</strong></p>
+            <img src="//placeape.com/600/300" alt="" style="width:100%"> 
+              <div class="carousel-slide"  id="carousel1">
+                <div class="carousel-inner">
+                <ul class="list-inline">
+                  <li><img src="//placeape.com/100/100" alt=""></li>
+                  <li><img src="//placeape.com/100/100" alt=""></li>
+                  <li><img src="//placeape.com/100/100" alt=""></li>
+                  <li><img src="//placeape.com/100/100" alt=""></li>
+                </ul>
+                <div class="left-arrow"><a href="#left"><span class="icon-angle-left"></span></a></div>
+                   <div class="right-arrow"><a href="#right"><span class="icon-angle-right"></span></a></div>
+                  </div>
+               </div>
+          </div>
+        </div>
+        <ul class="list-inline quicklinks">
+          <li class="fsl-orange-text"><strong>QUICKLINKS</strong></li>
+          <li><div class="vertical-line" ></div></li>
+          <li><a href="#nogo">Data Sheet</a></li>
+          <li><div class="vertical-line" ></div></li>
+          <li><a href="#nogo">Application Notes</a></li>
+          <li><div class="vertical-line" ></div></li>
+          <li><a href="#nogo">Buy, Sample & Availability</a></li>
+          <li><div class="vertical-line" ></div></li>
+          <li><a href="#nogo">Free Samples</a></li>
+        </ul>
+        <p><strong>Supported Devices</strong></p>
+        <p>Coldfire, Coldfire+, DSC, Kinetis, Qorivva, RS08, S08 and S12Z architecture <a href="#nogo">(See all supported devices)</a></p>
+        <ul class="list-inline">
+          <li><a href="#nogo" class="btn btn-orange"><span class="icon-para-cart"></span> Buy Now</a></li>
+          <li><a href="#nogo" class="btn btn-gray-medium">Download Evaluation</a></li>
+          <li><a href="#nogo" class="btn btn-link">All Download Options</a></li>
+        </ul>
+        <h3 id="features" class="heading">Features</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, accusantium, quod mollitia tempora repudiandae eos velit quam dolores ducimus magni? </li>
+            </ul>
+            <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, accusantium, quod mollitia tempora repudiandae eos velit quam dolores ducimus magni? </li>
+            </ul>
+            <button class="btn btn-link btn-sm"><span class="caret"></span> See More</button> 
+          </div>
+          <div class="col-md-6">
+            <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, accusantium, quod mollitia tempora repudiandae eos velit quam dolores ducimus magni? </li>
+            </ul>
+            <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+            </ul>
+            <button class="btn btn-link btn-sm"><span class="caret"></span> See More</button>            
+          </div>
+        </div>
+         <div class="row">
+           <div class="col-md-6">
+            <h5 class="fsl-orange-text"><strong>What's New</strong></h5>
+             <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+             <ul>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, accusantium, quod mollitia tempora repudiandae eos velit quam dolores ducimus magni? </li>
+             </ul>
+             <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+             <ul>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+             </ul>
+             <!-- <button class="btn btn-link btn-sm"><span class="caret"></span> See More</button>  -->
+           </div>
+           <div class="col-md-6">
+             <h5 class="fsl-black-text"><b>Lorem ipsum dolor.</b></h5>
+             <ul>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, dolorum. </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, autem consectetur mollitia eos voluptatem laudantium! </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, accusantium, quod mollitia tempora repudiandae eos velit quam dolores ducimus magni? </li>
+               <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, eaque? </li>
+             </ul>
+             <!-- <button class="btn btn-link btn-sm"><span class="caret"></span> See More</button>  -->
+             <p class="small"><strong>Lorem ipsum.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim porro explicabo consequuntur unde eveniet animi sequi quidem. Sunt, minus non exercitationem quae quibusdam voluptatibus deleniti.</p>           
+           </div>
+
+         </div>
+        <h3 id="buydownload" class="heading">Buy/Downloads</h3>
+         <ul class="list-inline">
+           <li> <button class="btn btn-sm btn-yellow">Compare Products</button> </li>
+           <li> <button class="btn btn-sm btn-gray-medium">Other Downloads & Versions</button> </li>
+         </ul>
+      
+      <div class="table-responsive">    
+         <table class="table table-bordered fsl-gray-xxlight text-center"  >
+           <tr>
+             <td>&nbsp;</td>
+             <td><p><strong> Evaluation</strong></p>
+                           <p class="small">CWX-MCU-PROED-EX</p>
+                           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, rem, cum doloremque commodi rerum illum facere repudiandae placeat modi architecto!</p>
+             </td>
+             <td colspan="2">
+              <p><strong> Basic</strong></p>
+                 <p class="small">CWX-Basic</p>
+                 <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, rem, cum doloremque commodi rerum illum facere repudiandae placeat modi architecto!</p>
+               </td>
+             <td colspan="2" class="fsl-yellow-xlight">
+               <p><strong> Standard</strong></p>
+                                <p class="small">CWX-STANDARD</p>
+                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, rem, cum doloremque commodi rerum illum facere repudiandae placeat modi architecto!</p>
+             </td>
+             <td colspan="2">
+              <p><strong> Professional</strong></p>
+              <p class="small">CWX-PRO</p>
+              <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, rem, cum doloremque commodi rerum illum facere repudiandae placeat modi architecto!</p>
+             </td>
+           </tr>
+           <tr>
+             <td><p>Parameter&nbsp;Name</p></td>
+             <td><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+             <td colspan="2" class="fsl-yellow-xlight"><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+           </tr>
+           <tr>
+              <td><p>Parameter&nbsp;Name</p></td>
+              <td><p>Value</p></td>
+              <td colspan="2"><p>Value</p></td>
+              <td colspan="2" class="fsl-yellow-xlight"><p>Value</p></td>
+              <td colspan="2"><p>Value</p></td>
+            </tr>
+            <tr>
+             <td><p>Parameter&nbsp;Name</p></td>
+             <td><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+             <td colspan="2" class="fsl-yellow-xlight"><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+           </tr>
+           <tr>
+             <td><p>Parameter&nbsp;Name</p></td>
+             <td><p><span class="icon-checkmark3"></span></p></td>
+             <td colspan="2"><p><span class="icon-checkmark3"></span></p></td>
+             <td colspan="2" class="fsl-yellow-xlight"><p><span class="icon-checkmark3"></span></p></td>
+             <td colspan="2"><p><span class="icon-checkmark3"></span></p></td>
+           </tr>
+            <tr>
+             <td><p>Parameter&nbsp;Name</p></td>
+             <td><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+             <td colspan="2" class="fsl-yellow-xlight"><p>Value</p></td>
+             <td colspan="2"><p>Value</p></td>
+           </tr>
+           <tr>
+             <td>
+              <p><strong>License Type</strong></p>
+              <p>Floating</p>
+              <p>Node Locked</p>
+             </td>
+             <td>&nbsp;</td>
+             <td><p>Floating</p>
+              <p><span class="icon-checkmark3"></span></p>
+              <p><span class="icon-minus"></span></p>
+           </td>
+             <td><p>Node Locked</p>
+               <p><span class="icon-minus"></span></p>
+               <p><span class="icon-checkmark3"></span></p>
+
+            </td>
+             <td class="fsl-yellow-xlight"><p>Floating</p>
+             <p><span class="icon-checkmark3"></span></p>
+             <p><span class="icon-minus"></span></p>
+          </td>
+            <td class="fsl-yellow-xlight"><p>Node Locked</p>
+              <p><span class="icon-minus"></span></p>
+              <p><span class="icon-checkmark3"></span></p>
+           </td>
+             <td><p>Floating</p>
+             <p><span class="icon-checkmark3"></span></p>
+             <p><span class="icon-minus"></span></p>
+          </td>
+            <td><p>Node Locked</p>
+              <p><span class="icon-minus"></span></p>
+              <p><span class="icon-checkmark3"></span></p>
+
+           </td>
+           </tr>
+            <tr>
+              <td>
+               <p><strong>Shipment</strong></p>
+               <p>Physical</p>
+               <p>Digital</p>
+              </td>
+              <td>&nbsp;</td>
+              <td><p>&nbsp;</p>
+               <p><span class="icon-checkmark3 "></span></p>
+               <p><span class="icon-checkmark3 "></span></p>
+            </td>
+              <td><p>&nbsp;</p>
+                <p><span class="icon-checkmark3 "></span></p>
+                <p><span class="icon-checkmark3 "></span></p>
+
+             </td>
+              <td class="fsl-yellow-xlight"><p>&nbsp;</p>
+              <p><span class="icon-checkmark3 "></span></p>
+              <p><span class="icon-checkmark3 "></span></p>
+           </td>
+             <td class="fsl-yellow-xlight"><p>&nbsp;</p>
+               <p><span class="icon-checkmark3 "></span></p>
+               <p><span class="icon-checkmark3 "></span></p>
+            </td>
+              <td><p>&nbsp;</p>
+              <p><span class="icon-checkmark3 "></span></p>
+              <p><span class="icon-checkmark3 "></span></p>
+           </td>
+             <td><p>&nbsp;</p>
+               <p><span class="icon-checkmark3 "></span></p>
+               <p><span class="icon-checkmark3 "></span></p>
+
+            </td>
+            </tr>
+             <tr>
+               <td>
+                <p><strong>Purchase&nbsp;Model</strong></p>
+                <p>&nbsp;</p>
+                <p>Annual</p>
+               </td>
+               <td>&nbsp;</td>
+               <td>
+                <p>&nbsp;</p>
+                <p class="small">$395.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                 <p>&nbsp;</p>
+                 <p class="small">$395.00</p>
+                 <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+                </td>
+               <td class="fsl-yellow-xlight">
+               <p>&nbsp;</p>
+               <p class="small">$995.00</p>
+               <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+              </td>
+              <td class="fsl-yellow-xlight">
+                <p>&nbsp;</p>
+                <p class="small">$995.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                <p>&nbsp;</p>
+                <p class="small">$1995.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                 <p>&nbsp;</p>
+                 <p class="small">$1995.00</p>
+                 <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+                </td>
+             </tr>
+             <tr>
+               <td>
+                <p>Perceptual</p>
+               </td>
+               <td >
+                 <p class="small">&nbsp;</p>
+                 <p><button class="btn btn-xs btn-gray-dark">Download Now</button></p>
+              </td>
+               <td>
+                <!-- <p>&nbsp;</p> -->
+                <p class="small">$995.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                 <!-- <p>&nbsp;</p> -->
+                 <p class="small">$995.00</p>
+                 <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+                </td>
+               <td class="fsl-yellow-xlight">
+               <!-- <p>&nbsp;</p> -->
+               <p class="small">$2495.00</p>
+               <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+              </td>
+              <td class="fsl-yellow-xlight">
+                <!-- <p>&nbsp;</p> -->
+                <p class="small">$2495.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                <!-- <p>&nbsp;</p> -->
+                <p class="small">$4995.00</p>
+                <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+               </td>
+               <td>
+                 <!-- <p>&nbsp;</p> -->
+                 <p class="small">$4995.00</p>
+                 <p><button class="btn btn-xs btn-orange"><span class="icon-para-cart fsl-white-text"></span> Buy Now </button></p>
+                </td>
+             </tr>
+         </table>
+
+      </div>
+
+        
+      <h3  class="heading">Knowledge Base</h3>
+
+      <h4>Getting Started Guide - Evaluation</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, inventore itaque cum harum accusantium dolore sunt doloribus minima praesentium deleniti aliquam nesciunt cumque nihil quia delectus hic quasi. Debitis, earum.</p>
+
+         <table class="table" >
+              <tr>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>User Guide</td>
+                <td>27&nbsp;NOV&nbsp;2013</td>
+                <td>PDF</td>
+                <td>96KB</td>
+               </tr>
+               <tr>
+                 <td>Lorem ipsum dolor sit amet.</td>
+                 <td>User Guide</td>
+                 <td>27&nbsp;NOV&nbsp;2013</td>
+                 <td>PDF</td>
+                 <td>96KB</td>
+                </tr>
+                <tr>
+                  <td colspan="100%">
+                    <h5>Code Examples for ABCD1234</h5>
+                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dignissimos magnam eligendi non sed suscipit nostrum id impedit architecto officia beatae porro illo inventore eveniet quae aspernatur deserunt temporibus sapiente.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum dolor sit amet.</td>
+                  <td>User Guide</td>
+                  <td>27&nbsp;NOV&nbsp;2013</td>
+                  <td>PDF</td>
+                  <td>96KB</td>
+                 </tr>
+                 <tr>
+                   <td>Lorem ipsum dolor sit amet.</td>
+                   <td>User Guide</td>
+                   <td>27&nbsp;NOV&nbsp;2013</td>
+                   <td>PDF</td>
+                   <td>96KB</td>
+                  </tr>
+            </table>
+            <h4>Getting Started Guide - Basic</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sint, earum, error veritatis possimus eveniet sed beatae sequi ab aperiam voluptatum ex hic voluptates optio accusamus ratione animi obcaecati commodi!</p>
+            <hr>
+            <button class="btn btn-sm btn-icon-link"><span class="caret"></span> See More</button>
+            
+            <h3 id="documents" class="heading">Documents</h3>
+            
+              <div class="row filter-row"><span class="col-xs-4">
+                <form class="input-group input-group-sm pull-left fsl-search" >
+                   <input type="text" class="form-control" placeholder="Search Within Documents" >
+                   <!-- <input type="text" class="form-control" placeholder="Search Within Documents" style="border-top-left-radius:20px; border-bottom-left-radius:20px; width:200px; "> -->
+                   <span class="input-group-btn " >
+                       <button type="button" class="btn btn-default" ><span class="icon-search2"></span></button>
+                       <!-- <button type="button" class="btn btn-default" style="border-top-right-radius:20px; border-bottom-right-radius:20px; "><span class="icon-search2"></span></button> -->
+                   </span>
+                 </form>
+              </span>
+              <span class="col-xs-3">
+               <ul class="nav navbar-nav">
+                   <li class="dropdown dropdown-filter"><small>Filter by</small>
+                     <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                        Document Type <b class="caret"></b>
+                     </a>
+                     <ul class="dropdown-menu">
+                       <li><a href="#nogo">Filter 1</a></li>
+                       <li><a href="#nogo">Filter 2</a></li>
+                       <li><a href="#nogo">Filter 3</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+             </span></div>
+             <div class="table-responsive">
+              <table class="table fsl-gray-xxlight table-condensed" >
+                  <thead >
+                  <tr >
+                  <th class="table-title">Data Sheets</th>
+                  <th class="table-title">Document&nbsp;Type</th>
+                  <th class="table-title">Date</th>             
+                </tr>
+              </thead>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+              <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                  <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                <td>Data Sheet</td>
+                <td>2&nbsp;Jan&nbsp;2014</td>
+              </tr>
+            <tr>
+              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+              <td>Data Sheet</td>
+              <td>2&nbsp;Jan&nbsp;2014</td>
+            </tr>
+              </table>
+            </div>
+             <div class="table-responsive">
+              <table class="table fsl-gray-xxlight table-condensed" >
+                  <thead >
+                  <tr >
+                  <th class="table-title">Application Notes</th>
+                  <th class="table-title">Document&nbsp;Type</th>
+                  <th class="table-title">Date</th>             
+                </tr>
+              </thead>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+              <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                  <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                <td>Data Sheet</td>
+                <td>2&nbsp;Jan&nbsp;2014</td>
+              </tr>
+            <tr>
+              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+              <td>Data Sheet</td>
+              <td>2&nbsp;Jan&nbsp;2014</td>
+            </tr>
+              </table>
+            </div>
+             <div class="table-responsive">
+              <table class="table fsl-gray-xxlight table-condensed" >
+                  <thead >
+                  <tr >
+                  <th class="table-title">Other Documents</th>
+                  <th class="table-title">Document&nbsp;Type</th>
+                  <th class="table-title">Date</th>             
+                </tr>
+              </thead>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+                <tr>
+                  <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                  <td>Data Sheet</td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                </tr>
+              <tr>
+                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                  <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+                <td>Data Sheet</td>
+                <td>2&nbsp;Jan&nbsp;2014</td>
+              </tr>
+            <tr>
+              <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                <p class="small"><span class="icon-file-pdf"></span> PDF 76KB ABDDocumentID</p></td>
+              <td>Data Sheet</td>
+              <td>2&nbsp;Jan&nbsp;2014</td>
+            </tr>
+              </table>
+            </div>
+            
+
+            <h3 id="training" class="heading">Training & Support</h3>
+            <div class="row">
+              <div class="col-sm-9">
+                 <h4 class="fsl-orange-text">Find Information in the Freescale Community</h4>
+                 <div class="row">
+                   <div class="col-xs-6">
+                       <ul class="list-unstyled">
+                         <li><p><strong>CodeWarrior for MCUs</strong> <span class="small pull-right text-muted)">(326 posts)</span></p></li>
+                         <li><p><strong>CodeWarrior Licensing</strong> <span class="small pull-right text-muted)">(22 posts)</span></p></li>
+                         <li><p><strong>CodeWarrior Tips and Tricks</strong> <span class="small pull-right text-muted)">(45 posts)</span></p></li>
+                       </ul>
+                   </div>
+                 </div>
+                 <p><span class="fsl-orange-text">RECENT CONTENT:</span> <strong>CodeWarrior MultiLink</strong> <span class="small text-muted">(326 posts)</span></p>
+                  <table class="table">
+                    <tr>
+                      <td> <img src="//placeape.com/75/40" alt=""> </td>
+                      <td><p><strong>Lorem ipsum dolor.</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></td>
+                      <td style="vertical-align:middle;">by Kelly Smith</td>
+                      <td style="vertical-align:middle;"><span class="icon-user"></span></td>
+                    </tr>
+                    <tr>
+                      <td> <img src="//placeape.com/75/40" alt=""> </td>
+                      <td><p><strong>Lorem ipsum dolor.</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></td>
+                      <td style="vertical-align:middle;">by Kelly Smith</td>
+                      <td style="vertical-align:middle;"><span class="icon-user"></span></td>
+                    </tr>
+                   <tr>
+                     <td> <img src="//placeape.com/75/40" alt=""> </td>
+                     <td><p><strong>Lorem ipsum dolor.</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></td>
+                     <td style="vertical-align:middle;">by Kelly Smith</td>
+                     <td style="vertical-align:middle;"><span class="icon-user"></span></td>
+                   </tr>
+                  </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                <img src="//placeape.com/600/300" alt="" style="width:100%">  
+                <br><br>
+                <p><b>Everything you need to know about Kats</b> <span class="pull-right"><small class="fsl-gray-light-text">319 views  <span class="icon-star3"></span><span class="icon-star3"></span><span class="icon-star3"></span><span class="icon-star"></span><span class="icon-star"></span></small></span></p>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, provident, repellendus, earum, unde magni facere commodi necessitatibus minus iste suscipit ipsa magnam labore in ratione iure voluptas molestiae. Qui, hic, error nulla quibusdam dolor vitae possimus natus accusantium nostrum laudantium quae commodi quas amet excepturi modi libero culpa architecto animi!</p>
+                
+              </div>
+              <div class="col-sm-3" >
+                <div class="video-sidebar" >
+                  <p><strong>Related Videos</strong>
+                  <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, odio?</p>
+                    <img src="//placeape.com/100/53" style="width:100%; margin-bottom:15px;" alt="" >
+                    <img src="//placeape.com/100/53" style="width:100%" alt="">
+                  </div>
+              </div>
+            </div>
+            
+            <h3 >Training</h3>
+            <div class="row filter-row">
+                 <span class="col-xs-12">
+                  <ul class="nav navbar-nav">
+                     <li><small >Filter By</small></li>
+                      <li class="dropdown dropdown-filter">
+                        <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                           Training Type <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#nogo">Filter 1</a></li>
+                          <li><a href="#nogo">Filter 2</a></li>
+                          <li><a href="#nogo">Filter 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown dropdown-filter">
+                        <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                           Vendor Type <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#nogo">Filter 1</a></li>
+                          <li><a href="#nogo">Filter 2</a></li>
+                          <li><a href="#nogo">Filter 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown dropdown-filter">
+                        <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                           Language <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#nogo">Filter 1</a></li>
+                          <li><a href="#nogo">Filter 2</a></li>
+                          <li><a href="#nogo">Filter 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                </span>
+               
+             </div>
+             <div class="table-responsive">
+              <table class="table fsl-gray-xxlight" >
+                  <thead >
+                  <tr >
+                  <th class="table-title">On Demand</th>
+                  <th class="table-title">Date <span class="icon-menu10"></span></th>
+                  <th class="table-title">Vendor</th>             
+                  <th class="table-title">File&nbsp;Type</th>             
+                  <th class="table-title">Duration</th>             
+                  <th class="table-title">Language</th>             
+                </tr>
+              </thead>
+              <tfoot>
+                <tr><td colspan="100%">
+                  <p><a href="#nogo"><span class="caret"></span> Sell All On Demand Training</a></p>
+                </td></tr>
+              </tfoot>
+                <tr>
+                  <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    </td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                  <td>Freescale</td>
+                  <td>WMV</td>
+                  <td>50 min</td>
+                  <td>English, Portugese, Espanol</td>
+                </tr>
+               <tr>
+                 <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                   </td>
+                 <td>2&nbsp;Jan&nbsp;2014</td>
+                 <td>Freescale</td>
+                 <td>WMV</td>
+                 <td>50 min</td>
+                 <td>English, Portugese, Espanol</td>
+               </tr>
+               <tr>
+                 <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                   </td>
+                 <td>2&nbsp;Jan&nbsp;2014</td>
+                 <td>Freescale</td>
+                 <td>WMV</td>
+                 <td>50 min</td>
+                 <td>English, Portugese, Espanol</td>
+               </tr>
+               
+              </table>
+            </div>
+             <div class="table-responsive">
+              <table class="table fsl-gray-xxlight" >
+                  <thead >
+                  <tr >
+                  <th class="table-title">Live Training</th>
+                  <th class="table-title">Date <span class="icon-menu10"></span></th>
+                  <th class="table-title">Vendor</th>             
+                  <th class="table-title">File&nbsp;Type</th>             
+                  <th class="table-title">Duration</th>             
+                  <th class="table-title">Language</th>             
+                </tr>
+              </thead>
+              <tfoot>
+                <tr><td colspan="100%">
+                  <p><a href="#nogo"><span class="caret"></span> Sell All Live Training</a></p>
+                </td></tr>
+              </tfoot>
+                <tr>
+                  <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                    </td>
+                  <td>2&nbsp;Jan&nbsp;2014</td>
+                  <td>Freescale</td>
+                  <td>WMV</td>
+                  <td>50 min</td>
+                  <td>English, Portugese, Espanol</td>
+                </tr>
+               <tr>
+                 <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                   </td>
+                 <td>2&nbsp;Jan&nbsp;2014</td>
+                 <td>Freescale</td>
+                 <td>WMV</td>
+                 <td>50 min</td>
+                 <td>English, Portugese, Espanol</td>
+               </tr>
+               <tr>
+                 <td><p><strong>Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iurea.</p>
+                   </td>
+                 <td>2&nbsp;Jan&nbsp;2014</td>
+                 <td>Freescale</td>
+                 <td>WMV</td>
+                 <td>50 min</td>
+                 <td>English, Portugese, Espanol</td>
+               </tr>
+               
+              </table>
+            </div>
+
+       <h3 id="related" class="heading">Related Software & Supported Devices</h3>
+            
+        <div class="row filter-row">
+             <span class="col-xs-12">
+              <ul class="nav navbar-nav">
+                 <li><small >Filter By</small></li>
+                  <li class="dropdown dropdown-filter">
+                    <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                       Vendor Type <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#nogo">Filter 1</a></li>
+                      <li><a href="#nogo">Filter 2</a></li>
+                      <li><a href="#nogo">Filter 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown dropdown-filter">
+                    <a href="#nogo" class="dropdown-toggle" data-toggle="dropdown">
+                       Software Type <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#nogo">Filter 1</a></li>
+                      <li><a href="#nogo">Filter 2</a></li>
+                      <li><a href="#nogo">Filter 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </span>
+           
+         </div>
+          <div class="table-responsive">
+            <table class="table">
+              <thead >
+                <tr>
+                  <th class="table-title">Hardware Development Tools</th>
+                  <th class="table-title">Date</th>
+                  <th class="table-title">Vendor</th>
+                  <th class="table-title">Services</th>
+                  <th class="table-title">&nbsp;</th>
+                </tr>
+              </thead>
+              <tfoot >
+                <tr>
+                  <td colspan="100%"><a href="#nogo"><span class="caret"></span> See All 36 Hardware Development Tools</a></td>
+                 
+                </tr>
+              </tfoot>
+              <tr>
+                <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                <td style="vertical-align: middle;">Freescale</td>
+                <td style="vertical-align: middle; width:125px;">
+                  <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                  <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                </td>
+                 <td style="vertical-align: middle; width:125px;">
+                  <button class="btn btn-block btn-sm btn-gray">Download</button>
+                  <button class="btn btn-block btn-sm btn-icon-link">Download Details</button>
+                </td>
+              </tr>
+             <tr>
+                  <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                  <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                  <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                  <td style="vertical-align: middle;">Freescale</td>
+                  <td style="vertical-align: middle;">
+                    <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                    <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                  </td>
+                   <td style="vertical-align: middle;">
+                    <button class="btn btn-block btn-sm btn-orange"><span class="icon-para-cart"></span> Buy Direct</button>
+                    <button class="btn btn-block btn-sm btn-gray-light">Download <span class="caret"></span></button>
+                  </td>
+                </tr> <tr>
+                <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                <td style="vertical-align: middle;">Freescale</td>
+                <td style="vertical-align: middle;">
+                  <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                  <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                </td>
+                 <td style="vertical-align: middle;">
+                  <button class="btn btn-block btn-sm btn-gray">Download</button>
+                  <!-- <button class="btn btn-block btn-sm btn-icon-link">Download Details</button> -->
+                </td>
+              </tr> 
+
+            </table>
+          </div>
+       
+          <div class="table-responsive">
+            <table class="table">
+              <thead >
+                <tr>
+                  <th class="table-title">Software Development Tools</th>
+                  <th class="table-title">Date</th>
+                  <th class="table-title">Vendor</th>
+                  <th class="table-title">Services</th>
+                  <th class="table-title">&nbsp;</th>
+                </tr>
+              </thead>
+              <tfoot >
+                <tr>
+                  <td colspan="100%"><a href="#nogo"><span class="caret"></span> See All 22 Software Development Tools</a></td>
+                 
+                </tr>
+              </tfoot>
+              <tr>
+                <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                <td style="vertical-align: middle;">Freescale</td>
+                <td style="vertical-align: middle; width:125px;">
+                  <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                  <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                </td>
+                 <td style="vertical-align: middle; width:125px;">
+                  <button class="btn btn-block btn-sm btn-lightblue">Download <span class="icon-para-share"></span></button>
+                  
+                </td>
+              </tr>
+             <tr>
+                  <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                  <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                  <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                  <td style="vertical-align: middle;">Freescale</td>
+                  <td style="vertical-align: middle;">
+                    <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                    <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                  </td>
+                   <td style="vertical-align: middle;">
+                    <button class="btn btn-block btn-sm btn-orange"><span class="icon-para-cart"></span> Buy Direct</button>
+                    <button class="btn btn-block btn-sm btn-gray-light">Download <span class="caret"></span></button>
+                  </td>
+                </tr> <tr>
+                <td><p><a href="#nogo">Lorem ipsum dolor sit amet, consectetur. </a><br><small>by Freescale</small></p>
+                <p class="small"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Omnis nulla sed placeat libero ducimus! Quidem, nemo, molestias quaerat quis recusandae soluta ad fugit tenetur vitae fugiat atque ex velit facilis.</p> </td>
+                <td style="vertical-align: middle;">14&nbsp;Mar&nbsp;2014</td>
+                <td style="vertical-align: middle;">Freescale</td>
+                <td style="vertical-align: middle; ">
+                  <button class="btn btn-block btn-sm btn-white">Pro Support</button>
+                  <button class="btn btn-block btn-sm btn-white">Design Services</button>
+                </td>
+                 <td style="vertical-align: middle;">
+                  <button class="btn btn-block btn-sm btn-gray">Download</button>
+                  <!-- <button class="btn btn-block btn-sm btn-icon-link">Download Details</button> -->
+                </td>
+              </tr> 
+
+            </table>
+          </div>
+    </div> <!-- column content  -->
+  </div>
+</div> <!-- // .container .fsl-container -->
+
+<footer>
+<div class="container footer">
+<div class="footer-wrapper ">
+    <div class="footer-left">
+      <!-- <div class="row"> -->
+        <div class="column1">
+          <ul class="list-unstyled small">
+            <li><a href="#nogo">About Freescale</a></li>
+            <li><a href="#nogo">Media</a></li>
+            <li><a href="#nogo">Investors</a></li>
+          </ul>
+        </div>
+        <div class="column2">
+          <ul class="list-unstyled small">
+            <li><a href="#nogo">Partners</a></li>
+            <li><a href="#nogo">University Programs</a></li>
+            <li><a href="#nogo">Events</a></li>
+          </ul>
+        </div>
+        <div class="visible-sm clearfix"></div>
+        <div class="column3">
+          <ul class="list-unstyled small">
+            <li><a href="#nogo0">Careers</a></li>
+            <li><a href="#nogo">Contact Us</a></li>
+            <li><a href="#nogo">Our Locations</a></li>
+          </ul>
+        </div>
+        <div class="column4">
+          <ul class="list-unstyled small">
+            <li><a href="#nogo">Sign up for our newsletter</a></li>
+            <li>Connect with us:
+             <ul class="list-inline social-icons" style="margin-top:3px;">
+               <li><a href="#nogo"><span class="icon-facebook"></span></a></li>
+               <li><a href="#nogo"><span class="icon-twitter"></span></a></li>
+               <li><a href="#nogo"><span class="icon-googleplus"></span></a></li>
+               <li><a href="#nogo"><span class="icon-youtube-square"></span></a></li>
+               <li><a href="#nogo"><span class="icon-linkedin"></span></a></li>
+             </ul>
+           </li>
+          </ul>
+        <!-- </div> -->
+      </div>
+
+    </div>
+    <!-- <div class="clearfix"></div> -->
+    <div class="footer-right">
+        <li class="media">
+                <div class="media-image pull-left">
+                 <img  border="0" alt="Freescale named a Top 100 Global Innovator" src="http://images.freescale.com/files/graphic/logo_freescale/DiamondChip-2014.png">
+                </div>
+                <div class="media-body" id="legal">
+                 <ul class="list-inline list-unstyled small fsl-gray-light-text">
+                     <li><a href="#nogo ">Terms of Use</a></li>
+                     <li><a href="#nogo">Privacy</a></li>
+                     <li><a href="#nogo">Cookie</a></li>
+                     <li><a href="#nogo">Terms of Sale</a></li>
+                   </ul>
+                   <p class="small fsl-gray-light-text">&copy; 2004-2014 Freescale Semiconductor Inc. All rights reserved.</p>
+                </div>
+               </li>
+    </div> 
+</div>
+</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>
+$(function(){
+   $(document).on('click', '.megamenu .dropdown-menu', function(e) {
+     e.stopPropagation();
+   });
+   $('#page-nav').affix({
+     offset: {top:100}
+   });
+
+   var navHeight = $('#page-nav').height()+10;  
+   var pageNavLi = $('#page-nav ul.nav li');
+
+   $("#page-nav ul.nav li > a[href^='#']").on('click', function(e) {
+      // prevent default anchor click behavior
+      e.preventDefault();
+      // store hash
+      var hash = this.hash;
+      pageNavLi.removeClass('active');
+      $(this).parent().addClass('active');
+      // animate
+      $('html, body').animate({
+          scrollTop: $(this.hash).offset().top-navHeight
+        }, 300, function(){
+
+          // when done, add hash to url
+          // (default click behaviour)
+          window.location.hash = hash;
+        });
+
+   });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="initial-scale=1">
+        
+        <link rel="stylesheet" href="../less/basecamp-legacy-header-footer-progressive.css">
+        <!-- <link rel="stylesheet" href="collateral-template.css"> -->
+        <style>
+         #applications-li, #products-li, #software-tools-li, #training-events-li, #support-li, #sample-and-buy-li, #about-li {width: auto;}
+
+        </style>
+
+    </head>
+  <body>
+   
+   <!--  <div id="header">
+             <header>
+               <div id="navigation">
+             <div id="fsl-logo">
+               <a title="Freescale" href="http://uat.freescale.com" onclick="s_objectID=&quot;http://uat.freescale.com/_1&quot;;return this.s_oc?this.s_oc(e):true"><img alt="Freescale Semiconductor" src="http://styles-uat.freescale.com/v1.1/shared/images/freescale-logo.png"></a>
+             </div>
+             <div id="header-nav">
+               <div id="header-util">
+                 <ul class="util">
+                 <li id="login-block"><a href="https://uat.freescale.com/security/public/login.LoginActionController.sp" onclick="s_objectID=&quot;https://uat.freescale.com/security/public/login.LoginActionController.sp_1&quot;;return this.s_oc?this.s_oc(e):true">Sign In</a></li>
+                   <li>
+                     <a class="nav-sprite" id="shopping-cart" href="https://uat.freescale.com/webapp/ecommerce.show_cart.framework" title="ShoppingCart" onclick="s_objectID=&quot;https://uat.freescale.com/webapp/ecommerce.show_cart.framework_1&quot;;return this.s_oc?this.s_oc(e):true">
+                     </a>
+                   </li>
+                   <li>
+                     <a href="/webapp/sps/site/homepage.jsp?code=GLOBAL_SITES" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=GLOBAL_SITES_1&quot;;return this.s_oc?this.s_oc(e):true">
+                     <div class="globe-icon nav-sprite"></div>&nbsp;Locations</a>
+                   </li>
+                 </ul>
+                 <ul class="lang-menu sf-js-enabled">
+                   <li id="languages">
+                     <a attr="en" class="sf-with-ul">
+                       <span class="flag-icon-en nav-sprite"></span>
+                       English<span class="caret-down"></span>
+                     <span class="sf-sub-indicator"></span></a>
+                     <ul style="display: none; visibility: hidden;">
+                       <li class="lang-text">Select Language</li>
+                       <li>
+                         <a href="/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=en" class="lang-en selected" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=en_1&quot;;return this.s_oc?this.s_oc(e):true">
+                           English<span class="flag-icon-en nav-sprite"></span>
+                           <span class="nav-sprite  checkmark-blue"></span>
+                       </a></li>
+                       <li>
+                         <a href="/zh-Hans/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=zh-Hans" class="lang-zh-Hans" onclick="s_objectID=&quot;http://uat.freescale.com/zh-Hans/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=z_1&quot;;return this.s_oc?this.s_oc(e):true">
+                           中文<span class="flag-icon-zh-Hans nav-sprite"></span>
+                           <span class="nav-sprite "></span>
+                       </a></li>
+                       <li>
+                         <a href="/ja/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=ja" class="lang-ja" onclick="s_objectID=&quot;http://uat.freescale.com/ja/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS&amp;uc=true&amp;lang_cd=ja_1&quot;;return this.s_oc?this.s_oc(e):true">
+                           日本語<span class="flag-icon-ja nav-sprite"></span>
+                           <span class="nav-sprite "></span>
+                       </a></li>
+                       <li><a href="http://www.freescale.co.kr" class="lang-ko" onclick="s_objectID=&quot;http://www.freescale.co.kr/_1&quot;;return this.s_oc?this.s_oc(e):true">
+                           한국어<span class="flag-icon-ko nav-sprite"></span>
+                       </a></li>
+                       </ul>
+                                 </li>
+                 </ul>
+               </div>
+               <div class="clearfix"></div>
+               <div id="header-search">
+                 <img src="//uat.freescale.com/shared/images/updated-yellow.png" class="pUpdated" id="pUpdated" height="16">
+                       
+                 <div id="parametric">
+                   
+                   <div>
+                     <a style="float:left" href="/webapp/parametricSelector.sp" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/parametricSelector.sp_1&quot;;return this.s_oc?this.s_oc(e):true">
+                         <span class="parametric-icon nav-sprite"></span> Parametric Selector</a>
+                     <button class="btn-1 btn-xs btn-yellow" id="paramGo" onclick="goButtonClick()">Go</button>
+                   </div>
+                 </div>
+   
+                 <form id="search" name="gs" method="GET" action="http://uat.freescale.com/search" onsubmit="return validateSubmitQuery(this);">
+                   <div id="fsl-search" class="keyword-search">
+                     <input type="text" value="" autocomplete="off" onkeyup="searchTop(event)" id="parts" name="q" placeholder="Search keyword/part number" class="keyword-search-input">
+                     <div id="keyword-button-div">
+                       <button class="nav-sprite global-searchglass" id="keyword-search-button" type="submit"></button>
+                     </div>
+                   </div>
+                   
+                   <table style="width: 205px; visibility: hidden;" id="result_suggest" cellpadding="0" cellspacing="0" class="ss-gac-m"></table>
+       
+                   <input id="client" name="client" value="UAT_search_all_results" type="hidden"> <input id="site" name="site" value="UAT_en" type="hidden"> <input id="proxystylesheet" name="proxystylesheet" value="UAT_search_style_fe" type="hidden"> <input id="sort" name="sort" value="date:D:L:d1" type="hidden">
+                   <input id="oe" name="oe" value="UTF-8" type="hidden"> <input id="ie" name="ie" value="UTF-8" type="hidden"> <input id="ud" name="ud" value="1" type="hidden"> <input id="output" name="output" value="xml_no_dtd" type="hidden">
+                   <input id="exclude_apps" name="exclude_apps" value="1" type="hidden"> <input id="callback" name="callback" value="ss_show" type="hidden"> <input id="lang_cd" name="lang_cd" value="en" type="hidden"> <input id="filter" name="filter" value="0" type="hidden"> <input id="getfields" name="getfields" value="*" type="hidden"> <input type="hidden" name="baseUrl" value="http://uat.freescale.com/webapp"> <input type="hidden" name="SEARCH_OPERATOR" value="Contains"> <input type="hidden" name="attempt" value="-1"> <input type="hidden" name="rc" value="1"> <input type="hidden" name="hl" value="en">
+                 </form>
+               </div>
+             </div>
+           </div>
+           <div class="clearfix"></div>   
+   <div id="menu"><nav class="menu-container" role="navigation">
+     <ul class="fsl-menu sf-js-enabled"><li id="products-li" class=""><a id="products-href" href="http://uat.freescale.com/webapp/sps/library/prod_lib.jsp" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/library/prod_lib.jsp_1&quot;;return this.s_oc?this.s_oc(e):true">Products<span class="sf-sub-indicator"></span></a><ul style="visibility: hidden; display: none;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=PCMCR01" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=PCMCR01_1&quot;;return this.s_oc?this.s_oc(e):true">Microcontrollers<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=KINETIS_1&quot;;return this.s_oc?this.s_oc(e):true">Kinetis ARM® MCUs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=POWER_ARCH_5XXX" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=POWER_ARCH_5XXX_1&quot;;return this.s_oc?this.s_oc(e):true">Qorivva (5xxx) 32-bit Power Architecture® MCUs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=PC68KCF" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=PC68KCF_1&quot;;return this.s_oc?this.s_oc(e):true">ColdFire+/ColdFire 32-bit MCUs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=8BITMCU" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=8BITMCU_1&quot;;return this.s_oc?this.s_oc(e):true">8-bit MCUs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DRMCR16BIT" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DRMCR16BIT_1&quot;;return this.s_oc?this.s_oc(e):true">16-bit MCUs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DSC_HOME" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DSC_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Digital Signal Controllers</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=MCU_PROGRAMMING_CENTER" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=MCU_PROGRAMMING_CENTER_1&quot;;return this.s_oc?this.s_oc(e):true">MCU Programming Center</a></li></ul></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=32BITHOME" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=32BITHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Processors<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IMX_HOME" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IMX_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">i.MX ARM® Applications Processors</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=VYBRID" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=VYBRID_1&quot;;return this.s_oc?this.s_oc(e):true">Vybrid ARM® Controller Solutions</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=QORIQ_HOME" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=QORIQ_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">QorIQ Processing Platforms</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=POWERQUICC_HOME" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=POWERQUICC_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">PowerQUICC Communications Processors</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=MPC8XXX7XXX" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=MPC8XXX7XXX_1&quot;;return this.s_oc?this.s_oc(e):true">Power Architecture® Host Processors</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=IMAGE_COGNITION" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=IMAGE_COGNITION_1&quot;;return this.s_oc?this.s_oc(e):true">Image Cognition Processors</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=C29X_FAMILY" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/taxonomy.jsp?code=C29X_FAMILY_1&quot;;return this.s_oc?this.s_oc(e):true">Crypto Coprocessors</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=STARCORE_HOME" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=STARCORE_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">StarCore High-Performance DSPs</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=563XXGPDSP" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=563XXGPDSP_1&quot;;return this.s_oc?this.s_oc(e):true">DSP56K/Symphony DSPs</a></li></ul></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=ANALOGHOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=ANALOGHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Analog and Power Management</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=RF_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=RF_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">RF</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SNSHOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SNSHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Sensors</a></li><li><a id="undefined" data-content-finding="Header" href="http://uat.freescale.net/webapp/sps/site/overview.jsp?code=PRODPROG" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.net/webapp/sps/site/overview.jsp?code=PRODPROG_1&quot;;return this.s_oc?this.s_oc(e):true">Product Programs<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ENERGY_EFF" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ENERGY_EFF_1&quot;;return this.s_oc?this.s_oc(e):true">Energy-Efficient Solutions Program</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=PRDCT_LONGEVITY_HM" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=PRDCT_LONGEVITY_HM_1&quot;;return this.s_oc?this.s_oc(e):true">Product Longevity Program</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SAFETYPRGRM" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SAFETYPRGRM_1&quot;;return this.s_oc?this.s_oc(e):true">SafeAssure Functional Safety Program</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=NETWORK_SECURITY" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=NETWORK_SECURITY_1&quot;;return this.s_oc?this.s_oc(e):true">Security Technology</a></li></ul></li></ul></li><li id="applications-li"><a id="applications-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFINDSTRYFCS_1&quot;;return this.s_oc?this.s_oc(e):true">Applications<span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFATOATMTV" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFATOATMTV_1&quot;;return this.s_oc?this.s_oc(e):true">Automotive<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLADASYS" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLADASYS_1&quot;;return this.s_oc?this.s_oc(e):true">Advanced Driver Assistance Systems</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLBDYELCTR" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLBDYELCTR_1&quot;;return this.s_oc?this.s_oc(e):true">Body Electronics</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLSAFETY" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLSAFETY_1&quot;;return this.s_oc?this.s_oc(e):true">Chassis and Safety</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLDISENT" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLDISENT_1&quot;;return this.s_oc?this.s_oc(e):true">Infotainment</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLINSCLSTR" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLINSCLSTR_1&quot;;return this.s_oc?this.s_oc(e):true">Instrument Cluster</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLPWTRCTRL" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLPWTRCTRL_1&quot;;return this.s_oc?this.s_oc(e):true">Powertrain and Hybrid Systems</a></li></ul></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CONNECTIVITY_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CONNECTIVITY_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Connectivity</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFCNSELCTR" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFCNSELCTR_1&quot;;return this.s_oc?this.s_oc(e):true">Consumer</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFINDCTRL1" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFINDCTRL1_1&quot;;return this.s_oc?this.s_oc(e):true">Industrial<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLMETERING" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLMETERING_1&quot;;return this.s_oc?this.s_oc(e):true">Smart Grid and Smart Metering</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLMNFCTRG" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLMNFCTRG_1&quot;;return this.s_oc?this.s_oc(e):true">Factory Automation</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLBLDGCTRL" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLBLDGCTRL_1&quot;;return this.s_oc?this.s_oc(e):true">Building Control</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLPTOFSALE" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLPTOFSALE_1&quot;;return this.s_oc?this.s_oc(e):true">Points-of-Sale and Kiosks</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLDIPOCON" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLDIPOCON_1&quot;;return this.s_oc?this.s_oc(e):true">Digital Power Conversion</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLHMAPPL" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=APLHMAPPL_1&quot;;return this.s_oc?this.s_oc(e):true">Home Appliances</a></li></ul></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=APLMEDICAL" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=APLMEDICAL_1&quot;;return this.s_oc?this.s_oc(e):true">Medical<span class="caret-right nav-sprite"></span><span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMDIAGTHERAPY" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMDIAGTHERAPY_1&quot;;return this.s_oc?this.s_oc(e):true">Diagnostics and Therapy</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMHEALTHWELL" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMHEALTHWELL_1&quot;;return this.s_oc?this.s_oc(e):true">Health and Wellness</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMHOMEPORTABLE" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMHOMEPORTABLE_1&quot;;return this.s_oc?this.s_oc(e):true">Home Portable</a></li><li><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMIMAGING" id="undefined" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=VMIMAGING_1&quot;;return this.s_oc?this.s_oc(e):true">Imaging</a></li></ul></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=MOTORCONTROLHOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=MOTORCONTROLHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Motor Control</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFNWNTWRKNG1" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=IFNWNTWRKNG1_1&quot;;return this.s_oc?this.s_oc(e):true">Networking</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=APL_ENERGY_EFF" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=APL_ENERGY_EFF_1&quot;;return this.s_oc?this.s_oc(e):true">Smart Energy</a></li></ul></li><li id="software-tools-li" class=""><a id="software-tools-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DEVELOPER_HOME" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=DEVELOPER_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Software &amp; Tools<span class="sf-sub-indicator"></span></a><ul style="visibility: hidden; display: none;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?nodeId=0152101A02" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?nodeId=0152101A02_1&quot;;return this.s_oc?this.s_oc(e):true">Hardware Development Tools</a></li><li><a id="swCenter" href="http://uat.freescale.com/webapp/software-center/library.jsp" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/software-center/library.jsp_1&quot;;return this.s_oc?this.s_oc(e):true">Software Center</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=REFDSGNHOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=REFDSGNHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Reference Designs</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SBC_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SBC_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Embedded Board Solutions</a></li></ul></li><li id="training-events-li"><a id="training-events-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=TRAINING_HOME" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=TRAINING_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Training &amp; Events<span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ON_DEMAND_TRNG" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ON_DEMAND_TRNG_1&quot;;return this.s_oc?this.s_oc(e):true">On-Demand Training</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DESIGNTECHDAYS" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DESIGNTECHDAYS_1&quot;;return this.s_oc?this.s_oc(e):true">Designing with Freescale</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=FTF_HOME_CATEGORY" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=FTF_HOME_CATEGORY_1&quot;;return this.s_oc?this.s_oc(e):true">Freescale Technology Forum</a></li><li><a id="undefined" href="/webapp/sps/site/event_calendar.jsp?fsrch=1&amp;attempt=0&amp;showCustomCollateral=false&amp;RELEVANCE=true&amp;fromTrng=false&amp;showAllCategories=false&amp;fromMobile=false&amp;code=EVENTS_HOME&amp;isResult=false&amp;searchSessionId=aed2b81239628661941.0&amp;Product%20" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/event_calendar.jsp?fsrch=1&amp;attempt=0&amp;showCustomCollatera_1&quot;;return this.s_oc?this.s_oc(e):true">Training Schedule</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=EVENTS_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=EVENTS_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Events</a></li><li><a id="videoVault" href="http://uat.freescale.com/webapp/video_vault/videoSummary.sp?searchLabel=renderHomepage" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/video_vault/videoSummary.sp?searchLabel=renderHomepage_1&quot;;return this.s_oc?this.s_oc(e):true">Video Vault</a></li></ul></li><li id="support-li"><a id="support-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SUPPORTHOME" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SUPPORTHOME_1&quot;;return this.s_oc?this.s_oc(e):true">Support &amp; Communities<span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SUPPORTHOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=SUPPORTHOME_2&quot;;return this.s_oc?this.s_oc(e):true">Sales and Support</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=CW_PROFESSIONAL" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=CW_PROFESSIONAL_1&quot;;return this.s_oc?this.s_oc(e):true">Professional Engineering Services</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/connect/memberDirSearch.sp" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/connect/memberDirSearch.sp_1&quot;;return this.s_oc?this.s_oc(e):true">Freescale Connect Partner Program</a></li><li><a id="undefined" href="https://uat.freescale.com/webapp/servicerequest.create_SR.framework" onclick="s_objectID=&quot;https://uat.freescale.com/webapp/servicerequest.create_SR.framework_1&quot;;return this.s_oc?this.s_oc(e):true">Technical Service Request</a></li><li><a id="undefined" href="https://community.freescale.com" onclick="s_objectID=&quot;https://community.freescale.com/_1&quot;;return this.s_oc?this.s_oc(e):true">Communities</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DOCUMENTATION" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DOCUMENTATION_1&quot;;return this.s_oc?this.s_oc(e):true">Documentation</a></li></ul></li><li id="sample-and-buy-li"><a id="sample-buy-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=WHERETOBUY" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=WHERETOBUY_1&quot;;return this.s_oc?this.s_oc(e):true">Sample &amp; Buy<span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=WTOBUY_BUYDIRECT" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=WTOBUY_BUYDIRECT_1&quot;;return this.s_oc?this.s_oc(e):true">Buy Direct</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ORDER_SAMPLES" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ORDER_SAMPLES_1&quot;;return this.s_oc?this.s_oc(e):true">Order Samples</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DISTRIBUTORS" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=DISTRIBUTORS_1&quot;;return this.s_oc?this.s_oc(e):true">Distributor Network</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=WTOBUY_PRICEAVAIL" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=WTOBUY_PRICEAVAIL_1&quot;;return this.s_oc?this.s_oc(e):true">Pricing and Availability</a></li></ul></li><li id="about-li"><a id="about-href" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=COMPANY_INFO_HOME" class="sf-with-ul" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=COMPANY_INFO_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">About<span class="sf-sub-indicator"></span></a><ul style="display: none; visibility: hidden;"><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=COMPANY_INFO_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=COMPANY_INFO_HOME_2&quot;;return this.s_oc?this.s_oc(e):true">Company Information</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CORP_SOCIAL_RESP" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CORP_SOCIAL_RESP_1&quot;;return this.s_oc?this.s_oc(e):true">Corporate Responsibility</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ABOUT_CUSTOMERS" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/overview.jsp?code=ABOUT_CUSTOMERS_1&quot;;return this.s_oc?this.s_oc(e):true">Customers</a></li><li><a id="undefined" data-content-finding="Header" href="http://investors.freescale.com/phoenix.zhtml?c=175261&amp;p=irol-irhome" onclick="s_objectID=&quot;http://investors.freescale.com/phoenix.zhtml?c=175261&amp;p=irol-irhome_1&quot;;return this.s_oc?this.s_oc(e):true">Investor Relations</a></li><li><a id="undefined" data-content-finding="Header" href="http://media.freescale.com/phoenix.zhtml?c=196520&amp;p=irol-overview" onclick="s_objectID=&quot;http://media.freescale.com/phoenix.zhtml?c=196520&amp;p=irol-overview_1&quot;;return this.s_oc?this.s_oc(e):true">Media Center</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=QUALITY_HOME" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=QUALITY_HOME_1&quot;;return this.s_oc?this.s_oc(e):true">Quality</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=RESEARCH_AND_DEVELOPMENT" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=RESEARCH_AND_DEVELOPMENT_1&quot;;return this.s_oc?this.s_oc(e):true">Technology</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=UNIVPROGRAM_HOME_CAT" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=UNIVPROGRAM_HOME_CAT_1&quot;;return this.s_oc?this.s_oc(e):true">University</a></li><li><a id="undefined" href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CAREERS" onclick="s_objectID=&quot;http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CAREERS_1&quot;;return this.s_oc?this.s_oc(e):true">Careers</a></li></ul></li></ul>
+   </nav></div>
+   
+   </header>
+           </div>
+   
+      <div class="clearfix" ></div>
+    -->
+
+
+
+   <header><div class="container fsl-container" id="header">
+             <div class="row">
+                 <div class="col-xs-4" >
+                   <div id="fsl-logo">
+                     <a href="#" title="Freescale" ><img src="//www.freescale.com/files/graphic/icons/freescale-logo.png" alt="Freescale Semiconductor"></a>
+                   </div>
+                 </div>
+                 <div class="col-xs-8 pull-right" id="login-block-new">
+                   <div class="row">
+                     <div class="col-xs-12">
+                       <ul class="list-inline pull-right">
+                         <li><span class="icon-user"></span>&nbsp;John Smith</li>
+                         <li><div class="vertical-line"></div></li>
+                         <li><span class="icon-cart"></span></li>
+                         <li><div class="vertical-line"></div></li>
+                         <li>
+                           <div class="dropdown">
+                            <a href="#" id="languageDropdownMenu" data-toggle="dropdown">Language <span class="caret"></span></a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="languageDropdownMenu">
+                                <li role="presentation">Select language</li>
+                                <li role="presentation"><a role="menuitem" class="lang-en selected">English <span class="icon-checkmark3 pull-right"></span></a></li>
+                                <li role="presentation"><a role="menuitem" class="lang-zh" href="http://www.freescale.com/zh-Hans" >中文</a></li>
+                                <li role="presentation"><a role="menuitem" class="lang-ja" href="http://www.freescale.com/ja" >日本語</a></li>
+                                <li role="presentation"><a role="menuitem" class="lang-ko" href="http://www.freescale.co.kr" >한국어 </a></li>
+                              </ul>
+                           </div>
+                         </li>
+                       </ul>
+
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="col-xs-6 pull-right ">
+                       <form class="input-group input-group-sm fsl-search" >
+                          <input type="text" class="form-control" placeholder="Search" >
+                          <span class="input-group-btn" >
+                              <button type="button" class="btn btn-default fsl-orange  fsl-white-text" ><span class="icon-search2"></span></button>
+                          </span>
+                        </form>
+                     </div>
+                   </div>
+                   
+                 </div>
+             </div>
+             <div class="navbar navbar-default megamenu">
+               <div class="navbar-header">
+                 <button type="button" data-toggle="collapse" data-target="#navbar-collapse-fsl" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+               </div>
+               <div id="navbar-collapse-fsl" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav">
+                   <li class="dropdown  megamenu-fw" id="products-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Products</a>
+                     <ul class="dropdown-menu" >
+                       <li>
+                         <div class="row">
+                           <div class="col-sm-4">
+                             <h4 ><strong>Microcontrollers</strong></h4>
+                             <ul class="list-unstyled">
+                               <li class="media">
+                                  <div class="media-image pull-left">
+                                    <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                                  </div>
+                                  <div class="media-body">
+                                    <a href="#nogo">
+                                     <p class="nav-heading">Kinetis</p>
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                  </a>
+                                  </div>
+                                 </li>
+                                 <li class="media">
+                            <div class="media-image pull-left">
+                              <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                            </div>
+                            <div class="media-body">
+                              <a href="#nogo">
+                               <p class="nav-heading">Kinetis</p>
+                              <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                            </a>
+                            </div>
+                           </li>
+                           <li class="media">
+                              <div class="media-image pull-left">
+                                <!-- <img style="display:inline-block;"  class="media-object" src="//placeape.com/30/30" alt="..."> -->
+                                <img class="media-object" src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="32 bit" >
+                              </div>
+                              <div class="media-body">
+                                <a href="#nogo">
+                                 <p class="nav-heading">Kinetis</p>
+                                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                              </a>
+                              </div>
+                             </li>
+                             <li class="media">
+                                <div class="media-image pull-left">
+                                  <img src="http://cache.freescale.com/files/graphic/tn/16-BIT-ORANGEBOX.png" alt="32 bit" class="media-object">
+                                </div>
+                                <div class="media-body">
+                                  <a href="#nogo">
+                                   <p class="nav-heading">Kinetis</p>
+                                   <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                </a>
+                                </div>
+                               </li>
+                               <li class="media">
+                                  <div class="media-image pull-left">
+                                    <img src="http://cache.freescale.com/files/graphic/tn/8-BIT-ORANGEBOX.png" alt="16 bit" class="media-object">
+                                  </div>
+                                  <div class="media-body">
+                                    <a href="#nogo">
+                                     <p class="nav-heading">Kinetis</p>
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                  </a>
+                                  </div>
+                                 </li>
+                             </ul>
+                             <a href="#nogo" ><p class="text-muted small" style="padding-left:40px;">&mdash; Compare all Microcontrollers</p></a>
+                            </div>
+                            <div class="col-sm-4">
+                              <h4 class="fsl-black-text"><strong>Processors</strong></h4>
+                              <ul class="list-unstyled">
+                                <li class="media" style="margin-left:-35px;">
+                                  <div class="media-image pull-left">
+                                    <img src="http://cache.freescale.com/files/graphic/tn/64-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                    <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                    <!-- <img style="display:inline-block;"  class="media-object" src="//placeape.com/30/30" alt="..."> -->
+                                  </div>
+                                  <div class="media-body">
+                                    <a href="#nogo">
+                                     <p class="nav-heading">Kinetis</p>
+                                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                  </a>
+                                  </div>
+                                 </li>
+                                 <li class="media">
+                                    <div class="media-image pull-left">
+                                     <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                    </div>
+                                    <div class="media-body">
+                                      <a href="#nogo">
+                                       <p class="nav-heading">Kinetis</p>
+                                      <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                    </a>
+                                    </div>
+                                   </li>
+                                   <li class="media">
+                                      <div class="media-image pull-left">
+                                       <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                      </div>
+                                      <div class="media-body">
+                                        <a href="#nogo">
+                                         <p class="nav-heading">Kinetis</p>
+                                        <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                      </a>
+                                      </div>
+                                     </li>
+                                     <li class="media">
+                                        <div class="media-image pull-left">
+                                          <img src="http://cache.freescale.com/files/graphic/tn/32-BIT-ORANGEBOX.png" alt="64 bit" class="media-object">
+                                        </div>
+                                        <div class="media-body">
+                                          <a href="#nogo">
+                                           <p class="nav-heading">Kinetis</p>
+                                          <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                        </a>
+                                        </div>
+                                       </li>
+                                       <li class="media">
+                                          <div class="media-image pull-left">
+                                           <img src="http://cache.freescale.com/files/graphic/tn/16-BIT-ORANGEBOX.png" alt="16 bit" class="media-object">
+                                          </div>
+                                          <div class="media-body">
+                                            <a href="#nogo">
+                                             <p class="nav-heading">Kinetis</p>
+                                            <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, rerum.</p>
+                                          </a>
+                                          </div>
+                                         </li>
+                              </ul>
+                              <a href="#nogo"><p class="text-muted small" style="padding-left:35px;">&mdash; Compare all Processors</p></a>
+                             </div>
+                           
+                          <div class="col-sm-4">
+                           <h4 class="fsl-black-text"><strong>More Products</strong></h4>
+                           <ul class="list-unstyled">
+                               <li><a href="#nogo"><p class="nav-heading">Analog & Power Management</p>
+                                 <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                               </li>
+                               <li>
+                                 <a href="#nogo"><p class="nav-heading">Sensors/Xtrinsic Sensing Solutions</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                               </li>
+                               <li>
+                                 <a href="#nogo"><p class="nav-heading">RF/Airfast RF Power Solutions</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                               </li>
+                               <li>
+                                 <a href="#nogo"><p class="nav-heading">Connectivity</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                               </li>
+                               <li>
+                                 <a href="#nogo"><p class="nav-heading">Programs & Technologies</p><p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, fugit.</p><p class="text-muted small">-Lorem ipsum dolor.</p></a>
+                                 </li>
+
+                             </ul> 
+                           </div>
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown megamenu-hw" id="applications-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Applications</a>
+                     <ul class="dropdown-menu">
+                       <li >
+                         
+                         <div class="row">
+                           <div class="col-sm-4">
+                             <ul>
+                               <li><a href="#nogo">Advanced Driver Assistance Systems</a></li>
+                               <li><a href="#nogo">Internet of Things</a></li>
+                               <li><a href="#nogo">Software Defined Networking</a></li>
+                             </ul>
+                             <img src="//placeape.com/75/75" style="padding-left:50px;">
+                            </div>
+                            <div class="col-sm-4">
+                               <ul>
+                               <li><a href="#nogo">Automotive</a>
+                                 <ul>
+                                   <li><a href="#nogo">ADAS</a></li>
+                                   <li><a href="#nogo">Body Electronics</a></li>
+                                   <li><a href="#nogo">Chasis and Safety</a></li>
+                                   <li><a href="#nogo">Infotainment</a></li>
+                                   <li><a href="#nogo">Instrument Cluster</a></li>
+                                   <li><a href="#nogo">Powertrain and Hybrid Systems</a></li>
+                                 </ul>
+                               </li>
+                               </ul></div>
+                               <div class="col-sm-4">
+                                 <ul>
+                               <li><a href="#nogo">Connectivity</a></li>
+                               <li><a href="#nogo">Consumer</a></li>
+                               <li><a href="#nogo">Industrial</a></li>
+                               <li><a href="#nogo">Medical</a></li>
+                               <li><a href="#nogo">Motor Control</a></li>
+                               <li><a href="#nogo">Networking</a></li>
+                               <li><a href="#nogo">Smart Energy</a></li>
+                           </ul> 
+
+                         </div>
+                           
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown" id="software-tools-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Software & Tools</a>
+                     <ul class="dropdown-menu">
+                       <li>
+                         
+                         <div class="row">
+                           <div class="col-sm-12">
+                               <ul class="list-unstyled">
+                               <li><a href="#nogo">Hardware Development Tools</a></li>
+                               <li><a href="#nogo">Software Development Tools</a></li>
+                               <li><a href="#nogo">Run-time Software</a></li>
+                               <li><a href="#nogo">Software Store</a></li>
+                               <li><a href="#nogo">Reference Designs</a></li>
+                               <li><a href="#nogo">Embedded Board Solutions</a></li>
+                           </ul> </div>
+                        
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown" id="training-events-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Training & Events</a>
+                     <ul class="dropdown-menu">
+                       <li>
+                         <div class="row">
+                           <div class="col-sm-12">
+                             <ul >
+                               <li><a href="#bogo">On Demand Training</a></li>
+                               <li><a href="#nogo">Designing with Freescale</a></li>
+                               <li><a href="#nogo">Freescale Technology Forum</a></li>
+                               <li><a href="#nogo">Training Schedule</a></li>
+                               <li><a href="#nogo">Events</a></li>
+                             </ul>
+                             <h4>FTF Video</h4>
+                               <div id="VideoBoxFTF"><a class="FTFVideo" data-date="04/09/14" data-time="(81:12 min)" video-id="5045" data-video="http://www.freescale.com/webapp/sps/site/overview.jsp?code=FTF_AMERICAS_VIDEOS" data-title="Opening FTF 2014 General Session with Freescale President and CEO Gregg Lowe" data-description="Get insight into Freescale's vision for a world of connected intelligence where big data, security and cloud computing meet, with Freescale president and CEO Gregg Lowe. Featuring several prominent customers, including Oracle, Cadillac, OrCam and Alcatel-Lucent Gregg provides a comprehensive look at Freescale solutions and the future of innovation."></a><iframe id="player" style="background-color:#000000;" seamless="" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" src="http://www.freescale.com/viewerportal/videos/embed.vp?programId=esc_program%3A5045&amp;autoplay=false"  height="300"></iframe></div>
+                         </div>
+                         </div>
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown" id="support-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Support & Communities</a>
+                     <ul class="dropdown-menu">
+                       <li >
+                         
+                         <div class="row">
+                           <div class="col-sm-12"><ul class="list-unstyled">
+                               <li><a href="nogo">Sales and Support</a></li>
+                               <li><a href="nogo">Professional Engineering Services</a></li>
+                               <li><a href="nogo">Freescale Connect Partner Program</a></li>
+                               <li><a href="nogo">Technical Service Request</a></li>
+                               <li><a href="nogo">Communities</a></li>
+                               <li><a href="nogo">Documentation</a></li>
+                           </ul> </div>
+                          
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown" id="sample-and-buy-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Sample & Buy</a>
+                     <ul class="dropdown-menu">
+                       <li >
+                         
+                         <div class="row">
+                           <div class="col-sm-12"><ul class="list-unstyled">
+                               <li><a href="nogo">Sales and Support</a></li>
+                               <li><a href="nogo">Professional Engineering Services</a></li>
+                               <li><a href="nogo">Freescale Connect Partner Program</a></li>
+                               <li><a href="nogo">Technical Service Request</a></li>
+                               <li><a href="nogo">Communities</a></li>
+                               <li><a href="nogo">Documentation</a></li>
+                           </ul> </div>
+                          
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                   <li><div class="vertical-line" ></div></li>
+                   <li class="dropdown" id="about-li">
+                       <a href="#" data-toggle="dropdown" class="dropdown-toggle">About</a>
+                     <ul class="dropdown-menu">
+                       <li >
+                         
+                         <div class="row">
+                           <div class="col-sm-12"><ul class="list-unstyled">
+                               <li><a href="nogo">Sales and Support</a></li>
+                               <li><a href="nogo">Professional Engineering Services</a></li>
+                               <li><a href="nogo">Freescale Connect Partner Program</a></li>
+                               <li><a href="nogo">Technical Service Request</a></li>
+                               <li><a href="nogo">Communities</a></li>
+                               <li><a href="nogo">Documentation</a></li>
+                           </ul> </div>
+                          
+                         </div>
+                         
+                       </li>
+                     </ul>
+                   </li>
+                 </ul>
+                <!--  <ul class="nav navbar-nav navbar-right">
+                 <li >
+                     <form class="input-group input-group-sm fsl-search" >
+                       <input type="text" class="form-control" placeholder="Search" >
+                       <span class="input-group-btn" >
+                           <button type="button" class="btn btn-default fsl-orange  fsl-white-text" ><span class="icon-search2"></span></button>
+                       </span>
+                     </form>
+                  </li>
+               </ul> -->
+               </div>
+             </div>  
+   </div></header> 
+
+   <div class="clearfix"></div>
+<div class="container fsl-container">
+<div class="row">
+  <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorem ex praesentium facere facilis totam nam architecto doloremque repellat consequuntur consequatur minima, earum, numquam. Quas molestiae suscipit, ratione ea neque consequatur fugiat, quam quis aperiam est quos ut et numquam nam, magni perspiciatis minus ducimus dolorum voluptatum assumenda consectetur at nostrum! Fugit sed commodi sint? Perspiciatis earum inventore modi impedit doloribus nihil, veritatis alias unde quis esse minus ipsam distinctio dignissimos animi fugiat dolor quaerat aut aliquid rem quam quas aperiam, amet laboriosam. Beatae officia animi eos quod quisquam non omnis aspernatur, minus ullam debitis libero, fugiat delectus enim amet?</p></div>
+  <div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorem ex praesentium facere facilis totam nam architecto doloremque repellat consequuntur consequatur minima, earum, numquam. Quas molestiae suscipit, ratione ea neque consequatur fugiat, quam quis aperiam est quos ut et numquam nam, magni perspiciatis minus ducimus dolorum voluptatum assumenda consectetur at nostrum! Fugit sed commodi sint? Perspiciatis earum inventore modi impedit doloribus nihil, veritatis alias unde quis esse minus ipsam distinctio dignissimos animi fugiat dolor quaerat aut aliquid rem quam quas aperiam, amet laboriosam. Beatae officia animi eos quod quisquam non omnis aspernatur, minus ullam debitis libero, fugiat delectus enim amet?</p></div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quis tempora non cupiditate quisquam commodi, dicta ipsam aliquam praesentium consequatur, nulla placeat odit, ullam quae. Blanditiis incidunt alias consectetur temporibus adipisci, harum commodi, animi optio sapiente nisi velit numquam doloremque accusamus illum architecto, quam possimus laborum suscipit voluptas assumenda veritatis cumque. Itaque eveniet quasi ab, eos facere dolor ullam cupiditate praesentium esse earum quidem modi culpa, voluptate maxime dolorem architecto sint animi nisi vero. Commodi autem ullam cupiditate quibusdam neque, possimus assumenda, deleniti repellat consequatur magni eos debitis, repudiandae vitae aut dolore nobis reiciendis ad magnam placeat sapiente. Saepe, non!</p>
+</div> <!-- // .container .fsl-container -->
+
+<div class="clearfix"></div>
+<footer>
+  <div class="container fsl-container" id="footer">
+   <ul id="footer-links-1"><li><h4><a data-content-finding="Footer" href="http://media.freescale.com/phoenix.zhtml?c=196520&amp;p=irol-overview">Media</a></h4></li><li><h4><a data-content-finding="Footer" href="http://investors.freescale.com/phoenix.zhtml?c=175261&amp;p=irol-irhome">Investors</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/connect/memberDirSearch.sp">Partners</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=UNIVPROGRAM_HOME_CAT">University Programs</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=EVENTS_HOME">Events</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?code=CAREERS">Careers</a></h4></li></ul>
+  <div class="clearfix"></div>
+  <ul id="footer-links-2"><li><h4><a href="http://uat.freescale.com/files/abstract/help_page/TERMSOFUSE.html">Terms of Use</a></h4></li><li><h4><a href="http://uat.freescale.com/files/abstract/help_page/PRIVACYPRACTICES.html">Privacy</a></h4></li><li><h4><a href="http://uat.freescale.com/files/abstract/help_page/COOKIE_POLICY.html">Cookies</a></h4></li><li><h4><a href="http://uat.freescale.com/files/abstract/help_page/TERMS_CONDITIONS_SALE.html">Terms of Sale</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/video_vault/videoSummary.sp?searchLabel=renderHomepage&amp;site_preference=mobile">Mobile</a></h4></li><li><h4><a href="http://uat.freescale.com/newsletter">Newsletter</a></h4></li><li><h4><a href="http://uat.freescale.com/webapp/sps/site/homepage.jsp?nodeId=0M10Xv6c0C">Contact Us</a></h4></li></ul>
+<div class="clearfix"></div>
+  <ul id="footer-social"><li><h4><a href="http://uat.freescale.com/webapp/sps/site/overview.jsp?code=SOCMEDFSL">Social @Freescale</a></h4></li><li><h4>Follow Us</h4></li></ul>
+   <ul id="footer-icons"><li><a href="https://www.facebook.com/freescale" class="nav-sprite facebook-icon" title="Follow Freescale on Facebook" data-content-finding="Footer"></a></li><li><a href="https://twitter.com/freescale" class="nav-sprite twitter-icon" title="Follow Freescale on Twitter" data-content-finding="Footer"></a></li><li><a href="http://www.youtube.com/user/freescale" class="nav-sprite youtube-icon" title="View Freescale YouTube Channel" data-content-finding="Footer"></a></li><li><a href="https://plus.google.com/+freescale" class="nav-sprite googleplus-icon" title="Follow Freescale on Google+" data-content-finding="Footer"></a></li><li><a href="http://www.linkedin.com/company/freescale-semiconductor" class="nav-sprite linkedin-icon" title="Follow Freescale on Linked In" data-content-finding="Footer"></a></li></ul>
+  <p class="copyright">© 2004-2014 Freescale Semiconductor, Inc. All rights reserved.</p>
+</div>
+</footer>
+
+
+
+<script type="text/javascript" charset="UTF-8" src="http://styles.freescale.com/files/abstract/misc/header_nav.js"></script>
+
+<script type="text/javascript" src="//styles.freescale.com/shared/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+var jQuery_1_9_1 = jQuery.noConflict(true);
+jQuery_1_9_1(function($){
+  jQuery_1_9_1('ul.fsl-menu').superfish();
+  jQuery_1_9_1('ul.lang-menu').superfish();
+});
+</script> 
+<script type="text/javascript" src="http://styles.freescale.com/shared/js/superfish.js"></script>
+<script type="text/javascript" src="http://styles.freescale.com/shared/js/header.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//styles.freescale.com/files/js/fsl-nav.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+$(function(){
+
+  
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+node_modules/**
+share/**
+nxprebrand/**
+nxprebrand.save/**
+redesign2014/**
+mockups/**
+test/**
+basecamp.*
+fonts/**
+less/**
