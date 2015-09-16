@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="./js/basecamp-template.js"></script>
+        <script>writeHead('BaseCamp - Less')</script>
+        <style>
+            .color-thumbnail {width:75px; height:75px; box-shadow: -5px 5px 3px #888888; }
+            .type-info pre {width:210px;}
+        </style>
+    </head>
+    <body>
+        <script>writeHeader();</script>
+    
+          <div class="fsl-container container">  
+            <div class="row" >
+                <div class="col-md-9" role="main">
+                   
+                    <div class="bs-docs-section">
+                        <h1 id="what-is-less" >
+                             A Brief Intro to Less CSS
+                        </h1><!-- Headings -->
+                        
+                        <h3 >
+                           What is Less?
+                        </h3>
+                        <ul class="boxes">
+                            <li>Less is a CSS pre-processor.</li>
+                            <li>It extends the language of CSS, adding features that allow programmatic functionality such as variables, functions, etc.</li>
+                            <li>It can make CSS more maintainable, themable and extendable.</li>
+                            <li>Can run from command line, IDE, code or web page.</li>
+                            <li>It provides formatted, customizable output that is checked for syntax.</li>
+                        </ul>
+                         <h3 id="getting-started">
+                          Getting Started
+                        </h3>
+                        <ul class="boxes">
+                            <li>Less requires Node.js (<a href="http://nodejs.org">http://nodejs.org</a>) to be installed.</li>
+                            <li>Less is installed using <a href="https://www.npmjs.com/">npm</a>, the node.js package manager
+                               <pre>npm install –g less</pre>
+                            </li>
+                            <li>Command line usage
+                             <pre>lessc stylesheet.css > stylesheet.css</pre>
+                            </li>
+                            <li>Client-side usage
+<pre>
+&lt;link rel="stylesheet/less" type="text/css" href="styles.less" /&gt;
+&lt;script src="less.js" type="text/script"&gt;javascript&lt;/script&gt;
+</pre>
+                      </li>
+                        </ul>
+                        
+                        <h3 id="importing">Importing</h3>
+                        <ul class="boxes">
+                            <li>Instead of having one big .less file you can have multiple files and use the <code>@import</code> command to combine all the .less files into one.</li>
+                            <li>All the mixins and variables will be made available to the main file.</li>
+<pre>
+@import “type.less”;
+@import “colors.less”;
+</pre>
+                        </ul>
+                        <h3 id="commenting">Commenting</h3>
+                        <ul class="boxes">
+                            <li>Multuple line comments are preserved</li>
+<pre>
+/* This will be shown in final compiled css file */
+/*
+    This does too!
+*/
+</pre>
+                            <li>Single line comments are "silent", they do not show up in the compiled css output.</li>
+<pre>//This will not show up in compiled code.  Use me instead!</pre>
+                        </ul>
+                        
+                       <h3 id="variables">Variable or Constants</h3>
+                       <ul class="boxes">
+                           <li>Variables are declared and used with the @ symbol.  You give them a name and a value and then you can refer to them anywhere in your .less file.</li>
+<pre>
+@name: value;
+@nxp-orange:    #f9b500;
+background-color: @nxp-orange; 
+</pre>
+                            <li>Variables can also be assigned to other variables</li>
+<pre>
+@mega-menu-background-color: @nxp-orange;
+</pre>
+                            <li>Variables are actually constants in that they can only be defined once.</li>
+                       </ul>
+                       <h3 id="mixins">Mixins</h3>
+                       <ul class="boxes">
+                           <li>Mixins allow you to include (mix-in) properties from one rule-set into another.</li>
+<pre>
+.bordered { border: solid 1px black; }
+#menu a {   
+    color: @nxp-orange;     
+    .bordered; 
+}   
+</pre>
+OUTPUT:
+<pre>
+#menu a {
+    color: #f9b500;
+    border: 1px solid black;
+}
+</pre>
+                        <h3 id="nested-rules">Nested Rules</h3>
+                        <ul class="boxes">
+                            <li>Nested gives you the ability to cascade your CSS</li>
+                            <em>Instead of:</em>
+<pre>
+#header { color: black;}
+#header .nav { font-size: 12px;}
+#header .logo {width:100px;}
+</pre>
+    <em>You can write it this way:</em>
+<pre>
+#header { color: black;
+    .navigation { font-size: 12px;}
+    .logo {width: 100px;}
+}
+</pre>
+                        </ul>
+
+                        <h3 id="parent-selectors">Parent Selectors</h3>
+                        <ul class="boxes">
+                            <li>The & operator represents the parent selector in a nested rule and is used most combining classes or pseudo-class to an existing selector.</li>
+<pre>
+a.blue {color: blue;
+    &:hover {color:green;}
+    &.uppercase {text-transform: uppercase;}
+} 
+</pre>
+                            <span>OUTPUT:</span>
+<pre>
+a.blue {color: blue;}
+a.blue:hover {color:green;}
+a.blue.uppercase { text-transform: uppercase;}
+</pre>
+                    </ul>
+                        <h3 id="functions">Functions</h3>
+                        <ul class="boxes">
+                            <li>Less has many built in functions that can be used to compute values</li>
+<pre>
+.nxp-orange-lightened { 
+    lighten(@nxp-orange, 10%)
+}
+</pre>
+
+                            <li>For a complete list of functions and examples visit: <a href="http://lesscss.org/functions">http://lesscss.org/functions</a></li>
+                        </ul>
+                        <h3 id="resources">Resources</h3>
+                        <ul class="boxes">
+                        <li>
+                           Less has many other features such as Operations, Conditionals and Namespaces, String Interpolation and much more.</li>
+                            <li>Find out more about what Less has to offer at <a href="http://lesscss.org">http://lesscss.org</a></li>
+                        </ul>
+
+                </div>
+            </div>
+                <div class="col-md-3">
+                   <div class="fsl-docs-sidebar" >
+                       <ul class="nav ">
+                       <li>
+                         <a href="#what-is-less">Intro to Less</a>
+                       
+                        <ul class="nav">
+                           <li><a href="#getting-started">Geting Started</a>
+                           </li>
+                           <li>
+                             <a href="#importing">Importing</a>
+                           </li>
+                            <li>
+                             <a href="#commenting">Commenting</a>
+                           </li>
+                           <li>
+                             <a href="#variable">Variables</a>
+                           </li>
+                           <li>
+                               <a href="#mixins">Mixins</a>
+                           </li>
+                           <li>
+                               <a href="#nested-rules">Nested Rules</a>
+                           </li>
+                           <li>
+                               <a href="#parent-selectors">Parent Selectors</a>
+                           </li>
+                           <li>
+                                <a href="#functions">Functions</a>
+                           </li>
+                           <li>
+                                <a href="#resources">Find out more</a>
+                           </li>
+                       </ul>
+                       </li>
+                       </ul>
+                       <a class='back-to-top' href='#top'>Back to top</a>
+                   </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script> <script src="./js/bootstrap.min.js">
+</script> <script src="./js/basecamp-docs.js">
+</script>
+<script>
+  jQuery(document).ready(function($) {
+   
+    $('#buttonColors button').click(function(e){
+      // console.log ($(this));
+            $('#buttonCode').text($(this)[0].outerHTML);
+    })
+
+  });
+
+</script>
+    </body>
+</html>
