@@ -1,0 +1,40 @@
+.generate-margins(20);
+
+.generate-margins(@n, @i: 1) when (@i =< @n) {
+	@l : @i*5;
+  .marginleft@{l} {
+    margin-left: (5px * @i);
+  }
+  .marginright@{l} {
+    margin-right: (5px * @i);
+  }
+
+  .top@{l}, .margintop@{l} {
+    margin-top: (5px * @i);
+  }
+  .bottom@{l}, .marginbottom@{l} {
+    margin-bottom: (5px * @i);
+  }
+
+  .generate-margins(@n, (@i + 1));
+}
+
+.generate-padding(20);
+
+.generate-padding(@n, @i: 1) when (@i =< @n) {
+  @l : @i*5;
+  .paddingleft@{l} {
+    padding-left: (5px * @i);
+  }
+  .paddingright@{l} {
+    padding-right: (5px * @i);
+  }
+  .paddingtop@{l} {
+    padding-top: (5px * @i);
+  }
+  .paddingbottom@{l} {
+    padding-bottom: (5px * @i);
+  }
+
+  .generate-padding(@n, (@i + 1));
+}

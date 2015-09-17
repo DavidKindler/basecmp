@@ -1,0 +1,120 @@
+/*  /-- BEGIN basecamp-ssp ----------------------------------------------------------------------------- */
+.ssp {
+     .row.borders { border-radius: 5px; border:1px solid @nxp-deep-orange; padding-top:16px; padding-bottom:16px; margin-left:-10px; margin-right:-10px; margin-bottom:5px; margin-top:15px;}
+      .row:after {clear:both; display:table; content: " ";}
+      
+		
+		.thumbs {height:40px; border:1px solid #ccc; padding:2px; margin-left:11px;}
+		.thumbsContainer {margin-left:11px;}
+
+		// // Unstyled keeps list items block level, just removes default browser padding and list-style
+		// .list-unstyled {
+		//   padding-left: 0;
+		//   list-style: none;
+		// }
+
+		// // Inline turns list items into inline-block
+		// .list-inline {
+		//   .list-unstyled();
+		//   margin-left: -5px;
+
+		//   > li {
+		//     display: inline-block;
+		//     padding-left: 5px;
+		//     padding-right: 5px;
+		//   }
+		// }
+	 //  h2 {font-size: 18px; font-weight: 400; padding-bottom: 6px; padding-top: 4px;}
+  //    h4 {color: @nxp-deep-orange; margin:1em 0 0 0;}
+  //    h5 {line-height: inherit; margin:1em 0 0 0;}
+  //    small, .small  { font-size: 90%; }
+
+
+  //    .text-left           { text-align: left; }
+  //    .text-right          { text-align: right; }
+  //    .text-center         { text-align: center; }
+
+     // .leftnav li a {color:#51626f; text-decoration: none; display: block; padding: 5px 10px; }     
+     // .leftnav li.selected a, .leftnav li a:active {background-color: @fsl-gray-xlight; text-decoration: none; color: #000;}
+     // .leftnav li a:hover {background-color: @fsl-gray-xlight; text-decoration: none; color:#000;}
+     // .leftnav li a span.count {color: #999; display: inline;}
+	
+	//   table { 
+	// 		border-collapse: collapse;
+ //      	border-spacing: 0;
+	//    }
+	//   .table > thead > tr > td.table-title, .table > tbody> tr > td.table-title, .table > thead> tr > th.table-title {
+	//     background-color: @fsl-gray-xlight; color:@fsl-gray-dark; padding-left: 8px; padding-top: 2px; padding-bottom: 2px; 
+	//     border-bottom: 1px solid @fsl-gray-dark; vertical-align: middle;  font-weight: 500;
+	//    }
+
+
+ //    .generate-th-widths(50, 10);
+
+ //   .generate-th-widths(@n, @i, @counter:1) when (@i >= 0) {
+ //     .table > thead > tr > th._@{n}px {
+ //        width: ~"@{n}px";
+ //     }
+ //     .generate-th-widths(@n+10, (@i - 1));
+	// }
+
+ //     .table p {margin-top:0px; margin-bottom:4px;}
+ //     .table .no-border-top {border-top:0;}
+
+}
+	.videoThumbnail .overlay {
+    background-image: url("../images/overlay2.png");
+    background-repeat: repeat;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.videoThumbnail .title {
+    color: white;
+    height: 26px;
+    left: 2%;
+    line-height: 1em;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 70%;
+    white-space: nowrap;
+    width: 95%;
+}
+
+.videoThumbnail .views {
+    bottom: 1%;
+    color: white;
+    font-size: 70%;
+    left: 2%;
+    position: absolute;
+}
+
+.videoThumbnail .time {
+    bottom: 1%;
+    color: white;
+    font-size: 70%;
+    position: absolute;
+    right: 2%;
+}
+
+.videoThumbnail img {
+    border: medium none;
+    height: 100%;
+    width: 100%;
+}
+
+.videoThumbnail {
+    display: block;
+    float: left;
+    height: 103px;
+    position: relative;
+    width: 184px;
+	border:0;
+	padding:0;
+}
+
+/*  END of basecamp-ss  ------------------------------------------------------------------------------- */

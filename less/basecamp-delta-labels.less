@@ -1,0 +1,70 @@
+//
+// Freescale Labels
+// --------------------------------------------------
+// Label mixin
+// -------------------------
+.fsl-label-variant(@bg-color: 'inherit', @border-color:@fsl-green, @text-color: @fsl-green) {
+  background-color: @bg-color;
+  border-color: @border-color;
+  color: @text-color;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      // background-color: darken(@bg-color, 10%);
+      background-color: @bg-color;
+      color: @text-color;
+    }
+  }
+}
+
+.fsl-label {
+  display: inline;
+  padding: .1em .5em .1em;
+  font-size: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1;
+  // color: @label-color;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: .10em;
+  border:1px solid;
+  // border-color: @
+
+  // Add hover effects, but only for links
+  &[href] {
+    &:hover,
+    &:focus {
+      color: @fsl-white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  // Empty labels collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+}
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-orange {
+    .fsl-label-variant(@nxp-deep-orange, @nxp-deep-orange, @fsl-white);
+}
+.label-white {
+  .fsl-label-variant(@fsl-white, @fsl-white, @nxp-deep-orange);
+}
+
+.label-green {
+  .fsl-label-variant();
+}
+
