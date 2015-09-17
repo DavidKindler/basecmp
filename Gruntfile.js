@@ -96,19 +96,24 @@ module.exports = function(grunt) {
       development: {
         options: {
           compress: false,
-          // yuicompress: true,
-          // optimization: 2,
+           ieCompat: true,
+            plugins: [
+                  // new (require('less-plugin-autoprefix'))({browsers: ["last 2 versions"]}),
+                  // new (require('less-plugin-clean-css'))(cleanCssOptions)
+                  new (require('less-plugin-clean-css'))('advanced')
+                ],
           banner: "/* Updated <%= grunt.template.date ('yyyy-mm-dd') %> */\n"
         },
         files: {
           // target.css file: source.less file
-          "css/basecamp.css": "less/basecamp.less",
-          "css/basecamp-only-icons.css": "less/basecamp-only-icons.less",
-          "css/basecamp-only-buttons.css": "less/basecamp-only-buttons.less",
-          "css/basecamp-legacy-header-footer-progressive.css": "less/basecamp-legacy-header-footer-progressive.less",
-          "css/basecamp-legacy-header-footer.css": "less/basecamp-legacy-header-footer.less",
-          "css/basecamp-no-header-footer.css": "less/basecamp-no-header-footer.less",
-          "css/thesink.css": "less/thesink.less"
+           "css/nxp-common.css": "less/nxp-common.less"
+          // "css/basecamp.css": "less/basecamp.less",
+          // "css/basecamp-only-icons.css": "less/basecamp-only-icons.less",
+          // "css/basecamp-only-buttons.css": "less/basecamp-only-buttons.less",
+          // "css/basecamp-legacy-header-footer-progressive.css": "less/basecamp-legacy-header-footer-progressive.less",
+          // "css/basecamp-legacy-header-footer.css": "less/basecamp-legacy-header-footer.less",
+          // "css/basecamp-no-header-footer.css": "less/basecamp-no-header-footer.less",
+          // "css/thesink.css": "less/thesink.less"
 
         }
       },
@@ -123,13 +128,14 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "css/basecamp.min.css": "less/basecamp.less",
-          "css/basecamp-only-icons.min.css": "less/basecamp-only-icons.less",
-          "css/basecamp-only-buttons.min.css": "less/basecamp-only-buttons.less",
-          "css/basecamp-legacy-header-footer-progressive.min.css": "less/basecamp-legacy-header-footer-progressive.less",
-          "css/basecamp-legacy-header-footer.min.css": "less/basecamp-legacy-header-footer.less",
-          "css/basecamp-no-header-footer.min.css": "less/basecamp-no-header-footer.less",
-          "css/thesink.min.css": "less/thesink.less"
+          "css/nxp-common.min.css": "less/nxp-common.less"
+          // "css/basecamp.min.css": "less/basecamp.less",
+          // "css/basecamp-only-icons.min.css": "less/basecamp-only-icons.less",
+          // "css/basecamp-only-buttons.min.css": "less/basecamp-only-buttons.less",
+          // "css/basecamp-legacy-header-footer-progressive.min.css": "less/basecamp-legacy-header-footer-progressive.less",
+          // "css/basecamp-legacy-header-footer.min.css": "less/basecamp-legacy-header-footer.less",
+          // "css/basecamp-no-header-footer.min.css": "less/basecamp-no-header-footer.less",
+          // "css/thesink.min.css": "less/thesink.less"
         }
       }
     },
@@ -202,11 +208,11 @@ module.exports = function(grunt) {
 
  grunt.registerTask('build',[
         'clean',
+        'buildcss',
         'copy'
-        // 'cssmin'
     ]);
 
   grunt.registerTask('default', ['server']);
   grunt.registerTask('watchLess', ['watch:styles']);
-  grunt.registerTask('unCSS', ['uncss', 'cssmin']);
+  grunt.registerTask('buildcss',['less']);
 };
