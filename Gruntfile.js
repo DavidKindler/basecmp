@@ -19,9 +19,34 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   grunt.initConfig({
- // Empties folders to start fresh
+    compress: {
+      less: {
+        options: {
+          archive: 'resources/less.zip'
+        },
+        files: [
+          // {src: ['less/*'], dest: 'resources/', filter: 'isFile'},
+          {expand:true,flatten: true, src: 'less/**',filter:'isFile'}
+        ]
+      },
+      nxptemplate: {
+        options: {
+          archive: 'resources/nxp-template.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: 'templates/nxp-template.html',dest:'/html',filter:'isFile'},
+          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      }
+    },
+   // Empties folders to start fresh
     clean: {
       dest : {
         files: [{
@@ -209,6 +234,7 @@ module.exports = function(grunt) {
  grunt.registerTask('build',[
         'clean',
         'buildcss',
+        'compress',
         'copy'
     ]);
 
