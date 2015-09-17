@@ -1,0 +1,221 @@
+.back-to-top {
+/*display: none;*/
+margin-top: 10px;
+margin-left: 10px;
+padding: 4px 10px;
+font-size: 12px;
+font-weight: 500;
+color: #999;
+}
+
+/*header.navbar {margin-bottom: 0px;}*/
+/*
+.navbar-header {float: left; clear:none;}
+.navbar-header:after, .navbar {clear:none;}
+*/
+
+.fsl-docs-header {
+    position:relative;
+    padding:0px;
+    color:linen;
+    text-align:center;
+    text-shadow:0 1px 0 rgba(0, 0, 0, .1);
+    /*height:300px;*/
+    overflow: hidden;
+    /*background-color:#F36A1B;*/
+    /*background-image: url('../img/KINETIS_K2_NEXT_GENERATION.jpg'); */
+    /*background-size:cover;*/
+}
+
+.fs-docs-header img {width:100%;}
+.fsl-docs-header .row { position: absolute; top: 0; padding-left: 20px;}
+.fsl-docs-header h1 {font-size: 30px; color:linen;}
+.fsl-docs-header p {font-size: 20px;}
+.fsl-docs-header #draftmode h2 {padding-top:100px; color:red; font-size:70px;
+    transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg); /* IE 9 */
+    -webkit-transform:rotate(-30deg); /* Opera, Chrome, and Safari */
+}
+
+.fsl-docs-nav {
+    margin-bottom:0;
+    background-color:#ff4f00;
+    border-bottom:0px;
+}
+
+.fsl-docs-nav .navbar-brand, .fsl-docs-nav .navbar-nav>li>a {
+    color:white;
+    /*color:#563d7c;*/
+    font-weight:500
+}
+.fsl-docs-nav .navbar-nav>li>a:hover, .fsl-docs-nav .navbar-nav>.active>a, .fsl-docs-nav .navbar-nav>.active>a:hover {
+    color:white;
+    background-color:#ff8f5d;
+    /*background-color:#f9f9f9*/
+}
+.fsl-docs-nav .navbar-toggle .icon-bar {
+    background-color:white;
+    /*background-color:#563d7c*/
+}
+.fsl-docs-nav .navbar-header .navbar-toggle {
+    border-color:#fff
+}
+.fsl-docs-nav .navbar-header .navbar-toggle:hover, .fsl-docs-nav .navbar-header .navbar-toggle:focus {
+    background-color:#ff4f00;
+    border-color: white;
+    /*background-color:#f9f9f9;*/
+    /*border-color:#f9f9f9;*/
+}
+
+
+
+#iconList, #parametric-icons {font-size: 20px;}
+.iconInfo {font-size:20px; float;left; padding:10px; border-bottom:1px solid lightgray; width:250px; display: inline-block; text-align: center;}
+
+
+
+@media (min-width:768px) {
+    .fs-docs-header {
+        height:300px;
+    }
+    
+    .fsl-docs-header h1 {
+        font-size:50px;
+    }
+
+}
+@media (min-width:992px) {
+    .fsl-docs-header  {
+        height:350px;    
+    }
+}
+
+
+
+
+.fsl-docs-sidebar {display: none;}
+
+.fsl-docs-sidebar.affix {
+    /*position:static;*/
+    top:0;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.fsl-docs-sidebar.affix-bottom {
+    /*position:static;*/
+    bottom:10;
+    /*margin-top:20px;*/
+    /*margin-bottom:20px;*/
+}
+
+.fsl-docs-sidebar .nav .nav {display: none;}
+.fsl-docs-sidebar .nav>.active>.nav {display: block;}
+.fsl-docs-sidebar .nav .nav  li {padding-left: 10px;}
+/*.fsl-docs-sidebar .nav .nav.active-sidebar, .fsl-docs-sidebar .nav .nav .active, .fsl-docs-sidebar .nav>.active>.nav  {display:block; }*/
+
+@media (min-width:992px) {
+    .fsl-docs-sidebar {
+        /*padding-left:20px;*/
+        display: block;
+        margin-top: 20px;
+    }
+    
+}
+
+
+.fsl-docs-sidebar .nav>li>a {
+    display:block;
+    font-size:13px;
+    font-weight:500;
+    color:#999;
+    padding:2px 20px
+}
+
+
+.fsl-docs-sidebar .nav>li>a:hover, .fsl-docs-sidebar .nav>li>a:focus {
+    padding-left:19px;
+    color:#563d7c;
+    text-decoration:none;
+    background-color:transparent;
+    border-left:1px solid #563d7c
+}
+.fsl-docs-sidebar .nav>.active>a, .fsl-docs-sidebar .nav>.active:hover>a, .fsl-docs-sidebar .nav>.active:focus>a {
+    padding-left:18px;
+    font-weight:700;
+    color:#563d7c;
+    background-color:transparent;
+    border-left:2px solid #563d7c
+}
+
+
+/*.fsl-docs-sidebar .nav>li.active>.nav {display:block;  padding-left: 25px;}*/
+/*.fsl-docs-sidebar .nav .nav.active-sidebar {display:block;}*/
+.is-hidden{
+    color: #CCC;
+    background-color: #F9F9F9!important;
+}
+
+.is-visible {
+    color: #468847;
+    background-color: #DFF0D8!important;
+}
+
+.show-grid.row {margin-bottom: 10px; }
+
+.show-grid [class^="col-"] {
+  /*background-color: yellow;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #468847;
+  background-color: rgba(70,136,71,0.15);
+  border:1px solid #468847;
+}
+
+ .bc-example {
+position: relative;
+padding: 45px 15px 15px;
+background-color: #fff;
+padding: 45px 15px 15px;
+margin: 0 -15px 15px;
+box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+border-color: #E5E5E5 #EEE #EEE;
+border-style: solid;
+border-width: 1px 0;
+
+margin-left: 0;
+margin-right: 0;
+background-color: #FFF;
+border-width: 1px;
+border-color: #DDD;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+
+} 
+
+.bc-example:after {
+content: "Example";
+position: absolute;
+top: 15px;
+left: 15px;
+font-size: 12px;
+font-weight: 700;
+color: #BBB;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.bc-example+.highlight {
+margin-top: -16px;
+margin-left: 0;
+margin-right: 0;
+border-width: 1px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+/*margin: -15px -15px 15px;*/
+border-radius: 0;
+}
+
+.highlight pre {border-top-left-radius: 0; border-top-right-radius: 0;}
+
+.bc-example>p>.close { float: none; }

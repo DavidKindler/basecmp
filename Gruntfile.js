@@ -17,8 +17,81 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.initConfig({
+ // Empties folders to start fresh
+    clean: {
+      dest : {
+        files: [{
+          dot: true,
+          src: [
+            '.tmp',
+            'dist/*'
+          ]
+        }]
+      }
+    },
+    copy: {
+        css: {
+            expand: true,
+            src: ['nxprebrand/css/*', 'css/basecamp-docs.css'],
+            dest: 'dist/css',
+            flatten:true,
+            filter: 'isFile'
+        },
+        html: {
+            expand: true,
+            src:['*.html'],
+            dest: 'dist/'                
+        },
+        less: {
+            expand: true,
+            src:['less/*'],
+            dest: 'dist/less',
+            flatten:true,
+            filter: 'isFile'
+        },
+        js: {
+            expand: true,
+            src:['js/basecamp-docs.js','js/basecamp-template.js','js/bootstrap.min.js', 'js/homepage.js','js/nxp-nav.js'],
+            dest: 'dist/js',
+            flatten:true,
+            filter: 'isFile'
+        },
+        font: {
+            expand: true,
+            src:['fonts/*'],
+            dest: 'dist/fonts',
+            flatten:true,
+            filter: 'isFile'
+        },
+        img: {
+            expand: true,
+            src:['img/*'],
+            dest: 'dist/img',
+            flatten:true,
+            filter: 'isFile'
+        },
+        templates: {
+            expand: true,
+            src:['templates/*'],
+            dest: 'dist/templates',
+            flatten:true,
+            filter: 'isFile'
+        },
+        resources: {
+            expand: true,
+            src:['resources/*.zip'],
+            dest: 'dist/resources',
+            flatten:true,
+            filter: 'isFile'
+        }
+
+
+
+    },
     less: {
       development: {
         options: {
@@ -126,6 +199,12 @@ module.exports = function(grunt) {
       'watch'
     ]);
   });
+
+ grunt.registerTask('build',[
+        'clean',
+        'copy'
+        // 'cssmin'
+    ]);
 
   grunt.registerTask('default', ['server']);
   grunt.registerTask('watchLess', ['watch:styles']);

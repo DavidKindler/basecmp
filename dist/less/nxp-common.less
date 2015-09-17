@@ -1,0 +1,131 @@
+
+		@import "variables.less";
+		@import "mixins.less";
+
+		/*! **** NORMALIZE  ****/
+		@import "normalize.less";
+		/*! **** END NORMALIZE  ****/
+
+		
+
+		html {
+		  font-family: @font-family-base;
+		  font-size: @font-size-base;
+		  line-height: @line-height-base;
+		  .box-sizing(border-box);
+		  position: relative;
+		}
+		*,*:before, *:after {
+		 .box-sizing(border-box);
+		}
+
+
+		// @import "print.less";
+		// Core CSS
+		@import "scaffolding.less";
+		@import "type.less";
+		@import "code.less";
+		@import "grid.less";
+    @import "spacing.less";
+
+		@import "tables.less";
+		@import "forms.less";
+		@import "buttons.less";
+
+		// Components
+		@import "component-animations.less";
+		// @import "glyphicons.less";
+		@import "dropdowns.less";
+		@import "button-groups.less";
+		@import "input-groups.less";
+		@import "navs.less";
+		@import "navbar.less";
+		// @import "breadcrumbs.less";
+		@import "pagination.less";
+		// @import "pager.less";
+		@import "labels.less";
+		@import "badges.less";
+		// @import "jumbotron.less";
+		@import "thumbnails.less";
+		@import "alerts.less";
+		// @import "progress-bars.less";
+		@import "media.less";
+		@import "list-group.less";
+		@import "panels.less";
+		@import "wells.less";
+		@import "close.less";
+
+		// Components w/ JavaScript
+		@import "modals.less";
+		@import "tooltip.less";
+		@import "popovers.less";
+		@import "carousel.less";
+
+		// Utility classes
+		@import "utilities.less";
+		@import "responsive-utilities.less";
+
+
+		@import "basecamp-delta-colors.less";
+
+/*! **** ICONS ELEMENTS BEGIN  ****/
+
+
+		@import "basecamp-delta-icons.less";
+@randomNumber : ceil(`Math.random()*100000`);
+		
+// Font mixin 
+.font-mixin(@font-family-name, @font-file-name, @font-path: "../fonts/", @weight: normal, @style: normal, @update: @randomNumber){
+  font-family: @font-family-name;
+  src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  src: ~"url('@{font-path}@{font-file-name}.eot?#iefix@{update}') format('embedded-opentype')",
+       ~"url('@{font-path}@{font-file-name}.woff?@{update}') format('woff')",
+       ~"url('@{font-path}@{font-file-name}.ttf?@{update}') format('truetype')",
+       ~"url('@{font-path}@{font-file-name}.svg?@{update}#@{font-file-name}') format('svg')";
+       // ~"url('@{font-path}@{font-file-name}.svg#@{icon-font-svg-id}') format('svg')";
+       font-weight: @weight;
+       font-style: @style;
+}
+
+
+.font-base64-mixin(@font-family-name, @font-file-name, @font-path: "../fonts/", @weight: normal, @style: normal, @update: @randomNumber, @base64){
+  font-family: @font-family-name;
+  src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  src: @base64;
+  font-weight: @weight;
+  font-style: @style;
+}
+
+
+@font-face {
+  @font-family-name: "icomoon";
+  @font-file-name: "icomoon";
+  @font-path: "../fonts/";
+  // @font-path: "//www.freescale.com/files/graphic/icons/";
+  // @font-path: "//styles-uat.freescale.com/files/graphic/icons/";
+  // @font-path: "//uat.freescale.com/files/graphic/icons/";
+  // @font-path: "//www.freescale.com/files/graphic/icons/";
+  // @font-path: "//ewmlx1.am.freescale.net/basecamp/fonts/";
+  .font-mixin(@font-family-name,@font-file-name,@font-path,normal, normal, @randomNumber); 
+};
+
+@import "lato-base64.less" ;  //import lato font as base64 encoded file
+
+@import "basecamp-delta-header-footer.less";
+@import "basecamp-delta-mega.less";
+@import "basecamp-delta-buttons.less";
+@import "basecamp-delta-labels.less";
+
+
+@import "FSL.toplevel.less";
+@import "FSL.TOPLEVEL_DELTA.less";
+@import "FSL.public_common.less";
+@import "FSL.taxonomy_css.less";
+@import "FSL.reco_styles.less";
+@import "FSL.webnote_style.less";
+@import "FSL.theme.less";
+@import "FSL.basecamp-asp.less";
+@import "FSL.basecamp-ssp.less";
+@import "FSL.asp-custom.less";
+@import "FSL.lightSlider.less";
+@import "FSL.nxp-rebrand-fixes.less";
