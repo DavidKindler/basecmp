@@ -61,7 +61,7 @@ module.exports = function(grunt) {
     copy: {
         css: {
             expand: true,
-            src: ['nxprebrand/css/*', 'css/basecamp-docs.css'],
+            src: ['css/*', 'css/basecamp-docs.css'],
             dest: 'dist/css',
             flatten:true,
             filter: 'isFile'

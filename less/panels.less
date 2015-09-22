@@ -195,11 +195,29 @@
 .panel-group {
   margin-bottom: @line-height-computed;
 
+  &.accordion {
+    border:none;
+    // border-bottom:1px solid @nxp-gray-light; 
+    .box-shadow(none);
+
+    .panel-title {
+      a span{color: @nxp-body-text;}
+      a {color: @nxp-orange;}
+      a:hover {text-decoration: none; cursor:pointer;}
+      a span.icon-arrow-right6:before{ content: "\e3cd"; }
+      a.collapsed span.icon-arrow-right6:before{ content: "\e3cb"; }
+    }
+  }
+
+
   // Tighten up margin so it's only between panels
   .panel {
     margin-bottom: 0;
+    border:none;
+    border-bottom: 1px solid @nxp-gray-light;
     border-radius: @panel-border-radius;
     overflow: hidden; // crop contents when collapsed
+    &:first-child {border-top:1px solid @nxp-gray-light;}
     + .panel {
       margin-top: 5px;
     }
@@ -208,7 +226,7 @@
   .panel-heading {
     border-bottom: 0;
     + .panel-collapse .panel-body {
-      border-top: 1px solid @panel-inner-border;
+      // border-top: 1px solid @panel-inner-border;
     }
   }
   .panel-footer {
@@ -222,7 +240,7 @@
 
 // Contextual variations
 .panel-default {
-  .panel-variant(@panel-default-border; @panel-default-text; @panel-default-heading-bg; @panel-default-border);
+  .panel-variant(@panel-default-border; @panel-default-text; "none"; @panel-default-border);
 }
 .panel-primary {
   .panel-variant(@panel-primary-border; @panel-primary-text; @panel-primary-heading-bg; @panel-primary-border);

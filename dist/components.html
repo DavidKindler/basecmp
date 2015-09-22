@@ -10,20 +10,7 @@
 <body>
  <script>writeHeader();</script>
 
- <!-- Docs page layout -->
- <!-- <div class="fsl-docs-header" >
-  <img class="img-responsive" style="width:100%" src="./img/KINETIS_K2_NEXT_GENERATION.jpg" alt="">
-  <div class="row">
-    <span class="col-sm-6 col-xs-8 col-md-7">
-      <h1>Basecamp Components</h1>
-      <p>
-        Reusable components to build interactive pages.
-      </p>
-    </span>
-    <div class="col-xs-4" id='draftmode'><h2>DRAFT</h2></div>
-  </div>
-</div>
- -->
+
 <div class="fsl-container container">  
   <div class="row" id="content">
     <div class="col-md-9">
@@ -32,11 +19,110 @@
  
   <h3 id="side-navigation" class="page-header">Side Navigation</h3>
 
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
+  <p >For homepage and overview pages that require a left navigational menu use the code below to identify the leftnav.  The column is assigned the id <code>#leftnav</code>.  The <code>ul</code> is assigned the class <code>.leftnav</code>. The <code>.hidden-sm</code> and <code>.hidden-xs</code> classes will hide the left nav in mobile and tablets.  Remove those classes if you want the left nav shown for mobile and tablet platforms.</p>
+<div class="bc-example">
+<div class="row">
+  <div class="col-sm-3 hidden-sm hidden-xs" id="leftnav">
+    <ul class="leftnav">
+    <h2>About</h2>
+    <li><a href="#nogo">NXP Worldwide</a></li>
+    <li class="selected"><a href="#nogo">Link 1</a>
+      <ul>
+      <li ><a href="#nogo"><span class="icon-stop2"></span>&nbsp;Sub-Link 1</a></li>
+      <li ><a href="#nogo"><span class="icon-stop2"></span>&nbsp;Sub-Link 2</a></li>
+      <li ><a href="#nogo"><span class="icon-stop2"></span>&nbsp;Sub-Link 3</a></li>
+      <li ><a href="#nogo"><span class="icon-stop2"></span>&nbsp;Sub-Link 4</a></li>
+        </ul>
+    </li>
+    <li><a href="#nogo">Link 2</a></li>
+    <li><a href="#nogo">Link 3</a></li>
+    <li><a href="#nogo">Link 4</a></li>
+    </ul>
+    </div>
 
+     <div class="col-sm-9"> 
+     <div id="bc">
+        <ul>
+          <li><a href="http://www.nxp.com">NXP</a></li>
+          <li><a href="#nogo">About</a></li> 
+          <li>Us</li>
+        </ul> 
+      </div>
+      <h1>H1 Heading</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quasi quod quibusdam nesciunt recusandae in, quisquam deserunt nulla vero. Quidem atque, eligendi, quas eius ipsam provident odit qui sit dicta.</p>
+   </div>
+ </div>
+  </div>
+  <div class="highlight">
+ <pre>
+ &lt;div class="row"&gt;
+  &lt;div class="col-sm-3 hidden-sm hidden-xs" id="leftnav"&gt;
+    &lt;ul class="leftnav"&gt;
+    &lt;h2&gt;About&lt;/h2&gt;
+    &lt;li&gt;&lt;a href="#nogo"&gt;NXP Worldwide&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="selected"&gt;&lt;a href="#nogo"&gt;Link 1&lt;/a&gt;
+      &lt;ul&gt;
+      &lt;li &gt;&lt;a href="#nogo"&gt;&lt;span class="icon-stop2"&gt;&lt;/span&gt;&nbsp;Sub-Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li &gt;&lt;a href="#nogo"&gt;&lt;span class="icon-stop2"&gt;&lt;/span&gt;&nbsp;Sub-Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li &gt;&lt;a href="#nogo"&gt;&lt;span class="icon-stop2"&gt;&lt;/span&gt;&nbsp;Sub-Link 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li &gt;&lt;a href="#nogo"&gt;&lt;span class="icon-stop2"&gt;&lt;/span&gt;&nbsp;Sub-Link 4&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nogo"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nogo"&gt;Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#nogo"&gt;Link 4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/div&gt;
+
+     &lt;div class="col-sm-9"&gt; 
+     &lt;div id="bc"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="http://www.nxp.com"&gt;NXP&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#nogo"&gt;About&lt;/a&gt;&lt;/li&gt; 
+          &lt;li&gt;Us&lt;/li&gt;
+        &lt;/ul&gt; 
+      &lt;/div&gt;
+      &lt;h1&gt;H1 Heading&lt;/h1&gt;
+     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quasi quod quibusdam nesciunt recusandae in, quisquam deserunt nulla vero. Quidem atque, eligendi, quas eius ipsam provident odit qui sit dicta.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;
+</pre>
+  </div>
   <h3 id="tabs" class="page-header">Tabs</h3>
 
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
+  <p>For summary pages where tabs are needed use the <code>.tabBar</code> class.  The <code>#selectedTab</code> id will be assigned automatically when tab is clicked.</p>
+<div class="bc-example">
+  <div class="row">
+<div class="tabBar">
+    <ul>
+     <li id="selectedTab"><a href="#nogo">Overview</a></li>
+     <li><a href="#nogo">Documentation</a></li>
+     <li><a href="#nogo">Software &amp; Tools</a></li>
+    </ul>
+</div>
+  </div>
+  <div class="row">
+   
+    <div class="col-sm-12">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quae sit nemo aliquid molestiae ipsa ea laborum consectetur, sunt ducimus labore placeat nesciunt voluptate velit neque iste, iusto, ipsum veritatis.</p>
+    </div>
+  </div>
+  </div>
+<div class="highlight">
+<pre>
+
+  &lt;div class="row"&gt;
+    &lt;div class="tabBar"&gt;
+        &lt;ul&gt;
+         &lt;li id="selectedTab"&gt;&lt;a href="#nogo"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#nogo"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href="#nogo"&gt;Software &amp; Tools&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </pre>
+</div>
 
   <h3 id="modal" class="page-header">Pop-Up/Modal Window</h3>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
@@ -45,15 +131,55 @@
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
 
   <h3 id="treeview" class="page-header">Tree view</h3>
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
+  <p >To use this component requires the jquery treeview plugin.  It is loaded by the jquery.plus.min.js file</p>
+  <pre> 
+&lt;script src="http://cache.freescale.com/shared/js/jquery/jquery.plus.min.js"&gt;&lt;/script&gt;
+  </pre>
+  <p>Use the <code>.treeview</code> class on the <code>ul</code>.  List items can be initially closed or opened.  Hitareas are used to control expansion and collapsing the tree branches.  List items may or may not contain anchor tags.</p>
+  <div class="bc-example">
+    
+    <ul class="treeview">
+      <li class="closed expandable"><div class="hitarea collapsible-hitarea"><span class="innericon"></span></div>
+        <a href="#nogo" >Link 1</a>
+        <ul >
+          <li class="closed expandable"><div class="hitarea expandable-hitarea"><span class="innericon"></span></div><a href="#nogo" >Sub Link 1</a>
+            <ul>
+              <li>Another Link</li>
+              <li><a href="#nogo">Here too</a></li>
+            </ul>
+          </li>
+          <li class="expandable"><a href="#nogo">Sub Link 2</a></li>
+         </ul>
+       </li>
+    </ul>
+  </div>
+  <div class="highlight">
+    <pre>
 
+&lt;ul class="treeview"&gt;
+  &lt;li class="closed expandable"&gt;&lt;div class="hitarea collapsible-hitarea"&gt;&lt;span class="innericon"&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;a href="#nogo" &gt;Link 1&lt;/a&gt;
+    &lt;ul &gt;
+      &lt;li class="closed expandable"&gt;&lt;div class="hitarea expandable-hitarea"&gt;&lt;span class="innericon"&gt;&lt;/span&gt;&lt;/div&gt;&lt;a href="#nogo" &gt;Sub Link 1&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Another Link&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#nogo"&gt;Here too&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class="expandable"&gt;&lt;a href="#nogo"&gt;Sub Link 2&lt;/a&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+      
+    </pre>
+  </div>
   <h3 id="blockdiagrams" class="page-header">Block Diagrams</h3>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
 
   <h3 id="showhide" class="page-header">Show-Hide</h3>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
 
-  <h3 id="accordion" class="page-header">Accordion</h3>
+  <h3 id="accordions" class="page-header">Accordion</h3>
   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cupiditate, quae, laborum, natus neque cumque alias nesciunt rerum saepe officia soluta maxime suscipit iste voluptas dolorem nemo assumenda totam iusto.</p>
 
   <h3 id="slideshows" class="page-header">Slideshows</h3>
@@ -72,7 +198,7 @@
                                     <li><a href="#treeview">Tree View</a>
                                     <li><a href="#blockdiagrams">Block Diagrams</a>
                                     <li><a href="#showhide">Show-Hide</a>
-                                    <li><a href="#accordiom">Accordion</a>
+                                    <li><a href="#accordions">Accordion</a>
                                     <li><a href="#slideshows">Slideshows</a>
                                 </ul>
                                 <a class='back-to-top' href='#top'>Back to top</a>
@@ -86,11 +212,17 @@
 <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+
+  <!-- <script src="http://styles.freescale.com/v1.27/shared/js/jquery/jquery.plus.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/basecamp-docs.js"></script>
+  <script src="http://cache.freescale.com/shared/js/jquery/jquery.plus.min.js"></script>
+<script>
+  
 
-
+$('.treeview').treeview();
+</script>
 
 
 

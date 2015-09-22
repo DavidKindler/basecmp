@@ -24,7 +24,7 @@
 #obviousBar li{background-position:right;height:2em;background-image:none;background-color:#f5f5f5;background:url(//www.freescale.com/files/worldwide/shared/images/misc/ffffff_017bba.png) repeat scroll 50% 50% #F5F5F5;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;border:0;margin:0;padding:0 .5em;}
 #obviousRule{height:9px;width:752px;background-position:bottom;margin:0;}
 .tabBar li a{text-decoration:none;display:block;width:158px;height:17px;background-image:url(../images/tabBG_off.jpg);background-repeat:no-repeat;text-align:center;padding-top:4px;color:#526172;}
-li#selectedTab a{background-image:url(../images/tabBG_on.jpg);}
+// li#selectedTab a{background-image:url(../images/tabBG_on.jpg);}
 .miniTabsBar li a{text-decoration:none;display:block;width:134px;height:17px;background-image:url(../images/tabBG_off.jpg);background-repeat:no-repeat;text-align:center;padding-top:4px;color:#526172;}
 .productHomeBox,.rhColExpand,.pHB_bullet{height:auto;overflow:hidden;margin:0;}
 .productHomeBox h4,.pHB_bullet h4{margin:0;padding:none;}
@@ -301,7 +301,7 @@ div.hrw{display:none;visibility:hidden;}
 // .rc .iu h1{font-size:1.1em;line-height:1.2em;margin:0;}
 .iu ul li {padding-bottom: 1em;}
 .iu ul li strong{color:@nxp-body-text;margin:0;}
-.iu h2,.iu h6{font-weight:700;-webkit-border-radius:.3em;-webkit-border-top-left-radius:0;-moz-border-radius:.3em;-moz-border-radius-topleft:0;border-radius:.3em;border-top-left-radius:0;padding:.7em .2em .5em .8em;}
+.iu h6{font-weight:700;-webkit-border-radius:.3em;-webkit-border-top-left-radius:0;-moz-border-radius:.3em;-moz-border-radius-topleft:0;border-radius:.3em;border-top-left-radius:0;padding:.7em .2em .5em .8em;}
 .paiu{border:none;}
 // .parc .paiu h1{font-size:1.1em;line-height:1.2em;margin:0;}
 .paiu ul li strong{color:@nxp-body-text;margin:0;}
@@ -364,17 +364,13 @@ div.hrw{display:none;visibility:hidden;}
 .tabBar li { margin-right: 2px;}
 .tabBar li a, #tabList ul li a{margin-right:0;background-image:none;background-color:#f2f4f6;color:@nxp-body-text;font-weight:700;width:auto;height:2em;display:block;border:1px solid @nxp-gray-medium;-webkit-border-top-left-radius:.3em;-webkit-border-top-right-radius:.3em;-moz-border-radius-topleft:.3em;-moz-border-radius-topright:.3em;border-top-left-radius:.3em;border-top-right-radius:.3em;white-space:nowrap;outline:none;padding:0 .75em;}
 .tabBar li a:hover,.tabBar li a:hover,#tabList ul li a:hover{background:@nxp-gray-light;color:white;border:1px solid @nxp-gray-medium;}
-.psp-jsp #selectedTab a,.lsum-jsp #selectedTab a{background:@nxp-white;color:@nxp-body-text;cursor:pointer;border-color:@nxp-white;}
-.psp-jsp #selectedTab a:hover,.lsum-jsp #selectedTab a:hover{background:@nxp-white;color:@nxp-body-text;}
+ #selectedTab a {background:@nxp-white;color:@nxp-body-text;cursor:pointer;border-color:@nxp-white;}
+ #selectedTab a:hover{background:@nxp-white;color:@nxp-body-text;}
 
 .tabBar li#selectedTab a {
   	border:1px solid @nxp-gray-medium;
   	border-bottom:1px solid @nxp-white;
 }
-
-// div#pgctwrp.psp-jsp div#mncnt1.iframe h1 {font-size: 24px; font-weight: 400; margin-top:10px;}
-
-
 
 .psp-jsp #mncnt1 .tabBar + div,.lsum-jsp #mncnt1 .tabBar + div{clear:both;}
 .psp-jsp #staticFile #obviousBar{margin:0 0 1em;}
