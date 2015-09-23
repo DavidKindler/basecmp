@@ -81,9 +81,9 @@
 // @btn-yellow-xlight-bg:            @fsl-yellow-xlight;
 // @btn-yellow-xlight-border:        darken(@btn-yellow-xlight-bg,2%);
 
-// @btn-green-color:             #fff;
-// @btn-green-bg:                @fsl-green;
-// @btn-green-border:            darken(@btn-green-bg,2%);
+@btn-green-color:             #fff;
+@btn-green-bg:                @nxp-green;
+@btn-green-border:            darken(@btn-green-bg,2%);
 
 @btn-aqua-color:             #fff;
 @btn-aqua-bg:                @nxp-aqua;
@@ -95,9 +95,9 @@
   border:2px solid;
 }
 
-.btn-deep-orange {
-  .button-variant(@btn-deep-orange-color; @btn-deep-orange-bg; @btn-deep-orange-border);
-}
+// .btn-deep-orange {
+//   .button-variant(@btn-deep-orange-color; @btn-deep-orange-bg; @btn-deep-orange-border);
+// }
 
 .btn-orange {
   .button-variant(@btn-orange-color; @btn-orange-bg; @btn-orange-border);
@@ -171,9 +171,10 @@
 //   .button-variant(@btn-yellow-xlight-color; @btn-yellow-xlight-bg; @btn-yellow-xlight-border);
 // }
 
-// .btn-green {
-//   .button-variant(@btn-green-color; @btn-green-bg; @btn-green-border);
-// }
+.btn-green {
+  .button-variant(@btn-green-color; @btn-green-bg; @btn-green-border);
+}
+
 .btn-aqua {
   .button-variant(@btn-aqua-color; @btn-aqua-bg; @btn-aqua-border);
 }

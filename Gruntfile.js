@@ -44,7 +44,35 @@ module.exports = function(grunt) {
           {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
           {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
         ]
-      }
+      },
+      investortemplate: {
+        options: {
+          archive: 'resources/investor-relations.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: ['templates/financial-information.html','templates/financial-results.html','templates/investor-relations.html','templates/sec-filings.html'],dest:'/html',filter:'isFile'},
+          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      },
+      mediatemplate: {
+        options: {
+          archive: 'resources/media-center.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'},
+          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      },
+
+
     },
    // Empties folders to start fresh
     clean: {

@@ -2591,87 +2591,86 @@ div#divopacity1.loadingbar{  background: url('//www.freescale.com/files/css/thic
 
 // ******** TABLE class definitions *****************
 
-#mncnt table.table {
+table.table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 2px;
 }
 
-#mncnt table.table th,
-#mncnt table.table td {
+table.table th,
+table.table td {
   padding: 4px 4px;
   line-height: 16px;
   text-align: left;
   vertical-align: top;
 }
 
-#mncnt table.table td {
+table.table td {
   border-spacing: 0px;
 }
 
-#mncnt table.table th {
+table.table th {
   font-weight: bold;
 }
 
-#mncnt table.table thead th {
+table.table thead th, table.table thead td {
   vertical-align: top;
   border-right: 1px solid white;
-  background-color: #c4cfd1;
+  background-color: @nxp-gray-cool-light; 
 }
 
-#mncnt table.table thead td {
-  vertical-align: top;
-  border-right: 1px solid white;
-  background-color: #efefef; 
-}
-
-#mncnt .table.table-bordered {
-  border: 1px solid #dddddd;
+table.table.table-bordered {
+  border: 1px solid @nxp-gray-light;
   *border-collapse: collapse; 
 }
 
-#mncnt table.table-head-light thead td,
-#mncnt table.table-head-light thead th
+table.table-head-light thead td,
+table.table-head-light thead th
 {
-   background-color: #efefef; 
+   background-color: @nxp-gray-cool-light; 
 }
 
 
-#mncnt .table.table-bordered td {
-   border:1px solid #cccccc;
+table.table.table-bordered td {
+   border:1px solid @nxp-gray-light;
    border-collapse: collapse;
    *border-collapse: collapse;
 }
 
-#mncnt  .table.table-bordered th {
-  border-left: 1px solid #cccccc;
-  border-right:1px solid #cccccc;
-  border-top:1px solid #cccccc;
+table.table.table-bordered th {
+  border-left: 1px solid @nxp-gray-light;
+  border-right:1px solid @nxp-gray-light;
+  border-top:1px solid @nxp-gray-light;
   border-collapse: collapse;
   *border-collapse: collapse;
 }
 
-#mncnt .table.table-centered td {
+table.table.table-centered td {
   text-align: center;
   vertical-align: inherit;
 }
 
-#mncnt .table.table-centered th {
+table.table.table-centered th {
   text-align: center;
   vertical-align: inherit;
 }
 
-#mncnt table.table-bordered thead:first-child tr:first-child th { 
-  border-right: 1px solid white;
-  border-top: 1px solid #cccccc;
+table.table-bordered thead:first-child tr:first-child th { 
+  border-right: 1px solid @nxp-white;
+  border-top: 1px solid @nxp-gray-light;
 }
 
-#mncnt table.table-bordered thead:first-child tr:first-child th:last-child
-{ border-right:1px solid #cccccc;}
+table.table-bordered thead:first-child tr:first-child th:last-child
+{ border-right:1px solid @nxp-gray-light;}
 
-#mncnt table.table-striped tbody > tr:nth-child(even) > td,
-#mncnt table.table-striped tbody > tr:nth-child(even) > th {
-  background-color: #ecf0f1;
+table.table-striped tbody > tr:nth-child(even) > td,
+table.table-striped tbody > tr:nth-child(even) > th {
+  background-color: fade(@nxp-aqua,20%);
+}
+
+table.table-striped tbody > tr:nth-child(odd) > td,
+table.table-striped tbody > tr:nth-child(odd) > th {
+    background-color: @nxp-white;
 }
 
 // ********<-- END of TABLE class definitions --> *****************
