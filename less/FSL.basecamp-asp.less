@@ -2,11 +2,13 @@
 
 // #mncnt &, #mncnt1 & {
 .fsl-sp {
-	.col-sm-9.content, .col-sm-9 {width:78%; padding-right: 0px;}
+ 	 padding-top: 8px; margin-left:15px;
+	.col-sm-9.content { padding-right: 0px;}
 	 #contextnav.col-sm-3 { width:22%;}
 	#leftnav {
 		&.col-sm-3{width:22%;  padding-left:25px; padding-right:0px;}
   	}
+  .iu h2 {background-color: initial;}
   .leftnav{ 
 	  .leftnav 
 	}
@@ -39,11 +41,10 @@
 
 		// span.count {display: inline; color:@nxp-gray-medium;}	  	
 
-	  	#leftnav {
-	      font-size:12px; line-height: normal;
-	  		h2 {color: @nxp-body-text; font-size:1.3em; margin-bottom: 5px;}
-		   // &.col-sm-3, #contextnav.col-sm-3 {width:22%; padding-left:25px; padding-right:0px;}
-     }
+  #leftnav {
+      font-size:12px; line-height: normal;
+  		h2 {color: @nxp-body-text; font-size:1.3em; margin: 0px; }
+  }
 
 
  	.leftnav {
@@ -51,7 +52,7 @@
 		 	// border-bottom:1px solid @nxp-white; 
 		 	&.affix {top:10px; width:217px;}
         & > li { 
-        	 border-collapse: collapse;  background-color: @nxp-gray-xlight; border-top:1px solid @nxp-white;
+        	 border-collapse: collapse;  background-color: @nxp-gray-cool-light; border-top:1px solid @nxp-white;
         	
         	& > a {
 						color:@nxp-body-text; text-decoration: none; display: block;  font-weight:600; padding:5px 10px;
@@ -107,7 +108,7 @@
 							& > a {
 								background-color: @nxp-orange; color: @nxp-body-text;
 								& > span {
-									color: @nxp-black; font-size:9px; margin-right:3px;
+									color: @nxp-black; font-size:8px; margin-right:3px;
 								}
 							}
 						}
@@ -122,18 +123,18 @@
 								}
 							}
 							&.selected {
-								& a > span { font-size:9px;}
+								& a > span { font-size:14px;}
 							}
 						}
 						& ul { border-top:1px solid @nxp-white;
 							& li {
 								& a { color:@nxp-body-text; text-decoration: none;  padding: 4px 0px 4px 40px;	font-size:12px; text-indent:-12px;
 								& span {
-									color:@nxp-body-text; font-size: 8px; margin-right:3px;
+									color:@nxp-body-text; font-size: 14px; margin-right:3px; line-height: 12px;
 									}
 								}
 								&.selected {
-									& a > span { font-size:9px; color:@nxp-black;}
+									& a > span { font-size:14px; color:@nxp-black;}
 								}
 							}
 						}
@@ -334,7 +335,8 @@
 	   }
 	   .table > tbody> tr > td {
 	   	font-size: 12px; 
- 			& h3 {font-size: 14px;}
+	   	& a h3 {color: @link-color;}
+ 			& h3 {font-size: 14px; }
 	   }
 	
 

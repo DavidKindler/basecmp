@@ -431,13 +431,13 @@ dd {
     overflow: hidden;
 }
 
-* html #mncnt .rc {
-    margin: 0;
-    padding: 0;
-    padding-left: 0;
-    width: 212px;
-    float: right
-}
+// * html #mncnt .rc {
+//     margin: 0;
+//     padding: 0;
+//     padding-left: 0;
+//     width: 212px;
+//     float: right
+// }
  // =DEPRECATED - - =rc1 
 #mncnt .rc1 {
     margin: -143px 0 0;
@@ -2809,32 +2809,32 @@ height:0px;
 
 .iu-large-video {margin: 0.5em 0.4em 0.5em 0.9em;}
 .iu-large-video .play-video-n a{height: 120px;width: 185px;margin-left:-1px;margin-top:-1px;}
-.iu-large-video .video-inner-n img{width:185px !important;height:120px !important;}
+.iu-large-video .video-inner-n img{width:185px;height:120px;}
 .iu-large-video .video-inner-n{height:120px;width:185px;}
-.iu-large-video .thumbp {padding:3px 0 0 !important; clear:both;}
+.iu-large-video .thumbp {padding:3px 0 0; clear:both;}
 
 // /*START TEMPORAL STYLES FOR SNAP PROJECT - b25427*/
-.overview-jsp #mncnt .rc, .homepage-jsp #mncnt .rc{
-	width: 780px !important;
+#mncnt .rc{
+	width: 780px;
 	float:none;
 }
 
-.overview-jsp #mncnt .rc .iu h2, .homepage-jsp #mncnt .rc .iu h2 {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #e66a08;
+#mncnt .rc .iu h2 {
+    // background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    // color: #e66a08;
     font-size: 16px;
     font-weight: normal;
-    padding: 4px 3px 6px 8px;
+    padding: 4px 3px 6px 0px;
 }
 
-.overview-jsp #mncnt .rc .iu, .homepage-jsp #mncnt .rc .iu {
-    background-color: #f2f4f6;
+#mncnt .rc .iu {
+    background-color: @nxp-gray-cool-light;
     box-sizing: border-box;
     float: left;
-    margin: 10px 25px 0 0 !important;
-    overflow: visible !important;
-    padding: 10px !important;
-    width: 234px !important;
+    margin: 10px 25px 0 0 ;
+    overflow: visible;
+    padding: 10px;
+    width: 234px;
 	font-size:14px;
 }
 

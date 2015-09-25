@@ -20,8 +20,19 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-ftp-deploy');
 
   grunt.initConfig({
+     ftpPut: {
+        options: {
+            host: 'swellsoftware.com',
+            port: 22,
+            authKey: 'key1'
+        },
+        src: './dist',
+        dest: '/apps/branding',
+        exclusions : '[]'
+    },
     compress: {
       less: {
         options: {
@@ -269,4 +280,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['server']);
   grunt.registerTask('watchLess', ['watch:styles']);
   grunt.registerTask('buildcss',['less']);
+  grunt.registerTask('ftpPut',['ftpPut']);
 };

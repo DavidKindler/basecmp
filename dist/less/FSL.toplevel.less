@@ -994,27 +994,22 @@ display:block;
  // Modified width and float styling for CR-s9954 by b41911 start
 
 #mncnt .lc { width:754px; float:left;}
-#mncnt .rc { width:212px; float:right; }
-* html #mncnt .rc { width:212px; float:none; padding-left:6px; }
+// #mncnt .rc { width:212px; float:right; }
+// * html #mncnt .rc { width:212px; float:none; padding-left:6px; }
 
-#mncnt .fsl-sp .infounitrule .rc {width:752px;clear:both;}
-#mncnt .fsl-sp .infounitrule .rc {float:none;}
-* html #mncnt .fsl-sp .infounitrule .rc { width:752px; float:none; padding-left:6px;}
+.fsl-sp .infounitrule .rc {clear:both; float:none;}
 
 #mncnt .parc { width:212px; float:right; }
 * html #mncnt .parc { width:212px; float:none; padding-left:6px; }
 
-#mncnt .fsl-sp .infounitrule .rc .iu:nth-of-type(n+4) 
-{ 
-    display: none; 
-}
+.rc .iu:nth-of-type(n+4) { display: none!important; }
 
 .infounitrule .divblock,.video-outer-n .thumbp a{display:block;}
 
 
  // Modified width and float styling for CR-s9954 by b41911 End
 
-#mncnt h2, #mncnt h4 { font-weight:bold; }
+// #mncnt h2, #mncnt h4 { font-weight:bold; }
 
 // these classes are to define a two column structure for an iframe template, i.e. ruhp ... 
 #mncnt .ilc { display:block; float:left; width:49%!important; }
@@ -1117,11 +1112,11 @@ width:252px;
 position:relative; }
 
 #mncnt .infounitrule .rc > .iu li .thumbp:nth-child(1n) {
-   padding: 0px 5px 10px 12px!important;
+   padding: 0px 5px 10px 12px;
   }
 
 #mncnt .infounitrule .rc .iu:nth-child(n+2) li .thumbp{
-   padding: 0 0 2px 78px!important;
+   padding: 0 0 2px 78px;
  }  
 
  
@@ -1132,7 +1127,7 @@ position:relative; }
 
 // /* Added for CR-59954 starts */
 .rc .iu:nth-child(3n+3){
-	padding-right:0px!important;
+	padding-right:0px;
 }
 // /* Added for CR-59954 ends */
 
@@ -1188,17 +1183,17 @@ position:relative; }
 // 	list-style:none; }
 // #mncnt .rc li, #mncnt .iu li {
 // 	list-style:none; }
-#mncnt .rc form {
-	margin:0;
-	padding:5px; }
-#mncnt .rc form p {
-	margin:0;
-	padding:0 0 5px; }
-#mncnt .rc form select {
-	width:190px; }
-#mncnt .rc .th {
-	padding-top:8px;
-	position:relative; }
+// #mncnt .rc form {
+// 	margin:0;
+// 	padding:5px; }
+// #mncnt .rc form p {
+// 	margin:0;
+// 	padding:0 0 5px; }
+// #mncnt .rc form select {
+// 	width:190px; }
+// #mncnt .rc .th {
+// 	padding-top:8px;
+// 	position:relative; }
 	
 	// /*b41911 start*/
 	
@@ -2943,12 +2938,7 @@ li#paramSearch-li {
 }
 
 
-.infounitrule .ccr #pHB_bd a:after, .infounitrule .irc #pHB_bd a:after{
-   
-     
-    left: 320px;
-  
-  }
+.infounitrule .ccr #pHB_bd a:after, .infounitrule .irc #pHB_bd a:after{ left: 320px; }
 
 
  
