@@ -11,6 +11,7 @@
 @gray-dark:              lighten(#000, 20%);   // #333
 // @gray:                   lighten(#000, 33.5%); // #555
 @gray:                   @nxp-gray;
+@gray-padding:           #bdc7cf;
 @gray-light:             lighten(@gray, 40%);   
 // @gray-light:             lighten(#000y, 60%);   // #999
 @gray-lighter:           lighten(@gray, 80%); // #eee
@@ -145,7 +146,7 @@
 @table-bg:                      transparent;
 //** Background color used for '.table-striped'.
 // @table-bg-accent:               @nxp-aqua;
-@table-bg-accent:               #f9f9f9;
+@table-bg-accent:                #F8F8F9;
 //** Background color used for '.table-hover'.
 @table-bg-hover:                #f5f5f5;
 @table-bg-active:               @table-bg-hover;
@@ -214,7 +215,7 @@
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray-light;
+@input-color-placeholder:        @nxp-gray-light;
 
 //** Default '.form-control' height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -227,7 +228,7 @@
 @legend-border-color:            #e5e5e5;
 
 //** Background color for textual input addons
-@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-bg:           @nxp-orange;
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
@@ -430,16 +431,16 @@
 @nav-open-link-hover-color:                 #fff;
 
 //== Tabs
-@nav-tabs-border-color:                     #ddd;
+@nav-tabs-border-color:                     @nxp-gray-medium;
 
-@nav-tabs-link-hover-border-color:          @gray-lighter;
+@nav-tabs-link-hover-border-color:          @nxp-gray-medium;
 
-@nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gray;
-@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-active-link-hover-bg:             @nxp-white;
+@nav-tabs-active-link-hover-color:          @nxp-gray-dark;
+@nav-tabs-active-link-hover-border-color:   @nxp-gray-medium;
 
-@nav-tabs-justified-link-border-color:            #ddd;
-@nav-tabs-justified-active-link-border-color:     @body-bg;
+@nav-tabs-justified-link-border-color:            @nxp-gray-medium;
+@nav-tabs-justified-active-link-border-color:     @nxp-gray-medium;
 
 //== Pills
 @nav-pills-border-radius:                   @border-radius-base;
@@ -463,7 +464,7 @@
 @pagination-active-bg:                 @brand-primary;
 @pagination-active-border:             @brand-primary;
 
-@pagination-disabled-color:            @gray-light;
+@pagination-disabled-color:            @nxp-gray-medium;
 @pagination-disabled-bg:               #fff;
 @pagination-disabled-border:           #ddd;
 

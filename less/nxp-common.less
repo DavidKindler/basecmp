@@ -18,7 +18,7 @@
 		*,*:before, *:after {
 		 .box-sizing(border-box);
 		}
-    body {margin-left: 1em;}
+    body {margin-left: 15px;}
 
 		// @import "print.less";
 		// Core CSS
@@ -66,16 +66,16 @@
 		@import "responsive-utilities.less";
 
 
-		@import "basecamp-delta-colors.less";
+		@import "nxp-colors.less";
 
 /*! **** ICONS ELEMENTS BEGIN  ****/
 
 
-		@import "basecamp-delta-icons.less";
+		@import "nxp-icons.less";
 @randomNumber : ceil(`Math.random()*100000`);
 		
 // Font mixin 
-.font-mixin(@font-family-name, @font-file-name, @font-path: "../fonts/", @weight: normal, @style: normal, @update: @randomNumber){
+.font-mixin(@font-family-name, @font-file-name, @font-path: "http://style.nxp.com/shared/fonts/", @weight: normal, @style: normal, @update: @randomNumber){
   font-family: @font-family-name;
   src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
   src: ~"url('@{font-path}@{font-file-name}.eot?#iefix@{update}') format('embedded-opentype')",
@@ -88,7 +88,7 @@
 }
 
 
-.font-base64-mixin(@font-family-name, @font-file-name, @font-path: "../fonts/", @weight: normal, @style: normal, @update: @randomNumber, @base64){
+.font-base64-mixin(@font-family-name, @font-file-name, @font-path: "http://style.nxp.com/shared/fonts/", @weight: normal, @style: normal, @update: @randomNumber, @base64){
   font-family: @font-family-name;
   src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
   src: @base64;
@@ -97,35 +97,42 @@
 }
 
 
-@font-face {
-  @font-family-name: "icomoon";
-  @font-file-name: "icomoon";
-  @font-path: "../fonts/";
-  // @font-path: "//www.freescale.com/files/graphic/icons/";
-  // @font-path: "//styles-uat.freescale.com/files/graphic/icons/";
-  // @font-path: "//uat.freescale.com/files/graphic/icons/";
-  // @font-path: "//www.freescale.com/files/graphic/icons/";
-  // @font-path: "//ewmlx1.am.freescale.net/basecamp/fonts/";
-  .font-mixin(@font-family-name,@font-file-name,@font-path,normal, normal, @randomNumber); 
-};
+// @font-face {
+//   @font-family-name: "icomoon";
+//   @font-file-name: "icomoon";
+//   // @font-path: "../fonts/";
+//   // @font-path: "/files/graphic/icons/";
+//   // @font-path: "//www.nxp.com/files/graphic/icons/";
+//   // @font-path: "//styles-uat.nxp.com/files/graphic/icons/";
+//   // @font-path: "//uat.nxp.com/files/graphic/icons/";
+//   // @font-path: "//ewmlx1.am.freescale.net/basecamp/fonts/";
+//   .font-mixin(@font-family-name,@font-file-name,@font-path,normal, normal, @randomNumber); 
+// };
+
+// @import "icomoon-base64.less";
+ 
+@import "icomoon.less";
 
 @import "lato-base64.less" ;  //import lato font as base64 encoded file
 
-@import "basecamp-delta-header-footer.less";
-@import "basecamp-delta-mega.less";
-@import "basecamp-delta-buttons.less";
-@import "basecamp-delta-labels.less";
+@import "nxp-header-footer.less";
+@import "nxp-mega.less";
+@import "nxp-buttons.less";
+@import "nxp-labels.less";
 
 
-@import "FSL.toplevel.less";
-@import "FSL.TOPLEVEL_DELTA.less";
-@import "FSL.public_common.less";
-@import "FSL.taxonomy_css.less";
-@import "FSL.reco_styles.less";
-@import "FSL.webnote_style.less";
-@import "FSL.theme.less";
-@import "FSL.basecamp-asp.less";
-@import "FSL.basecamp-ssp.less";
-@import "FSL.asp-custom.less";
-@import "FSL.lightSlider.less";
-@import "FSL.nxp-rebrand-fixes.less";
+// @import "FSL.toplevel.less";
+// @import "FSL.TOPLEVEL_DELTA.less";
+// @import "FSL.public_common.less";
+// @import "FSL.taxonomy_css.less";
+// @import "FSL.reco_styles.less";
+// @import "FSL.webnote_style.less";
+// @import "FSL.theme.less";
+// @import "FSL.basecamp-asp.less";
+// @import "FSL.basecamp-ssp.less";
+// @import "FSL.asp-custom.less";
+// @import "FSL.lightSlider.less";
+// @import "FSL.nxp-rebrand-fixes.less";
+
+@import "FSL.LEGACY.less";  // Combined all FSL. stylesheets in list above.
+@import "nxp-common-updates.less";  // renamed the FSL.nxp-rebrand-fixes.less

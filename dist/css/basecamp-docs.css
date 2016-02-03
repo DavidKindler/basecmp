@@ -1,3 +1,4 @@
+body {padding-bottom: 30px;}
 header.navbar.navbar-default {position: fixed; top:0px; width:100%;}
 .container {padding-top: 50px;}
 .back-to-top {
@@ -221,3 +222,26 @@ border-radius: 0;
 .highlight pre {border-top-left-radius: 0; border-top-right-radius: 0;}
 
 .bc-example>p>.close { float: none; }
+
+body {margin:0px;}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.page-header {font-weight: bold;}

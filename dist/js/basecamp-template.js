@@ -6,18 +6,21 @@ if (title == 'test') {
 		document.write('<link href="./css/basecamp.css" rel="stylesheet">');
 		} else {
 		document.write('  <link href="./css/nxp-common.min.css" rel="stylesheet">' );
+		document.write('  <link href="./css/nxp-common-delta.css" rel="stylesheet">' );
 }
 
 document.write(''+
 ' 			<title>'+title+'</title>'+
 '        <link href="./css/basecamp-docs.css" rel="stylesheet">'+
 '        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->'+
-'        <!--[if lt IE 9]>'+
-'           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>'+
-'           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>'+
-'         <![endif]-->'+
-// '        <link rel="shortcut icon" href="./ico/favicon.ico">'+
-// '        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">'+
+'        <!--[if lte IE 9]> '+
+'          <link rel="stylesheet" href="../css/nxp-common-ie.min.css">'+
+'          <script src="//www.freescale.com/files/js/html5shiv.js"></script>'+
+'        <![endif]-->'+
+'         <!--[if lt IE 9]>'+
+'          <script src="//www.freescale.com/files/js/html5shiv.js"></script>'+
+'          <link rel="stylesheet" href="../css/nxp-common-ie8.css">'+
+'        <![endif]-->'+
 '');
 };
 
@@ -31,7 +34,7 @@ var writeHeader = function(){
 '             <span class="icon-bar"></span>'+
 '             <span class="icon-bar"></span>'+
 '           </button>'+
-'           <a href="./" class="navbar-brand" "><span class="icon-home"></span> BaseCamp</a>'+
+'           <a href="./" class="navbar-brand" "><span class="icon-home"></span> NXP Web Branding</a>'+
 '         </div>'+
 '         <nav id="fsl-navbar-collapse" class="collapse navbar-collapse" >'+
 '           <ul class="nav navbar-nav">'+

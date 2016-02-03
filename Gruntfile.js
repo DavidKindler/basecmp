@@ -20,19 +20,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.loadNpmTasks('grunt-ftp-deploy');
+  grunt.loadNpmTasks('grunt-bless');
+  grunt.loadNpmTasks('grunt-fontoptim');
 
   grunt.initConfig({
-     ftpPut: {
-        options: {
-            host: 'swellsoftware.com',
-            port: 22,
-            authKey: 'key1'
-        },
-        src: './dist',
-        dest: '/apps/branding',
-        exclusions : '[]'
-    },
     compress: {
       less: {
         options: {
@@ -49,11 +40,12 @@ module.exports = function(grunt) {
         },
         files: [
           // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
-          {flatten: true, expand:true, src: 'templates/nxp-template.html',dest:'/html',filter:'isFile'},
-          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
-          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
-          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
-          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+          // {flatten: true, expand:true, src: 'templates/nxp-template.html',dest:'/html',filter:'isFile'}
+          {flatten: true, expand:true, src: 'templates/nxp-template.html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
         ]
       },
       investortemplate: {
@@ -62,11 +54,12 @@ module.exports = function(grunt) {
         },
         files: [
           // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
-          {flatten: true, expand:true, src: ['templates/financial-information.html','templates/financial-results.html','templates/investor-relations.html','templates/sec-filings.html'],dest:'/html',filter:'isFile'},
-          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
-          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
-          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
-          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+          {flatten: true, expand:true, src: ['templates/financial-information.html','templates/financial-results.html','templates/investor-relations.html','templates/sec-filings.html'],filter:'isFile'}
+          // {flatten: true, expand:true, src: ['templates/financial-information.html','templates/financial-results.html','templates/investor-relations.html','templates/sec-filings.html'],dest:'/html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
         ]
       },
       mediatemplate: {
@@ -75,13 +68,56 @@ module.exports = function(grunt) {
         },
         files: [
           // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
-          {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'},
-          {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
-          {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
-          {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
-          {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+          {flatten: true, expand:true, src: ['templates/media*.html'],filter:'isFile'}
+          // {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
         ]
       },
+      mediatemplate_ja: {
+        options: {
+          archive: 'resources/ja/media-center-ja.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: ['templates/ja/media*.html'],filter:'isFile'}
+          // {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      },
+      mediatemplate_zh_Hans: {
+        options: {
+          archive: 'resources/zh-Hans/media-center-zh-Hans.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: ['templates/zh-Hans/media*.html'],filter:'isFile'}
+          // {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      },
+      mediatemplate_ko: {
+        options: {
+          archive: 'resources/ko/media-center-ko.zip'
+        },
+        files: [
+          // {src: 'templates/nxp-template.html', expand:true,flatten:true, filter: 'isFile'},
+          {flatten: true, expand:true, src: ['templates/ko/media*.html'],filter:'isFile'}
+          // {flatten: true, expand:true, src: ['templates/media*.html'],dest:'/html',filter:'isFile'}
+          // {flatten: true, src: 'css/nxp-common**.css',filter:'isFile'},
+          // {flatten: true, src: 'fonts/icomoon.*',filter:'isFile'},
+          // {flatten: true, src: ['img/NXP**.*','img/nxp**.*','img/header-footer-sprite.png'],filter:'isFile'},
+          // {flatten: true, src: ['js/nxp-nav.js','js/homepage.js'],filter:'isFile'}
+        ]
+      }
 
 
     },
@@ -140,16 +176,16 @@ module.exports = function(grunt) {
         },
         templates: {
             expand: true,
-            src:['templates/*'],
-            dest: 'dist/templates',
-            flatten:true,
+            src:['templates/**'],
+            dest: 'dist/',
+            flatten:false,
             filter: 'isFile'
         },
         resources: {
             expand: true,
-            src:['resources/*.zip'],
-            dest: 'dist/resources',
-            flatten:true,
+            src:['resources/**/*.zip'],
+            dest: 'dist/',
+            flatten:false,
             filter: 'isFile'
         }
 
@@ -170,7 +206,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-           "css/nxp-common.css": "less/nxp-common.less"
+           "css/nxp-common.css": "less/nxp-common.less",
+           "css/nxp-common-ie8.css": "less/nxp-common-ie8.less"
           // "css/basecamp.css": "less/basecamp.less",
           // "css/basecamp-only-icons.css": "less/basecamp-only-icons.less",
           // "css/basecamp-only-buttons.css": "less/basecamp-only-buttons.less",
@@ -192,7 +229,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.less file
-          "css/nxp-common.min.css": "less/nxp-common.less"
+          "css/nxp-common.min.css": "less/nxp-common.less",
+          "css/nxp-common-ie8.min.css": "less/nxp-common-ie8.less"
           // "css/basecamp.min.css": "less/basecamp.less",
           // "css/basecamp-only-icons.min.css": "less/basecamp-only-icons.less",
           // "css/basecamp-only-buttons.min.css": "less/basecamp-only-buttons.less",
@@ -201,7 +239,34 @@ module.exports = function(grunt) {
           // "css/basecamp-no-header-footer.min.css": "less/basecamp-no-header-footer.less",
           // "css/thesink.min.css": "less/thesink.less"
         }
+      },
+      icons: {
+        options:{
+          cleancss:true,
+          ieCompat: true,
+          banner: "/* Updated <%= grunt.template.date ('yyyy-mm-dd') %> */\n"
+        },
+        files: {
+          "css/nxp-icons-only.css":"less/nxp-icons-only.less"
+        }
       }
+    },
+    bless: {
+        css: {
+          options: { },
+          files: {
+            'css/nxp-common-ie.min.css' : 'css/nxp-common.min.css'
+          }
+        }
+      },
+    fontoptim: {
+        ptserif: {
+            src: 'fonts/icomoon.woff',
+            dest: 'less/icomoon.less',
+            options: {
+                fontFamily: 'icomoon'
+            }
+        }
     },
     watch: {
       livereload: {
@@ -273,6 +338,7 @@ module.exports = function(grunt) {
  grunt.registerTask('build',[
         'clean',
         'buildcss',
+        'ieSucks',
         'compress',
         'copy'
     ]);
@@ -280,5 +346,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['server']);
   grunt.registerTask('watchLess', ['watch:styles']);
   grunt.registerTask('buildcss',['less']);
-  grunt.registerTask('ftpPut',['ftpPut']);
+  grunt.registerTask('ieSucks',['bless']);
+  grunt.registerTask('font64',['fontoptim']);
 };

@@ -8,4 +8,5 @@ test/**
 basecamp.*
 examples/**
 fonts/**
-.ftppass
+.ftp*
+secret.json

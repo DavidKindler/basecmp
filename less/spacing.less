@@ -3,17 +3,17 @@
 .generate-margins(@n, @i: 1) when (@i =< @n) {
 	@l : @i*5;
   .marginleft@{l} {
-    margin-left: (5px * @i);
+    margin-left: (5px * @i)!important;
   }
   .marginright@{l} {
-    margin-right: (5px * @i);
+    margin-right: (5px * @i)!important;
   }
 
   .top@{l}, .margintop@{l} {
-    margin-top: (5px * @i);
+    margin-top: (5px * @i)!important;
   }
   .bottom@{l}, .marginbottom@{l} {
-    margin-bottom: (5px * @i);
+    margin-bottom: (5px * @i)!important;
   }
 
   .generate-margins(@n, (@i + 1));

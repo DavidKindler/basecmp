@@ -1,0 +1,42 @@
+
+		@import "nxp-icons.less";
+@randomNumber : ceil(`Math.random()*100000`);
+		
+// Font mixin 
+.font-mixin(@font-family-name, @font-file-name, @font-path: "http://style.nxp.com/shared/fonts/", @weight: normal, @style: normal, @update: @randomNumber){
+  font-family: @font-family-name;
+  src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  src: ~"url('@{font-path}@{font-file-name}.eot?#iefix@{update}') format('embedded-opentype')",
+       ~"url('@{font-path}@{font-file-name}.woff?@{update}') format('woff')",
+       ~"url('@{font-path}@{font-file-name}.ttf?@{update}') format('truetype')",
+       ~"url('@{font-path}@{font-file-name}.svg?@{update}#@{font-file-name}') format('svg')";
+       // ~"url('@{font-path}@{font-file-name}.svg#@{icon-font-svg-id}') format('svg')";
+       font-weight: @weight;
+       font-style: @style;
+}
+
+
+.font-base64-mixin(@font-family-name, @font-file-name, @font-path: "http://style.nxp.com/shared/fonts/", @weight: normal, @style: normal, @update: @randomNumber, @base64){
+  font-family: @font-family-name;
+  src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  src: @base64;
+  font-weight: @weight;
+  font-style: @style;
+}
+
+
+// @font-face {
+//   @font-family-name: "icomoon";
+//   @font-file-name: "icomoon";
+//   // @font-path: "../fonts/";
+//   // @font-path: "/files/graphic/icons/";
+//   // @font-path: "//www.nxp.com/files/graphic/icons/";
+//   // @font-path: "//styles-uat.nxp.com/files/graphic/icons/";
+//   // @font-path: "//uat.nxp.com/files/graphic/icons/";
+//   // @font-path: "//ewmlx1.am.freescale.net/basecamp/fonts/";
+//   .font-mixin(@font-family-name,@font-file-name,@font-path,normal, normal, @randomNumber); 
+// };
+
+// @import "icomoon-base64.less";
+ 
+@import "icomoon.less";

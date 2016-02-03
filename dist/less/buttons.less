@@ -33,11 +33,13 @@
 
   &:hover,
   &:focus,
-  &:visited {
+ {
     color: @btn-default-color;
     background-color: lighten(@nxp-gray-dark,8%);
     text-decoration: none;
   }
+
+
 
   &:active,
   &.active {
@@ -56,6 +58,7 @@
   }
 }
 
+  // a.btn:visited, a.btn:link {color:@btn-default-color;}
 
 // Alternate buttons
 // --------------------------------------------------
@@ -108,11 +111,14 @@
     border-color: transparent;
   }
   &:hover,
-  &:focus {
+  &:focus
+  {
     color: @link-visited-color;
     text-decoration: underline;
     background-color: transparent;
   }
+
+
   &[disabled],
   fieldset[disabled] & {
     &:hover,
@@ -123,6 +129,7 @@
   }
 }
 
+ // a.btn-link:visited { color: @link-visited-color;}
 
 // Button Sizes
 // --------------------------------------------------
