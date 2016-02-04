@@ -61,8 +61,8 @@ Version: 0.1
 @font-face {
     font-family: 'wingdings-3';
     src: url('fonts/wingdings_3-webfont.eot');
-    src: url('fonts/wingdings_3-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/wingdings_3-webfont.woff2') format('woff2'),
+    src: url('fonts/wingdings_3-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/wingdings_3-webfont.html') format('woff2'),
          url('fonts/wingdings_3-webfont.woff') format('woff'),
          url('fonts/wingdings_3-webfont.ttf') format('truetype'),
          url('fonts/wingdings_3-webfont.svg#webfontregular') format('svg');
@@ -76,8 +76,8 @@ Version: 0.1
 @font-face {
     font-family: 'din-light';
     src: url('fonts/dinnextw1g-light-webfont.eot');
-    src: url('fonts/dinnextw1g-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/dinnextw1g-light-webfont.woff2') format('woff2'),
+    src: url('fonts/dinnextw1g-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinnextw1g-light-webfont.html') format('woff2'),
          url('fonts/dinnextw1g-light-webfont.woff') format('woff'),
          url('fonts/dinnextw1g-light-webfont.ttf') format('truetype'),
          url('fonts/dinnextw1g-light-webfont.svg#webfontregular') format('svg');
@@ -92,8 +92,8 @@ Version: 0.1
 @font-face {
     font-family: 'din-ultra-light';
     src: url('fonts/dinnextw1g-ultralight-webfont.eot');
-    src: url('fonts/dinnextw1g-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/dinnextw1g-ultralight-webfont.woff2') format('woff2'),
+    src: url('fonts/dinnextw1g-ultralight-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinnextw1g-ultralight-webfont.html') format('woff2'),
          url('fonts/dinnextw1g-ultralight-webfont.woff') format('woff'),
          url('fonts/dinnextw1g-ultralight-webfont.ttf') format('truetype'),
          url('fonts/dinnextw1g-ultralight-webfont.svg#webfontregular') format('svg');
@@ -108,7 +108,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd35Light';
 	src:	url('fonts/avenirltstd-light-webfont.eot');
-	src:	url('fonts/avenirltstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-light-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-light-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-light-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-light-webfont.svg#AvenirLTStd35Light') format('svg');
@@ -121,7 +121,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd35LightOblique';
 	src:	url('fonts/avenirltstd-lightoblique-webfont.eot');
-	src:	url('fonts/avenirltstd-lightoblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-lightoblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-lightoblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-lightoblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-lightoblique-webfont.svg#AvenirLTStd35LightOblique') format('svg');
@@ -136,7 +136,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd45Book';
 	src:	url('fonts/avenirltstd-book-webfont.eot');
-	src:	url('fonts/avenirltstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-book-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-book-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-book-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-book-webfont.svg#AvenirLTStd45Book') format('svg');
@@ -149,7 +149,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd45BookOblique';
 	src:	url('fonts/avenirltstd-bookoblique-webfont.eot');
-	src:	url('fonts/avenirltstd-bookoblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-bookoblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-bookoblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-bookoblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-bookoblique-webfont.svg#AvenirLTStd45BookOblique') format('svg');
@@ -164,7 +164,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd55Roman';
 	src:	url('fonts/avenirltstd-roman-webfont.eot');
-	src:	url('fonts/avenirltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-roman-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-roman-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-roman-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-roman-webfont.svg#AvenirLTStd55Roman') format('svg');
@@ -177,7 +177,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd55Oblique';
 	src:	url('fonts/avenirltstd-oblique-webfont.eot');
-	src:	url('fonts/avenirltstd-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-oblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-oblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-oblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-oblique-webfont.svg#AvenirLTStd55Oblique') format('svg');
@@ -191,7 +191,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd65Medium';
 	src:	url('fonts/avenirltstd-medium-webfont.eot');
-	src:	url('fonts/avenirltstd-medium-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-medium-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-medium-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-medium-webfont.svg#AvenirLTStd65Medium') format('svg');
@@ -204,7 +204,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd65MediumOblique';
 	src:	url('fonts/avenirltstd-mediumoblique-webfont.eot');
-	src:	url('fonts/avenirltstd-mediumoblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-mediumoblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-mediumoblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-mediumoblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-mediumoblique-webfont.svg#AvenirLTStd65MediumOblique') format('svg');
@@ -218,7 +218,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd85Heavy';
 	src:	url('fonts/avenirltstd-heavy-webfont.eot');
-	src:	url('fonts/avenirltstd-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-heavy-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-heavy-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-heavy-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-heavy-webfont.svg#AvenirLTStd85Heavy') format('svg');
@@ -231,7 +231,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd85HeavyOblique';
 	src:	url('fonts/avenirltstd-heavyoblique-webfont.eot');
-	src:	url('fonts/avenirltstd-heavyoblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-heavyoblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-heavyoblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-heavyoblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-heavyoblique-webfont.svg#AvenirLTStd85HeavyOblique') format('svg');
@@ -245,7 +245,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd95Black';
 	src:	url('fonts/avenirltstd-black-webfont.eot');
-	src:	url('fonts/avenirltstd-black-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-black-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-black-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-black-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-black-webfont.svg#AvenirLTStd95Black') format('svg');
@@ -258,7 +258,7 @@ Version: 0.1
 @font-face {
 	font-family: 'AvenirLTStd95BlackOblique';
 	src:	url('fonts/avenirltstd-blackoblique-webfont.eot');
-	src:	url('fonts/avenirltstd-blackoblique-webfont.eot?#iefix') format('embedded-opentype'),
+	src:	url('fonts/avenirltstd-blackoblique-webfontd41d.eot?#iefix') format('embedded-opentype'),
 			url('fonts/avenirltstd-blackoblique-webfont.woff') format('woff'),
 			url('fonts/avenirltstd-blackoblique-webfont.ttf') format('truetype'),
 			url('fonts/avenirltstd-blackoblique-webfont.svg#AvenirLTStd95BlackOblique') format('svg');
