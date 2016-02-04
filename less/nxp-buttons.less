@@ -273,5 +273,42 @@
 
    // a.btn-link:visited { color: @link-visited-color;}
  // a.btn:visited {color:@btn-default-color;}
+// .btn {
+//   &[disabled] & {
+//     &:hover,
+//     &:focus{
+//       opacity: .16;
+//       color:000;
+//     }
+//   }
+//   &.btn-green, &.btn-orange {
+//     &[disabled] & {
+//       &:hover,
+//       &:focus{
+//       opacity: .65;
+//       }
+//     }
+//   }
+//   &.btn-white {
+//    &[disabled] & {
+//     &:hover,
+//     &:focus{
+//      opacity: .45;
+//     }
+//   }
+// }
 
+// }
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn
+{
+  opacity: .16;
+  color:#000;
+}
+
+.btn.btn-green.disabled, .btn.btn-green[disabled], .btn.btn-orange.disabled, .btn.btn-orange[disabled], .btn.btn-white.disabled, .btn.btn-white[disabled]
+{
+  opacity: .45;
+  color: @nxp-gray;
+}
 

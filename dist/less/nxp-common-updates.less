@@ -83,14 +83,10 @@
     vertical-align: bottom;
 }
 
-/* The images */
 .overlay .img {
   max-width: 100%;
-  /* just in case, to force correct aspect ratio */
   height: auto !important;
 }
-
-
 
 
 .fsl_banner_summithome {
@@ -119,7 +115,6 @@
 
 .search_box_container{
   background-color:@nxp-gray-cool-light; 
-  // height:85px; 
   margin-top:10px;
   padding:20px 15px 20px;
 }
@@ -145,18 +140,15 @@ padding-left: 20px;
 input[type="checkbox"] + span:before {
  font-family: "icomoon-parametric";
   padding-right: 3px;
-  // font-size: 20px;
 }
 
 
 input[type="checkbox"] + span:before {
  content: "\e42f"; /* check-empty */
- // content: "\e60f";  /* check-empty  */
 }
 
 input[type="checkbox"]:checked + span:before {
    content: "\e42e"; /* check */
-   // content: "\e60c";  /*check  */
 }
 
 #accordion, .accordion {
@@ -222,9 +214,9 @@ table.filterMenu.table{
   thead td {font-size: 14px;}
 }
 
-.filterMenu {background-color: inherit;}
+// .filterMenu {background-color: inherit;}
 
-.filterMenu .btn {   margin: 0px; }
+// .filterMenu .btn {   margin: 0px; }
 
 
 .row.customBuyTable {margin-left: 20px;
@@ -233,14 +225,11 @@ table.filterMenu.table{
 
 }
 
-.overview-childcat {
-  text-indent: 12px;
-}
+.overview-childcat {    text-indent: 12px; }
 
 table#fslPartMatch tr td:nth-child(2) {background-color: rgba(0,164,167,.2); }
 table#fslPartMatch tr td:nth-child(n+2) { text-align: center;}
 
-// .alliance-jsp #tabsJQ #auvp-overview-tab {float:left; margin-top:10px!important;}
 #tabsJQ #auvp-overview-tab .intro {font-size: 1em;}
 
 
@@ -252,9 +241,7 @@ table#fslPartMatch tr td:nth-child(n+2) { text-align: center;}
   padding: 4px;
 }
 
-.fssLeftNavigation {
-word-wrap: break-word;
-}
+.fssLeftNavigation {word-wrap: break-word;}
 
 .videostore-container .carousel-slide .caroufredsel_wrapper {margin-left: 30px!important;}
 
@@ -296,13 +283,6 @@ ul#share-actions a {
 
 .share-icons span {color: @nxp-gray-xdark;}
 
-
-// #contextnav h2 {
-//      font-size: 14px;
-//      margin-left: 10px;
-// }
-
-
 .panel-group.accordion .panel-title a span.icon-arrow-right6:before {
   content: "\e3b6";
 }
@@ -327,26 +307,24 @@ ul#share-actions a {
 }
 
 .profservices {
-    width:221px;
-    padding:1px 20px 20px 24px;
+  width:221px;
+  padding:1px 20px 20px 24px;
   position: relative;
   left:-246px;
   bottom: 498px;
-  background-color: #e7eaeb;
+  background-color: @nxp-deep-orange;
 }
 
 
 @-moz-document url-prefix() {
-   .profservices {
-    width:221px;
-    padding:1px 20px 20px 24px;
+.profservices {
+  width:221px;
+  padding:1px 20px 20px 24px;
   position: relative;
   left:-246px;
   bottom: 500px;
-  background-color: #e7eaeb;
+  background-color: @nxp-deep-orange;
 }
 }
 
-#auvp-overview-tab {margin-top: 155px;}
 
-#contextnav label {margin-bottom: 0px; }

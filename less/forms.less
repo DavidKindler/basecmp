@@ -143,6 +143,7 @@ output {
     cursor: not-allowed;
     background-color: @input-bg-disabled;
     opacity: 1; // iOS fix for unreadable disabled content
+    opacity: .65;
   }
 
   // Reset height for `textarea`s
@@ -241,6 +242,7 @@ input[type="checkbox"],
   &[disabled],
   fieldset[disabled] & {
     cursor: not-allowed;
+    opacity:.65;
   }
 }
 
@@ -374,6 +376,7 @@ input[type="checkbox"],
     .checkbox input[type="checkbox"] {
       float: none;
       margin-left: 0;
+      display: inline-block;
     }
 
     // Validation states
