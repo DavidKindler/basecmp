@@ -90,7 +90,8 @@
 
 .font-base64-mixin(@font-family-name, @font-file-name, @font-path: "http://style.nxp.com/shared/fonts/", @weight: normal, @style: normal, @update: @randomNumber, @base64){
   font-family: @font-family-name;
-  src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  // src: ~"url('@{font-path}@{font-file-name}.eot?@{update}')";
+  src: ~"url('@{font-path}@{font-file-name}.eot}')";
   src: @base64;
   font-weight: @weight;
   font-style: @style;
