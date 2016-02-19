@@ -1276,20 +1276,20 @@ width:602px;
 // #featured_green {  background-image: url("//www.nxp.com/search/images/featured-green-trans.png"); background-repeat: no-repeat; cursor: pointer; display: block; text-indent: -999em; height: 20px;}
 // #btn_datasheet {  background-image: url("//www.nxp.com/search/images/icon_datasheet.gif"); background-repeat: no-repeat; cursor: pointer; display: block; text-indent: -999em; height: 20px;} 
 // #btn_sample { background-image: url("//www.nxp.com/search/images/exclusive_sample_botton.png"); background-repeat: no-repeat; cursor: pointer; display: block; text-indent: -999em; width: 75px; margin-left: 5px; height: 20px;}
-#image_feedback { 
-background-image: url("//www.nxp.com/shared/images/feedbackIcon.gif");
-height: 100px;
-width: 78px;
-background-repeat: no-repeat;
-cursor: pointer;
-display: inline-block; } 
-.btn_serpSubmitImage {
-background-image: url("//www.nxp.com/search/images/button_blue_submit.png");
-display: block;
-margin-top: 4px; 
-height: 22px; 
-cursor: pointer; width: 78px;
-background-repeat: no-repeat;}
+// #image_feedback { 
+// background-image: url("//www.nxp.com/shared/images/feedbackIcon.gif");
+// height: 100px;
+// width: 78px;
+// background-repeat: no-repeat;
+// cursor: pointer;
+// display: inline-block; } 
+// .btn_serpSubmitImage {
+// background-image: url("//www.nxp.com/search/images/button_blue_submit.png");
+// display: block;
+// margin-top: 4px; 
+// height: 22px; 
+// cursor: pointer; width: 78px;
+// background-repeat: no-repeat;}
 #new_green { 
 background-image: url("//www.nxp.com/site_cons/images/new_green.png");
 height: 10px;
@@ -1497,7 +1497,9 @@ form#register {margin-top: 20px;}
     text-decoration: underline
 }
 
-#mncnt .Tbl_a td,#mncnt .ccl td,#mncnt .ccr td,#mncnt .lc td {
+#mncnt .Tbl_a td
+// ,#mncnt .ccl td,#mncnt .ccr td,#mncnt .lc td 
+{
     border-collapse: separate;
     border: 1px solid #fff
 }
@@ -1512,11 +1514,15 @@ form#register {margin-top: 20px;}
     white-space: nowrap
 }
 
-.Tbl_a_header h2,.Thd h2,.Thg h2,.Thw h2,.Tbl_a_header h4,.Thd h4,.Thg h4,.Thw h4,#mncnt .lc td h2,#mncnt .lc td h4 {
+.Tbl_a_header h2,.Thd h2,.Thg h2,.Thw h2,.Tbl_a_header h4,.Thd h4,.Thg h4,.Thw h4
+// ,#mncnt .lc td h2,#mncnt .lc td h4 
+{
     line-height: 1.2em
 }
 
-.Tbl_a_header p,.Thd p,.Thg p,.Thw p,.Thd2 p,#mncnt .lcn td p,#mncnt .lc td p {
+.Tbl_a_header p,.Thd p,.Thg p,.Thw p,.Thd2 p
+// ,#mncnt .lcn td p ,#mncnt .lc td p 
+{
     margin: 0
 }
 
@@ -2390,13 +2396,13 @@ margin-right:0
 }
 #mncnt1 #featured .more-less .txt,#mncnt1 #featured .less-more .txt{
 }
-.callToAction{
-background: url('//www.nxp.com/shared/images/FS_Master_SpriteSheet.png') no-repeat 0 -2630px;
-height: 10px;
-width: 5px;
-display: inline-block;
-line-height: 1.2em;
-}
+// .callToAction{
+// background: url('//www.nxp.com/shared/images/FS_Master_SpriteSheet.png') no-repeat 0 -2630px;
+// height: 10px;
+// width: 5px;
+// display: inline-block;
+// line-height: 1.2em;
+// }
 
 #mncnt .rtarw.multilineCallToAction a, #mncnt .rtarw.multilineCallToAction a:hover{padding: 0 !important;background: none; z-index: auto;}
 .rtarw.multilineCallToAction .txt{margin-right: 5px; z-index: auto;}
@@ -3158,91 +3164,6 @@ div#dhtmlwindowholder div#ajaxbox1.dhtmlwindow div.drag-contentarea {margin-left
 div#dwindowcontent1.loadingbar{  background: url('//www.nxp.com/files/css/thickbox/images/loadingAnimation.gif') no-repeat center ;  }
 div#divopacity1.loadingbar{  background: url('//www.nxp.com/files/css/thickbox/images/loadingAnimation.gif') no-repeat center ;  }   
 
-// ******** TABLE class definitions *****************
-
-// table.table {
-//   background-color: transparent;
-//   border-collapse: collapse;
-//   border-spacing: 2px;
-// }
-
-// table.table th,
-// table.table td {
-//   padding: 4px 4px;
-//   line-height: 16px;
-//   text-align: left;
-//   vertical-align: top;
-// }
-
-// table.table td {
-//   border-spacing: 0px;
-// }
-
-// table.table th {
-//   font-weight: bold;
-// }
-
-// table.table thead th, table.table thead td {
-//   vertical-align: top;
-//   border-right: 1px solid white;
-//   background-color: #e3e3e6;
-// }
-
-// table.table.table-bordered {
-//   border: 1px solid @nxp-gray-light;
-//   *border-collapse: collapse; 
-// }
-
-// table.table-head-light thead td,
-// table.table-head-light thead th
-// {
-//    background-color: @nxp-gray-cool-light; 
-// }
-
-
-// table.table.table-bordered td {
-//    border:1px solid @nxp-gray-light;
-//    border-collapse: collapse;
-//    *border-collapse: collapse;
-// }
-
-// table.table.table-bordered th {
-//   border-left: 1px solid @nxp-gray-light;
-//   border-right:1px solid @nxp-gray-light;
-//   border-top:1px solid @nxp-gray-light;
-//   border-collapse: collapse;
-//   *border-collapse: collapse;
-// }
-
-// table.table.table-centered td {
-//   text-align: center;
-//   vertical-align: inherit;
-// }
-
-// table.table.table-centered th {
-//   text-align: center;
-//   vertical-align: inherit;
-// }
-
-// table.table-bordered thead:first-child tr:first-child th { 
-//   border-right: 1px solid @nxp-white;
-//   border-top: 1px solid @nxp-gray-light;
-// }
-
-// table.table-bordered thead:first-child tr:first-child th:last-child
-// { border-right:1px solid @nxp-gray-light;}
-
-// table.table-striped tbody > tr:nth-child(even) > td,
-// table.table-striped tbody > tr:nth-child(even) > th {
-//   background-color:  #F8F8F9;
-// }
-
-// table.table-striped tbody > tr:nth-child(odd) > td,
-// table.table-striped tbody > tr:nth-child(odd) > th {
-//     background-color: @nxp-white;
-// }
-
-// ********<-- END of TABLE class definitions --> *****************
 // /****** classes for Sample and buy project CR50499 *******/
 tr.rowhighlight {background:red;margin:0;border:1;padding:0;}
 
@@ -4202,7 +4123,9 @@ a.hypBtn:hover{text-decoration: none;}
      text-decoration: underline !important;
  }
  
- #mncnt .Tbl_a td, #mncnt .ccl td, #mncnt .ccr td, #mncnt .lc td {
+ #mncnt .Tbl_a td
+ // , #mncnt .ccl td, #mncnt .ccr td, #mncnt .lc td 
+ {
      border-collapse: separate !important;
      border: 1px solid #fff !important;
  }
@@ -4212,37 +4135,43 @@ a.hypBtn:hover{text-decoration: none;}
      white-space: nowrap !important;
  }
  
- #mncnt .Tbl_a_header h2, #mncnt .Thd h2, #mncnt .Thg h2, #mncnt .Thw h2, #mncnt .Tbl_a_header h4, #mncnt .Thd h4, #mncnt .Thg h4, #mncnt .Thw h4, #mncnt .lc td h2, #mncnt .lc td h4 {
+ #mncnt .Tbl_a_header h2, #mncnt .Thd h2, #mncnt .Thg h2, #mncnt .Thw h2, #mncnt .Tbl_a_header h4, #mncnt .Thd h4, #mncnt .Thg h4, #mncnt .Thw h4
+ // , #mncnt .lc td h2, #mncnt .lc td h4 
+ {
      line-height: 1.2em !important;
  }
  
- #mncnt .Tbl_a_header p, #mncnt .Thd p, #mncnt .Thg p, #mncnt .Thw p, #mncnt .Thd2 p, #mncnt .lcn td p, #mncnt .lc td p {
-     margin: 0 !important;
+ #mncnt .Tbl_a_header p, #mncnt .Thd p, #mncnt .Thg p, #mncnt .Thw p, #mncnt .Thd2 p
+ // , #mncnt .lcn td p, #mncnt .lc td p 
+ {
+     margin: 0;
  }
  
  #mncnt .Thd_sort, #mncnt .Thd_sort td {
      padding: 4px !important;
-     background-color: #efefef !important;
+     background-color: #efefef;
  }
  
  #mncnt .Thg a, #mncnt .Thw a, #mncnt .Thg td a, #mncnt .Thw td a, #mncnt .Thg a strong, #mncnt .Thw a strong, #mncnt .Thg a:hover strong, #mncnt .Thw a:hover strong, #mncnt .Thg td a strong, #mncnt .Thw td a strong, #mncnt .Thg td a:hover strong, #mncnt .Thw td a:hover strong, #mncnt .Thg strong a, #mncnt .Thw strong a, #mncnt .Thg strong a:hover, #mncnt .Thw strong a:hover, #mncnt .Thg td strong a, #mncnt .Thw td strong a, #mncnt .Thg td strong a:hover, #mncnt .Thw td strong a:hover {
      font-weight: normal !important;
  }
  
- #mncnt .Tbl_a_header, #mncnt .Thd, #mncnt .Thd2, #mncnt .Tbl_a_header td, #mncnt .Thd td, #mncnt .Thd2 td, #mncnt .lc thead tr, #mncnt .lc thead td {
-     background: #efefef !important;
+ #mncnt .Tbl_a_header, #mncnt .Thd, #mncnt .Thd2, #mncnt .Tbl_a_header td, #mncnt .Thd td, #mncnt .Thd2 td
+ // , #mncnt .lc thead tr, #mncnt .lc thead td 
+ {
+     background: #efefef;
  }
  
  #mncnt .SubH1 a:link, #mncnt .SubH1 a:visited, #mncnt .Tbl_a_header a:link, #mncnt .Tbl_a_header a:visited, #mncnt .Thd a:link, #mncnt .Thd a:visited {
-     color: #51626f !important;
-     padding-left: 8px !important;
+     color: #51626f ;
+     padding-left: 8px;
      background: url(//www.nxp.com/files/worldwide/homepage/images/sprite3.gif) -39px -183px no-repeat !important;
      text-decoration: none !important;
  }
  
  #mncnt .SubH1 a:hover, #mncnt .Tbl_a_header a:hover, #mncnt .Thd a:hover {
-     color: #51626f !important;
-     padding-left: 8px !important;
+     color: #51626f;
+     padding-left: 8px;
      background: url(//www.nxp.com/files/worldwide/homepage/images/sprite3.gif) -39px -183px no-repeat !important;
      text-decoration: underline !important;
  }
@@ -7561,6 +7490,12 @@ font-size: 11px !important;
   font-size: 12px;
 }
 
+.table thead th, .table thead td {
+  vertical-align: top;
+  border-right: 1px solid white;
+  background-color: #e3e3e6;
+}
+
 #community > tbody > tr > td{
 border-top: 0;
 }
@@ -7651,7 +7586,7 @@ border-top: 0;
 
 
 .videoThumbnail .overlay {
-  background-image: url("//styles.nxp.com/videostore/images/overlay2.png");
+  background-image: url("//style.nxp.com/videostore/images/overlay2.png");
   background-repeat: repeat;
   height: 100%;
   left: 0;
@@ -7953,19 +7888,25 @@ display: block;
 }
 
 #partCompTable .lc h2
-{color: #51626F ;
-font-size:16px ;
+{ padding:0;
+	margin:0;
+  font-size: 16px;
+  margin-top: 1em;
+  color: #333333;
+  font-weight: 400;
 }
-#partCompTable .lc table strong
-{
-font-size:12px ;
-}
+
+// #partCompTable .lc table strong
+// {
+// font-size:12px ;
+// }
 #partCompTable .removeExSpace {	margin:0;	padding:0;	width:100%; line-height:0; font-size:0; clear:both;
 	height:1px; }
-#featureSectionDiv table
-{
-width:310px;
-}
+
+// #featureSectionDiv table
+// {
+// width:310px;
+// }
 
 
 .keyPara .ptr
