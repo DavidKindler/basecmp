@@ -324,6 +324,9 @@ module.exports = function(grunt) {
           dest: 'cleancss/tidy.css'
         }]
       }
+    },
+    file_compare: {
+      check_suite1: ['css/nxp-common.css', 'dist/css/nxp-common.css']  // List of files to compare
     }
   });
 

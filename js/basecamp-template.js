@@ -68,6 +68,9 @@ var writeHeader = function(){
 '             <li>'+
 '               <a class="active" href="./resources.html">Resources</a>'+
 '             </li>'+
+'             <li>'+
+'               <a class="active" href="./changelog.html">Changelog</a>'+
+'             </li>'+
 '           </ul>'+
 '         </nav>'+
 '     </header>'+
