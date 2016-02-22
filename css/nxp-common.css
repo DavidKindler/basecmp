@@ -11644,16 +11644,11 @@ a.btn.btn-white:visited {
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
-  opacity: .16;
-  color: #000;
+  opacity: .45;
+  color: #ffffff;
 }
-.btn.btn-green.disabled,
-.btn.btn-green[disabled],
-.btn.btn-orange.disabled,
-.btn.btn-orange[disabled],
 .btn.btn-white.disabled,
 .btn.btn-white[disabled] {
-  opacity: .45;
   color: #979799;
 }
 .fsl-label {
@@ -23743,7 +23738,4 @@ ul#share-actions a > span[class*=" icon-"] {
 body.taxonomy-jsp table#staticTable .intro {
   color: #333333;
   font-size: 12px;
-}
-.this-is-a-new-class {
-  color: black;
 }
