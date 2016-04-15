@@ -62,11 +62,15 @@ var writeHeader = function(){
 '             <li>'+
 '                 <a href="./icons.html">Icons</a>'+
 '             </li>'+
+// '             <li>'+
+// '               <a class="active" href="./templates.html">Templates</a>'+
+// '             </li>'+			
 '             <li>'+
-'               <a class="active" href="./templates.html">Templates</a>'+
-'             </li>'+			
-'             <li>'+
-'               <a class="active" href="./resources.html">Resources</a>'+
+	'               <a class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" href="./resources.html">Resources <span class="caret"></span></a>'+
+	'              <ul class="dropdown-menu">'+
+	'									<li><a href="./resources.html">Templates</a></li>' +
+	'									<li><a href="./resources/Mobile_App_Style_Guide.pdf">Mobile Style Guidelines</a></li>' +
+	'							</ul>'+
 '             </li>'+
 '             <li>'+
 '               <a class="active" href="./changelog.html">Changelog</a>'+

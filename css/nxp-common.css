@@ -1,4 +1,4 @@
-/* Updated 2016-02-22 */
+/* Updated 2016-04-15 */
 /*! **** NORMALIZE  ****/
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -14064,8 +14064,8 @@ form#register {
 #registration_tbl td[id*="val_msg"] {
   padding-bottom: 10px;
 }
-/* 
- -- END toplevel -----------------------------------------------------------------------------------   
+/*
+ -- END toplevel -----------------------------------------------------------------------------------
  */
 /*
  -- BEGIN TOPLEVEL_DELTA--/  ----------------------------------------------------------------------------
@@ -15349,6 +15349,14 @@ img.ytube_img {
 .psp-jsp .lc.ref_design {
   padding: 0;
 }
+.simple-warning {
+  color: #e31b23 !important;
+}
+.warning-box {
+  color: #e31b23;
+  border: 1px solid red;
+  padding: 3px;
+}
 #accordion div a:hover,
 .accordion div a:hover {
   text-decoration: underline;
@@ -15774,8 +15782,8 @@ div.short_div > table > tbody > tr > td {
 .psp-jsp p.intro {
   font-size: 14px !important;
 }
-/* 
--- END TOPLEVEL_DELTA --------------------------------------------------------------------------------   
+/*
+-- END TOPLEVEL_DELTA --------------------------------------------------------------------------------
 */
 /* /-- BEGIN public_common--/ ------------------------------------------------------------------------------- */
 .main_display {
@@ -18633,8 +18641,8 @@ a.hypBtn:hover {
   border-spacing: 2px;
 }
 /*  /--END of public_common--/  ------------------------------------------------------------------------ */
-/* 
- /--  BEGIN taxonomy_css   --/ ---------------------------------------------------------------------- 
+/*
+ /--  BEGIN taxonomy_css   --/ ----------------------------------------------------------------------
  */
 .iu dd,
 .puiu dd {
@@ -19223,8 +19231,8 @@ a.FSLvideo {
   width: 234px;
   font-size: 14px;
 }
-/*  
- /--  END taxonomy_css   --/ ------------------------------------------------------------------------   
+/*
+ /--  END taxonomy_css   --/ ------------------------------------------------------------------------
  */
 /*
  -- BEGIN reco_styles.css --/ ----------------------------------------------------------------------
@@ -19708,8 +19716,8 @@ li.general_title {
 .max_bar:hover {
   text-decoration: none;
 }
-/* 
-- END reco_styles.css --/ ----------------------------------------------------------------------- 
+/*
+- END reco_styles.css --/ -----------------------------------------------------------------------
 */
 /* /-- BEGIN webnote_styles --/ ---------------------------------------------------------------------------- */
 #noteSeparatorLayer {
@@ -19800,8 +19808,8 @@ textarea#noteBody {
   outline-style: none;
 }
 /* /-- END webnote_styles --/ ------------------------------------------------------------------------*/
-/* 
- -- BEGIN theme --/ ------------------------------------------------------------------------------- 
+/*
+ -- BEGIN theme --/ -------------------------------------------------------------------------------
  */
 .dNone {
   display: none;
@@ -21749,10 +21757,10 @@ a:hover .paramSort {
 .hwwidth {
   min-width: 100px!important;
 }
-/* 
--- BEGIN FSL.theme --/ ------------------------------------------------------------------------------  
+/*
+-- BEGIN FSL.theme --/ ------------------------------------------------------------------------------
 */
-/* 
+/*
 - START  basecamp-asp  -------------------------------------------------------------------------
 */
 .fsl-sp #leftnav.col-sm-3 {
@@ -22296,47 +22304,47 @@ a:hover .paramSort {
   float: right;
 }
 /***  ROBIN TREEVIEW  **/
-/* 
+/*
 	   	@magic-number: 20px;
 
 
 	   	Meat and Potatoes
 	   	===============================
-	   	ul.treeview { 
-	   	  //margin-left: 15px; 
+	   	ul.treeview {
+	   	  //margin-left: 15px;
 	   	  padding: 0;
 	   	  list-style-type: none;
-	   	  
+
 	   	  ul {
-	   	    list-style-type: none; 
+	   	    list-style-type: none;
 	   	    margin:0;
 	   	    padding:0;
 	   	  }
-	   	  
+
 	   	  li {
-	   	    background-image: none; 
-	   	    list-style-image:none; 
+	   	    background-image: none;
+	   	    list-style-image:none;
 	   	    padding:5px 0 5px 10px;
 	   	  }
-	   	  
+
 	   	  li.expandable,li.closed {
 	   	    padding-left: @magic-number;
 	   	  }
-	   	  
+
 	   	  li:not(.closed),
-	   	  li:not(.expandable) { 
-	   	    padding-left: @magic-number; 
-	   	  // background: hsla(90,50%,75%,.55);  
+	   	  li:not(.expandable) {
+	   	    padding-left: @magic-number;
+	   	  // background: hsla(90,50%,75%,.55);
 	   	}
 
-	   	  .hitarea { 
-	   	    background-image: none; 
-	   	    list-style-image: none; 
-	   	    float:left; 
+	   	  .hitarea {
+	   	    background-image: none;
+	   	    list-style-image: none;
+	   	    float:left;
 	   	    margin-left: -@magic-number;
 
 	   	    & span, & i {
-	   	      font-size:8px; 
+	   	      font-size:8px;
 	   	      padding: 3px 3px 1px 2px;
 	   	      background-color: white;
 	   	      color:gray;
@@ -22345,7 +22353,7 @@ a:hover .paramSort {
 	   	      border: 1px solid gray;
 	   	      border-radius: 2px;
 	   	      text-decoration: none;
-	   	      
+
 	   	      &:hover {
 	   	        background-color: gray;
 	   	        color:white; cursor: pointer;
@@ -22370,14 +22378,14 @@ a:hover .paramSort {
 	   	}
 
 	   	    //ul ul {padding-left: 0; }
-	   	    
+
 	   	  Make the square orange bullets
 	   	    ul li {
 	   	      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAF0lEQVQIHWP8uZXhPwMWwIRFDCxEDwkAjygCuZMRiw4AAAAASUVORK5CYII=) no-repeat 0px 12px;
 	   	      list-style: none;
 	   	      margin:0px;
 	   	      padding-left: @magic-number;
-	   	      
+
 	   	    &.collapsible {
 	   	      list-style-image: none;
 	   	      background: none;
@@ -22999,11 +23007,11 @@ span.count {
   text-overflow: ellipsis;
   width: 350px;
 }
-/* 
+/*
 -- END basecamp-asp -----------------------------------------------------------------------------------
 */
-/*  
--- BEGIN basecamp-ssp ----------------------------------------------------------------------------- 
+/*
+-- BEGIN basecamp-ssp -----------------------------------------------------------------------------
 */
 .thumbs {
   height: 40px;
@@ -23014,11 +23022,11 @@ span.count {
 .thumbsContainer {
   margin-left: 11px;
 }
-/* 
- END of basecamp-ss  ------------------------------------------------------------------------------- 
+/*
+ END of basecamp-ss  -------------------------------------------------------------------------------
  */
-/* 
--- BEGIN asp-custom ----------------------------------------------------------  
+/*
+-- BEGIN asp-custom ----------------------------------------------------------
 */
 .row .col-xs-4 .iu {
   background-color: #ededf0;
@@ -23063,8 +23071,8 @@ span.count {
 .homepage-jsp .ssp p.video_footer {
   font-size: 12px;
 }
-/* 
-/-- END asp-custom --/ ----------------------------------------------------------------- 
+/*
+/-- END asp-custom --/ -----------------------------------------------------------------
 */
 /* /-- BEGIN lightSlider --/  ----------------------------------------------------------------------------- */
 .lSSlideOuter {
@@ -23723,7 +23731,7 @@ ul#share-actions a > span[class*=" icon-"] {
   position: relative;
   left: -246px;
   bottom: 498px;
-  background-color: #e66a08;
+  background-color: #e6e6e6;
 }
 @-moz-document url-prefix() {
   .profservices {
@@ -23732,10 +23740,15 @@ ul#share-actions a > span[class*=" icon-"] {
     position: relative;
     left: -246px;
     bottom: 500px;
-    background-color: #e66a08;
+    background-color: #e6e6e6;
   }
 }
 body.taxonomy-jsp table#staticTable .intro {
   color: #333333;
   font-size: 12px;
+}
+#image .container {
+  width: auto;
+  min-width: 990px;
+  max-width: 1200px;
 }

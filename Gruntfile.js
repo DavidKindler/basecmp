@@ -183,7 +183,7 @@ module.exports = function(grunt) {
         },
         resources: {
             expand: true,
-            src:['resources/**/*.zip'],
+            src:['resources/**/*.zip','resources/**/*.pdf'],
             dest: 'dist/',
             flatten:false,
             filter: 'isFile'
