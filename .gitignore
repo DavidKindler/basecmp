@@ -10,6 +10,7 @@ examples/**
 fonts/**
 .ftp*
 secret.json
-nxp-cms
-dist
-ARCHIVES 
+nxp-cms/**
+dist/**
+ARCHIVES/**
+dist/**
