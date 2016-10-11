@@ -14,3 +14,5 @@ nxp-cms/**
 dist/**
 ARCHIVES/**
 dist/**
+.git/**
+diff/**
