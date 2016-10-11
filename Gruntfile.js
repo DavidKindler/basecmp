@@ -128,7 +128,7 @@ module.exports = function(grunt) {
           dot: true,
           src: [
             '.tmp',
-            'dist/*'
+            'dist/**'
           ]
         }]
       }
@@ -187,6 +187,12 @@ module.exports = function(grunt) {
             dest: 'dist/',
             flatten:false,
             filter: 'isFile'
+        },
+        nxp_cms: {
+          expand: true,
+          cwd: 'nxp-cms/dist',
+          src: '**/*',
+          dest: 'dist/nxp-cms/'
         }
 
 

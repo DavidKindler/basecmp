@@ -11,3 +11,5 @@ fonts/**
 .ftp*
 secret.json
 nxp-cms
+dist
+ARCHIVES 
