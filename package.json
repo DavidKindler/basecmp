@@ -8,7 +8,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +28,8 @@
     "grunt-contrib-less": "^0.11.4",
     "grunt-contrib-watch": "^1.0.1",
     "grunt-open": "^0.2.3",
-    "grunt-contrib-connect": "^0.8.0"
-  }
+    "grunt-contrib-connect": "^0.8.0",
+    "snyk": "^1.73.0"
+  },
+  "snyk": true
 }
